@@ -1,6 +1,6 @@
 \contentsline {paragraph}{short}{2}{section*.1}%
 \contentsline {chapter}{Contents}{3}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}Part I(a): ISA Reminder, Assembly Language, Compiler - W 1.1}{4}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Part I(a) - ISA Reminder, Assembly Language, Compiler - W 1.1}{4}{chapter.1}%
 \contentsline {section}{\numberline {1.1}From High Level Languages to Assembly Language}{4}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}High Level Languages}{4}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Assembly Language}{4}{subsection.1.1.2}%

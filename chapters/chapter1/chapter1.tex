@@ -1,4 +1,4 @@
-\chapter{Part I(a): ISA Reminder, Assembly Language, Compiler - W 1.1}
+\chapter{Part I(a) - ISA Reminder, Assembly Language, Compiler - W 1.1}
 \textbf{hum...welcome back} \newline
 \textit{In the first part of the course, professor introduced (for motivational purposes) how computer architecture, specifically processors, have become essential to our lives, and how the field is growing exponentially. (didn't think it was essential to mention here...)}
 
@@ -43,8 +43,7 @@ do {
 \end{minipage}
 
 \subsection{Assembly Language}
-\textit{We use such code because we're able to build a Finite State Machine that can execute it (which cannot be done directly for C code.)} \newline
-\textbf{In this language, we get a more rigid format, a sequence of numbered instructions, an \textit{opcode} and predefined variable names. We also get a way to jump between lines of code.} \newline   
+We use this code because it enables us to build a \textit{Finite State Machine}, which isn't feasible with C code. This language provides a more rigid format with a sequence of numbered instructions, an \textit{opcode}, predefined variable names, and the ability to \textbf{jump between lines}.
 \newpage
 \begin{center}
     \begin{assembly}
@@ -60,42 +59,43 @@ loop: and x5, x1, x3
     addi x4, x4, 1
     bne x4, x6, loop
     \end{assembly}
-\end{center} 
+\end{center}
 
 \section{Processors}
-\textit{Last year, we studies Processors for a good reason, they are the closest machines to the code we write.} \newline
 \textbf{Remember, a processor can be decomposed into five components:} \newline
-
-- \textbf{ALU (Arithmetic and Logic Unit)}: Performs arithmetic and logical operations. \\
-- \textbf{Register File}: Stores data temporarily for quick access during processing. \\
-- \textbf{Memory}: Holds data and instructions needed by the processor. \\
-- \textbf{Control Logic}: Directs the operation of the processor by coordinating the other components. \\
-- \textbf{PC (Program Counter)}: Keeps track of the address of the next instruction to be executed. \\
-- \textbf{Instruction Memory}: Stores the program instructions that the processor will execute. \\
-
+\begin{itemize}[noitemsep]
+    \item[-] \textbf{ALU (Arithmetic and Logic Unit)}: Performs arithmetic and logical operations.
+    \item[-] \textbf{Register File}: Stores data temporarily for quick access during processing.
+    \item[-] \textbf{Memory}: Holds data and instructions needed by the processor.
+    \item[-] \textbf{Control Logic}: Directs the operation of the processor by coordinating the other components.
+    \item[-] \textbf{PC (Program Counter)}: Keeps track of the address of the next instruction to be executed.
+    \item[-] \textbf{Instruction Memory}: Stores the program instructions that the processor will execute.
+\end{itemize}
 \begin{center}
     \includegraphics[width=0.5\textwidth]{chapters/chapter1/images/processor.png}
 \end{center}
 
-We may distinguish three types of operations: \newline
+We may distinguish three types of general operations made by the processor: \newline
 \subsubsection*{Encoding}
 \begin{center}
-    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/encoding.png}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter1/images/encoding.png}
 \end{center}
 \subsubsection*{Fetching}
 \begin{center}
-    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/fetching.png}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter1/images/fetching.png}
 \end{center}
 \subsubsection*{Executing}
 \begin{center}
-    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/executing.png}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter1/images/executing.png}
 \end{center}
 
 
 \section{Joint or Disjoint Program and Data Memories}
 \textit{There are two main types of architectures one called the Harvard Architecture (Where the data and the memory are seperate) and pne called Unified Architecture (where data is shared with the program memory)} \newline
+\vspace*{5px}
 \begin{minipage}[htp]{0.4\textwidth}
-    \textit{Harvard Architecture} \newline
+    \texttt{Harvard Architecture} \newline
+    \vspace*{2px}
     \centering
     \includegraphics[width=0.6\textwidth]{chapters/chapter1/images/harvard.png}
 \end{minipage}
@@ -103,11 +103,13 @@ We may distinguish three types of operations: \newline
 \vline
 \hfill
 \begin{minipage}[htp]{0.4\textwidth}
-    \textit{Unified Architecture} \newline
+    \texttt{Unified Architecture} \newline    
+    \vspace*{2px}
+
     \centering
     \includegraphics[width=0.6\textwidth]{chapters/chapter1/images/unified.png}
 \end{minipage}
-
+\newpage
 \section{The Encoding problem}
 \textit{We may ask ourselves how we encode assembly written instructions into actual 0s and 1s.} \newline
 \subsection{The Stupid Solution}
@@ -126,6 +128,7 @@ We may distinguish three types of operations: \newline
     \textbf{RISC-V encoding}
 \end{center}
 
+\newpage
 \subsection{Automating this process}
 \subsubsection{Assembler}
 \textit{The program that does this is called an assembler. It takes the assembly code and converts it into machine code.} \newline
@@ -142,10 +145,10 @@ A compiler is a program that translates high-level source code written in langua
     \textbf{Compilation}
 \end{center}
 
-
+\newpage
 \section{ISA (Instruction Set Architecture)}
 \textit{The ISA is the interface between the hardware and the software. It defines the instructions that a processor can execute, as well as the format of those instructions.} \newline
 \begin{center}
-    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/isa.png}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter1/images/isa.png}
     \centering
 \end{center}

@@ -1,0 +1,151 @@
+\chapter{Part I(a): ISA Reminder, Assembly Language, Compiler - W 1.1}
+\textbf{hum...welcome back} \newline
+\textit{In the first part of the course, professor introduced (for motivational purposes) how computer architecture, specifically processors, have become essential to our lives, and how the field is growing exponentially. (didn't think it was essential to mention here...)}
+
+\section{From High Level Languages to Assembly Language}
+\subsection{High Level Languages}
+\textit{When talking about programming we usually think of programs that look like this\dots} \newline \vspace*{5px}
+
+\begin{minipage}[htp]{0.4\textwidth} % Use \textwidth to ensure it spans the page width
+\begin{cc}
+int data = 0x00123456;
+int result = 0;
+int mask = 1;
+int count = 0;
+int temp = 0;
+int limit = 32;
+do {
+    temp = data & mask;
+    result = result + temp;
+    data = data >> 1;
+    count = count + 1;
+} while (count != limit);
+\end{cc}
+\end{minipage}
+\hfill
+\vline
+\hfill
+\begin{minipage}[htp]{0.4\textwidth}
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{name} & \textbf{value} \\ \hline
+        data       & 0x00123456  \\ \hline
+        result     & 0           \\ \hline
+        mask       & 1           \\ \hline
+        count      & \dots       \\ \hline
+        temp       &             \\ \hline
+        limit      &             \\ \hline
+        \dots      &             \\ \hline
+        my\_float  & 3.141529    \\ \hline
+        a\_string  & Hello world! \\ \hline
+        \end{tabular}
+\end{minipage}
+
+\subsection{Assembly Language}
+\textit{We use such code because we're able to build a Finite State Machine that can execute it (which cannot be done directly for C code.)} \newline
+\textbf{In this language, we get a more rigid format, a sequence of numbered instructions, an \textit{opcode} and predefined variable names. We also get a way to jump between lines of code.} \newline   
+\newpage
+\begin{center}
+    \begin{assembly}
+    li x1, 0x00123456
+    li x2, 0
+    li x3, 1
+    li x4, 0
+    li x5, 0
+    li x6, 32
+loop: and x5, x1, x3
+    add x2, x2, x5
+    srli x1, x1, 1
+    addi x4, x4, 1
+    bne x4, x6, loop
+    \end{assembly}
+\end{center} 
+
+\section{Processors}
+\textit{Last year, we studies Processors for a good reason, they are the closest machines to the code we write.} \newline
+\textbf{Remember, a processor can be decomposed into five components:} \newline
+
+- \textbf{ALU (Arithmetic and Logic Unit)}: Performs arithmetic and logical operations. \\
+- \textbf{Register File}: Stores data temporarily for quick access during processing. \\
+- \textbf{Memory}: Holds data and instructions needed by the processor. \\
+- \textbf{Control Logic}: Directs the operation of the processor by coordinating the other components. \\
+- \textbf{PC (Program Counter)}: Keeps track of the address of the next instruction to be executed. \\
+- \textbf{Instruction Memory}: Stores the program instructions that the processor will execute. \\
+
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{chapters/chapter1/images/processor.png}
+\end{center}
+
+We may distinguish three types of operations: \newline
+\subsubsection*{Encoding}
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/encoding.png}
+\end{center}
+\subsubsection*{Fetching}
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/fetching.png}
+\end{center}
+\subsubsection*{Executing}
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/executing.png}
+\end{center}
+
+
+\section{Joint or Disjoint Program and Data Memories}
+\textit{There are two main types of architectures one called the Harvard Architecture (Where the data and the memory are seperate) and pne called Unified Architecture (where data is shared with the program memory)} \newline
+\begin{minipage}[htp]{0.4\textwidth}
+    \textit{Harvard Architecture} \newline
+    \centering
+    \includegraphics[width=0.6\textwidth]{chapters/chapter1/images/harvard.png}
+\end{minipage}
+\hfill
+\vline
+\hfill
+\begin{minipage}[htp]{0.4\textwidth}
+    \textit{Unified Architecture} \newline
+    \centering
+    \includegraphics[width=0.6\textwidth]{chapters/chapter1/images/unified.png}
+\end{minipage}
+
+\section{The Encoding problem}
+\textit{We may ask ourselves how we encode assembly written instructions into actual 0s and 1s.} \newline
+\subsection{The Stupid Solution}
+\textit{Now, the professor throws out the "stupid idea"(his words) of just counting all possible instructions, assigning a number to each one, and writing the numbers in binary. The problem with such a method is that the number of instructions could grow exponentially, requiring an unmanageable number of bits to represent each one, leading to inefficiency.} \newline 
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/encoding.png}
+    \centering
+    \textbf{"stupid solution"}
+\end{center}
+
+\subsection{RISC-V Encoding (The Solution)}
+\textbf{Instead, the chosen solution is to use an instruction set encoding where instructions are grouped into classes, each with a fixed format. This approach optimizes both memory usage and processing speed by limiting the number of bits required to represent instructions, while still allowing for a large variety of operations.} \newline
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/riscv.png}
+    \centering
+    \textbf{RISC-V encoding}
+\end{center}
+
+\subsection{Automating this process}
+\subsubsection{Assembler}
+\textit{The program that does this is called an assembler. It takes the assembly code and converts it into machine code.} \newline
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/assembler.png}
+    \centering
+    \textbf{Assembly}
+\end{center}
+\subsubsection{Compiler}
+A compiler is a program that translates high-level source code written in languages like C or Java into machine code or an intermediate representation. This machine code can then be executed by the processor. The compiler performs various stages, such as lexical analysis, parsing, optimization, and code generation, ensuring that the program runs efficiently on the target hardware.
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/compiler.png}
+    \centering
+    \textbf{Compilation}
+\end{center}
+
+
+\section{ISA (Instruction Set Architecture)}
+\textit{The ISA is the interface between the hardware and the software. It defines the instructions that a processor can execute, as well as the format of those instructions.} \newline
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/isa.png}
+    \centering
+\end{center}

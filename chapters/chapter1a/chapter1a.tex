@@ -72,32 +72,32 @@ loop: and x5, x1, x3
     \item[-] \textbf{Instruction Memory}: Stores the program instructions that the processor will execute.
 \end{itemize}
 \begin{center}
-    \includegraphics[width=0.5\textwidth]{chapters/chapter1/images/processor.png}
+    \includegraphics[width=0.5\textwidth]{chapters/chapter1a/images/processor.png}
 \end{center}
 
 We may distinguish three types of general operations made by the processor: \newline
 \subsubsection*{Encoding}
 \begin{center}
-    \includegraphics[width=0.65\textwidth]{chapters/chapter1/images/encoding.png}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter1a/images/encoding.png}
 \end{center}
 \subsubsection*{Fetching}
 \begin{center}
-    \includegraphics[width=0.65\textwidth]{chapters/chapter1/images/fetching.png}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter1a/images/fetching.png}
 \end{center}
 \subsubsection*{Executing}
 \begin{center}
-    \includegraphics[width=0.65\textwidth]{chapters/chapter1/images/executing.png}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter1a/images/executing.png}
 \end{center}
 
 
 \section{Joint or Disjoint Program and Data Memories}
 \textit{There are two main types of architectures one called the Harvard Architecture (Where the data and the memory are seperate) and pne called Unified Architecture (where data is shared with the program memory)} \newline
-\vspace*{5px}
+\vspace*{10px}
 \begin{minipage}[htp]{0.4\textwidth}
     \texttt{Harvard Architecture} \newline
     \vspace*{2px}
     \centering
-    \includegraphics[width=0.6\textwidth]{chapters/chapter1/images/harvard.png}
+    \includegraphics[width=0.6\textwidth]{chapters/chapter1a/images/harvard.png}
 \end{minipage}
 \hfill
 \vline
@@ -107,7 +107,7 @@ We may distinguish three types of general operations made by the processor: \new
     \vspace*{2px}
 
     \centering
-    \includegraphics[width=0.6\textwidth]{chapters/chapter1/images/unified.png}
+    \includegraphics[width=0.6\textwidth]{chapters/chapter1a/images/unified.png}
 \end{minipage}
 \newpage
 \section{The Encoding problem}
@@ -115,15 +115,15 @@ We may distinguish three types of general operations made by the processor: \new
 \subsection{The Stupid Solution}
 \textit{Now, the professor throws out the "stupid idea"(his words) of just counting all possible instructions, assigning a number to each one, and writing the numbers in binary. The problem with such a method is that the number of instructions could grow exponentially, requiring an unmanageable number of bits to represent each one, leading to inefficiency.} \newline 
 \begin{center}
-    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/encoding.png}
+    \includegraphics[width=0.7\textwidth]{chapters/chapter1a/images/encoding.png}
     \centering
     \textbf{"stupid solution"}
 \end{center}
 
 \subsection{RISC-V Encoding (The Solution)}
-\textbf{Instead, the chosen solution is to use an instruction set encoding where instructions are grouped into classes, each with a fixed format. This approach optimizes both memory usage and processing speed by limiting the number of bits required to represent instructions, while still allowing for a large variety of operations.} \newline
+\textbf{Instead, the chosen solution is to use an instruction set encoding where instructions are grouped into classes, each with a fixed format optimizing both memory usage and processing speed by limiting the number of bits required to represent instructions.} \newline
 \begin{center}
-    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/riscv.png}
+    \includegraphics[width=0.7\textwidth]{chapters/chapter1a/images/riscv.png}
     \centering
     \textbf{RISC-V encoding}
 \end{center}
@@ -134,22 +134,22 @@ We may distinguish three types of general operations made by the processor: \new
 \subsubsection{Assembler}
 \textit{The program that does this is called an assembler. It takes the assembly code and converts it into machine code.} \newline
 \begin{center}
-    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/assembler.png}
+    \includegraphics[width=0.7\textwidth]{chapters/chapter1a/images/assembler.png}
     \centering
     \textbf{Assembly}
 \end{center}
 \subsubsection{Compiler}
-A compiler is a program that translates high-level source code written in languages like C or Java into machine code or an intermediate representation. This machine code can then be executed by the processor. The compiler performs various stages, such as lexical analysis, parsing, optimization, and code generation, ensuring that the program runs efficiently on the target hardware.
+A compiler is a program that translates high-level source code written in languages like C or Java into machine code or an intermediate representation. 
 \begin{center}
-    \includegraphics[width=0.7\textwidth]{chapters/chapter1/images/compiler.png}
+    \includegraphics[width=0.7\textwidth]{chapters/chapter1a/images/compiler.png}
     \centering
     \textbf{Compilation}
 \end{center}
 
-\newpage
+
 \section{ISA (Instruction Set Architecture)}
 \textit{The ISA is the interface between the hardware and the software. It defines the instructions that a processor can execute, as well as the format of those instructions.} \newline
 \begin{center}
-    \includegraphics[width=0.65\textwidth]{chapters/chapter1/images/isa.png}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter1a/images/isa.png}
     \centering
 \end{center}

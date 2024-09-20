@@ -91,7 +91,7 @@ We may distinguish between different types of memories based on their \textbf{te
 \newpage
 \subsection{Basic Structure}
 \textit{Remember, a Data Flip Flop, stores a 1 bit value by updating the output value to the input value at the rising edge of the clock signal.} \\ \vspace*{5px}
-\begin{minipage}[htp]{0.45\textwidth} 
+\begin{minipage}[htp]{0.35\textwidth} 
 \begin{center}
     \begin{tabular}{|c|c|}
         \hline
@@ -135,24 +135,32 @@ We may distinguish between different types of memories based on their \textbf{te
 \hfill
 \vline
 \hfill
-\begin{minipage}[htp]{0.45\textwidth}
-    \textbf{16 x 4 Memory Cells (~Special DFFs (Data Flip-Flops))} \\ \vspace*{5px}
+\begin{minipage}[htp]{0.35\textwidth}
+\textbf{16 x 4 Memory Cells (~Special DFFs (Data Flip-Flops))} \\
 \begin{center}
     \includegraphics[width=0.45\textwidth]{chapters/chapter1c/images/structure.png}
 \end{center}
+\end{minipage} \\
+\vfill
+\begin{minipage}[htp]{0.45\textwidth}   
+    \subsection{Write Operations}
+    \textit{The D is connected to the Data outside of the system and at the risiing edge it updates the value of the DFF.} \textbf{The AND gate ensures that the write signal is high when the clock signal is high.} \\ \vspace*{5px}
+    \begin{center}
+        \includegraphics[width=0.45\textwidth]{chapters/chapter1c/images/write.png}
+    \end{center}
 \end{minipage}
-\subsection{Write Operations}
-\textit{The D is connected to the Data outside of the system and at the risiing edge it updates the value of the DFF.} \\ \vspace*{5px}
-\textbf{The AND gate ensures that the write signal is high when the clock signal is high.} \\ \vspace*{5px}
-\begin{center}
-    \includegraphics[width=0.45\textwidth]{chapters/chapter1c/images/write.png}
-\end{center}
-\subsection{Read Operations}
-\textit{D is still connected to the Data, remember the tri-state driver is active when it's enable signal is active (so when the wr is off and the operation signal is sent.).} \\ \vspace*{5px}
-\begin{center}
-    \includegraphics[width=0.45\textwidth]{chapters/chapter1c/images/read.png}
-\end{center}
+\hfill  
+\vline
+\hfill
+\begin{minipage}[htp]{0.45\textwidth}
+    \subsection{Read Operations}
+    \textit{D is still connected to the Data, remember the tri-state driver is active when it's enable signal is active (so when the wr is off and the operation signal is sent.).} \\ \vspace*{5px}
+    \begin{center}
+        \includegraphics[width=0.45\textwidth]{chapters/chapter1c/images/read.png}
+    \end{center}
+\end{minipage}
 
+\vspace*{5px}
 \subsection{Practical SRAMs}
 \textbf{DISCLAIMER !!: Combinational loops are prohibited as they can lead to unstable behavior, unpredictable timing, simulation and synthesis issues, excessive power consumption, and lack of a defined reset state, making them unsuitable for reliable digital circuit design.} \\ \vspace*{5px}
 \textit{While the type of memory we've juste seen is small, and very fast, SRAM memories uses 6 transitors per cell (less than the previous design). We've also seen (in Taxonomy) that SRAM is \textbf{static} meaning it doesn't require periodic refresh.} \\ \vspace*{5px}
@@ -201,6 +209,7 @@ We may distinguish between different types of memories based on their \textbf{te
 \begin{center}
     \includegraphics[width=0.45\textwidth]{chapters/chapter1c/images/rom.png}
 \end{center}
+
 \subsection{Static Ram Typical Interface}
 \textit{This a typical interface of a SRAM, it has a 16-bit data input/output, a 16-bit address input, a write enable signal, and a circuit select signal.}
 \begin{center}
@@ -224,6 +233,7 @@ We may distinguish between different types of memories based on their \textbf{te
         \includegraphics[width=0.45\textwidth]{chapters/chapter1c/images/sram_read2.png}
     \end{center}
 \end{minipage}  
+
 \subsubsection{Read Cycle}
 \textit{Latency} defined as the number of cycles between the address asserted and data available \\ \vspace*{5px}
 \begin{center}
@@ -273,9 +283,9 @@ We may distinguish between different types of memories based on their \textbf{te
 \end{center}
 
 \section{More Addressing Modes? Not in RISC-V!}
-
-
+\vspace*{-10px}
 \begin{center}
+\resizebox{1.1\textwidth}{!}{
 \begin{tabular}{|l|l|l|}
 \hline
 \textbf{Addressing Mode}          & \textbf{Instruction}                                      & \textbf{Description}                                                                                   \\ \hline
@@ -287,11 +297,11 @@ We may distinguish between different types of memories based on their \textbf{te
 \textbf{Base or Indexed}          & \texttt{add x0, x1, i5(x2)}                               & Adds the value of \texttt{x1} and the value in memory at \texttt{x2} plus index \texttt{i5}, stores in \texttt{x0}. \\ \hline
 \textbf{Auto-increment/-decrement} & \texttt{add x0, x1, (x2+)}                               & Adds the value of \texttt{x1} and the value in memory at the address in \texttt{x2}, then increments \texttt{x2}, stores in \texttt{x0}. \\ \hline
 \textbf{PC-Relative}              & \texttt{add x0, x1, 123(pc)}                              & Adds the value of \texttt{x1} and the value in memory at \texttt{pc} plus 123, stores in \texttt{x0}.    \\ \hline
-\end{tabular}
+\end{tabular}}
 \end{center}
     
 \textit{Syntax here looks like RISC-V but most of these instructions do not exist in RISC-V.}
-
+\newpage
 \subsection{Word Adressed Memory}
 \textit{In a word addressed memory, the address is the index of the word in the memory.} \\ 
 \textit{The letters inside the word are identified as eg. for Hello World, H:3980, E:3981, L:3982, \dots}.
@@ -334,16 +344,12 @@ We may distinguish between different types of memories based on their \textbf{te
 \end{minipage}
 \subsubsection{Counting Characters in a String}
 \textit{As an example, for counting the number of characters in a string, the load byte instruction would be more suitable as seeing the string as a sequence of bytes makes use of the memory as a sort of array.} \\ \vspace*{5px}
-\begin{minipage}[htp]{0.45\textwidth}   
-    \begin{center}
-        \includegraphics[width=0.35\textwidth]{chapters/chapter1c/images/hello2.png}
-    \end{center}
-\end{minipage}
-\hfill
-\vline
-\hfill
-\begin{minipage}[htp]{0.45\textwidth}
-\begin{assembly}
+
+\begin{center}
+    \includegraphics[width=0.15\textwidth]{chapters/chapter1c/images/hello2.png}
+\end{center}
+\begin{center}
+    \begin{assembly}
 strlen:
     mv t0, a0 # Copy the pointer (a0) into t0 to traverse the string
     li t1, 0 # t1 will hold the length (initialized to 0)
@@ -356,10 +362,12 @@ j loop # Repeat the loop
 end:
     mv a0, t1 # Move the length (t1) into a0 as the return value
     ret # Return to caller
-\end{assembly}
-\end{minipage}\\ \vspace*{5px}
+    \end{assembly}
+\end{center}
+
 \textit{\texttt{lbu} is used here to ensure that the byte is treated as an unsigned value, which is the correct approach for processing characters in a string.
 }
+\newpage
 In a word addressed memory view, the code would look like such: \\ \vspace*{5px}
 \begin{center}
 \begin{assembly}

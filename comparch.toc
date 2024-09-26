@@ -1,89 +1,115 @@
 \contentsline {paragraph}{short}{2}{section*.1}%
 \contentsline {chapter}{Contents}{3}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}Part I(a) - ISA Reminder, Assembly Language, Compiler - W 1.1}{5}{chapter.1}%
-\contentsline {section}{\numberline {1.1}From High Level Languages to Assembly Language}{5}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}High Level Languages}{5}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Assembly Language}{5}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Processors}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Joint or Disjoint Program and Data Memories}{7}{section.1.3}%
-\contentsline {section}{\numberline {1.4}The Encoding problem}{8}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}The Stupid Solution}{8}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}RISC-V Encoding (The Solution)}{8}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Automating this process}{9}{subsection.1.4.3}%
-\contentsline {subsubsection}{Assembler}{9}{section*.6}%
-\contentsline {subsubsection}{Compiler}{9}{section*.7}%
-\contentsline {section}{\numberline {1.5}ISA (Instruction Set Architecture)}{9}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Part I(b) - ISA, Functions, and Stack - W 1.2}{11}{chapter.2}%
-\contentsline {section}{\numberline {2.1}The Contract between HW and SW}{11}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Arithmetic and Logic Instructions in RISCV}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Constants must be encoded on 12 bits}{12}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Assembler Directives}{12}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}The \texttt {x0} Register}{13}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}PseudoInstructions}{13}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Control flow instructions}{13}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}If-Then-Else}{13}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Jumps and Branches}{14}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Comparaisions}{14}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Do-While}{14}{subsection.2.3.5}%
-\contentsline {section}{\numberline {2.4}Functions}{14}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Jump to the Function/Retun control to the calling program}{15}{subsection.2.4.1}%
-\contentsline {subsubsection}{The too simple not working approach}{15}{section*.8}%
-\contentsline {subsubsection}{The Good Approach}{15}{section*.9}%
-\contentsline {subsection}{\numberline {2.4.2}Jump Instructions}{15}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Register Conventions}{16}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Back to the good (not so good) approach}{16}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}One simple solution (still not good)}{16}{subsection.2.4.5}%
-\contentsline {subsection}{\numberline {2.4.6}Acquire storage resources the function needs (still not it)}{17}{subsection.2.4.6}%
-\contentsline {subsubsection}{Problem: Recursive Functions}{17}{section*.10}%
-\contentsline {subsection}{\numberline {2.4.7}The Stack}{17}{subsection.2.4.7}%
-\contentsline {subsubsection}{Dynamic Memory Allocation}{18}{section*.11}%
-\contentsline {subsubsection}{Retrieving Data from the Stack}{18}{section*.12}%
-\contentsline {subsubsection}{Memory Deallocation}{19}{section*.13}%
-\contentsline {subsubsection}{The Stack Pointer}{19}{section*.14}%
-\contentsline {subsection}{\numberline {2.4.8}Spilling Registers to Memory}{19}{subsection.2.4.8}%
-\contentsline {subsection}{\numberline {2.4.9}Register across functions}{19}{subsection.2.4.9}%
-\contentsline {subsection}{\numberline {2.4.10}Preserving Registers}{20}{subsection.2.4.10}%
-\contentsline {section}{\numberline {2.5}Passing Arguments in RISC-V}{20}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Option 1: Using Registers}{20}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Option 2: Using the Stack}{21}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}The RISC-V Approach}{21}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Summary of RISC-V Register Conventions}{21}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Part I(c) - ISA Memory and Addressing Modes - W 2.1}{22}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Memory}{22}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Address and Data}{22}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Many Types of Memories}{23}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Functional Taxonomy of Memories}{23}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Taxonomy of Random Access Memories}{23}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Basic Structure}{24}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Write Operations}{24}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Read Operations}{24}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Practical SRAMs}{24}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}DRAMs}{25}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}Ideal Random Access Memory}{25}{subsection.3.2.8}%
-\contentsline {subsection}{\numberline {3.2.9}Physical Organisation }{25}{subsection.3.2.9}%
-\contentsline {subsection}{\numberline {3.2.10}Realistic ROM Array}{26}{subsection.3.2.10}%
-\contentsline {subsection}{\numberline {3.2.11}Static Ram Typical Interface}{26}{subsection.3.2.11}%
-\contentsline {section}{\numberline {3.3}Typical Asynchronous SRAM Read Cycle}{26}{section.3.3}%
-\contentsline {subsubsection}{Read Cycle}{26}{section*.15}%
-\contentsline {subsubsection}{Write Cycle}{27}{section*.16}%
-\contentsline {section}{\numberline {3.4}Where is Memory in the Processor?}{27}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Arithmetic and Logic Instructions}{27}{subsection.3.4.1}%
-\contentsline {subsubsection}{Load Instructions}{28}{section*.17}%
-\contentsline {subsubsection}{Load and Store: The RiSC-V Way}{28}{section*.18}%
-\contentsline {subsubsection}{A Load/Store Architecture}{28}{section*.19}%
-\contentsline {section}{\numberline {3.5}More Addressing Modes? Not in RISC-V!}{28}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Word Adressed Memory}{29}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Loading Words (lw) and Instructions}{29}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Loading Bytes (lb)}{29}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}A Few More Load/Store Instructions}{29}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Access as it is more suitable}{30}{subsection.3.5.5}%
-\contentsline {subsubsection}{Counting Characters in a String}{30}{section*.20}%
-\contentsline {subsection}{\numberline {3.5.6}Loading Bytes (lb)}{31}{subsection.3.5.6}%
-\contentsline {subsubsection}{Which Byte Where?}{31}{section*.21}%
-\contentsline {chapter}{\numberline {4}Part I(d) - ISA Arrays and Data Structures - W 2.2}{32}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Arrays}{32}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Different Ways to Store Arrays}{32}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Adding Positive Elements}{33}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Pointer to Memory vs Index in Array}{34}{subsection.4.1.3}%
-\contentsline {subsubsection}{In C}{35}{section*.22}%
-\contentsline {subsubsection}{We need a good compiler}{35}{section*.23}%
+\contentsline {chapter}{\numberline {1}Part I(a) - ISA Reminder, Assembly Language, Compiler - W 1.1}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}From High Level Languages to Assembly Language}{6}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}High Level Languages}{6}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Assembly Language}{6}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Processors}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Joint or Disjoint Program and Data Memories}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.4}The Encoding problem}{9}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}The Stupid Solution}{9}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}RISC-V Encoding (The Solution)}{9}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Automating this process}{10}{subsection.1.4.3}%
+\contentsline {subsubsection}{Assembler}{10}{section*.6}%
+\contentsline {subsubsection}{Compiler}{10}{section*.7}%
+\contentsline {section}{\numberline {1.5}ISA (Instruction Set Architecture)}{10}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Part I(b) - ISA, Functions, and Stack - W 1.2}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The Contract between HW and SW}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Arithmetic and Logic Instructions in RISCV}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Constants must be encoded on 12 bits}{13}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Assembler Directives}{13}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}The \texttt {x0} Register}{14}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}PseudoInstructions}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Control flow instructions}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}If-Then-Else}{14}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Jumps and Branches}{15}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Comparaisions}{15}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Do-While}{15}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Functions}{15}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Jump to the Function/Retun control to the calling program}{16}{subsection.2.4.1}%
+\contentsline {subsubsection}{The too simple not working approach}{16}{section*.8}%
+\contentsline {subsubsection}{The Good Approach}{16}{section*.9}%
+\contentsline {subsection}{\numberline {2.4.2}Jump Instructions}{16}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Register Conventions}{17}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Back to the good (not so good) approach}{17}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}One simple solution (still not good)}{17}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Acquire storage resources the function needs (still not it)}{18}{subsection.2.4.6}%
+\contentsline {subsubsection}{Problem: Recursive Functions}{18}{section*.10}%
+\contentsline {subsection}{\numberline {2.4.7}The Stack}{18}{subsection.2.4.7}%
+\contentsline {subsubsection}{Dynamic Memory Allocation}{19}{section*.11}%
+\contentsline {subsubsection}{Retrieving Data from the Stack}{19}{section*.12}%
+\contentsline {subsubsection}{Memory Deallocation}{20}{section*.13}%
+\contentsline {subsubsection}{The Stack Pointer}{20}{section*.14}%
+\contentsline {subsection}{\numberline {2.4.8}Spilling Registers to Memory}{20}{subsection.2.4.8}%
+\contentsline {subsection}{\numberline {2.4.9}Register across functions}{20}{subsection.2.4.9}%
+\contentsline {subsection}{\numberline {2.4.10}Preserving Registers}{21}{subsection.2.4.10}%
+\contentsline {section}{\numberline {2.5}Passing Arguments in RISC-V}{21}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Option 1: Using Registers}{21}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Option 2: Using the Stack}{22}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}The RISC-V Approach}{22}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Summary of RISC-V Register Conventions}{22}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Part I(c) - ISA Memory and Addressing Modes - W 2.1}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Memory}{23}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Address and Data}{23}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Many Types of Memories}{24}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Functional Taxonomy of Memories}{24}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Taxonomy of Random Access Memories}{24}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Basic Structure}{25}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Write Operations}{25}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Read Operations}{25}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Practical SRAMs}{25}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}DRAMs}{26}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Ideal Random Access Memory}{26}{subsection.3.2.8}%
+\contentsline {subsection}{\numberline {3.2.9}Physical Organisation }{26}{subsection.3.2.9}%
+\contentsline {subsection}{\numberline {3.2.10}Realistic ROM Array}{27}{subsection.3.2.10}%
+\contentsline {subsection}{\numberline {3.2.11}Static Ram Typical Interface}{27}{subsection.3.2.11}%
+\contentsline {section}{\numberline {3.3}Typical Asynchronous SRAM Read Cycle}{27}{section.3.3}%
+\contentsline {subsubsection}{Read Cycle}{27}{section*.15}%
+\contentsline {subsubsection}{Write Cycle}{28}{section*.16}%
+\contentsline {section}{\numberline {3.4}Where is Memory in the Processor?}{28}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Arithmetic and Logic Instructions}{28}{subsection.3.4.1}%
+\contentsline {subsubsection}{Load Instructions}{29}{section*.17}%
+\contentsline {subsubsection}{Load and Store: The RiSC-V Way}{29}{section*.18}%
+\contentsline {subsubsection}{A Load/Store Architecture}{29}{section*.19}%
+\contentsline {section}{\numberline {3.5}More Addressing Modes? Not in RISC-V!}{29}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Word Adressed Memory}{30}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Loading Words (lw) and Instructions}{30}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Loading Bytes (lb)}{30}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}A Few More Load/Store Instructions}{30}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Access as it is more suitable}{31}{subsection.3.5.5}%
+\contentsline {subsubsection}{Counting Characters in a String}{31}{section*.20}%
+\contentsline {subsection}{\numberline {3.5.6}Loading Bytes (lb)}{32}{subsection.3.5.6}%
+\contentsline {subsubsection}{Which Byte Where?}{32}{section*.21}%
+\contentsline {chapter}{\numberline {4}Part I(d) - ISA Arrays and Data Structures - W 2.2}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Arrays}{33}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Different Ways to Store Arrays}{33}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Adding Positive Elements}{34}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Pointer to Memory vs Index in Array}{35}{subsection.4.1.3}%
+\contentsline {subsubsection}{In C}{36}{section*.22}%
+\contentsline {subsubsection}{We need a good compiler}{36}{section*.23}%
+\contentsline {chapter}{\numberline {5}Part I(e) - ISA Arithmetic - W 3.1}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Notation}{37}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Numbers}{37}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Unsigned Integers}{37}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Signed Integers}{38}{subsection.5.2.2}%
+\contentsline {subsubsection}{Sign and Magnitude}{38}{section*.24}%
+\contentsline {subsection}{\numberline {5.2.3}Radix's Complement}{38}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Two's Complement Subtraction}{39}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Addition Is Unchanged from Unsigned}{40}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Sign Extension}{40}{subsection.5.2.6}%
+\contentsline {subsubsection}{Example: 4-bit to 8-bit Conversion}{40}{section*.25}%
+\contentsline {subsection}{\numberline {5.2.7}Signed and Unsigned Instructions}{40}{subsection.5.2.7}%
+\contentsline {section}{\numberline {5.3}Overflow}{41}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Overflow in 2's Complement}{41}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Overflow in Software}{42}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Detect Addition Overflow in Software}{42}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Detect Addition Overflow in Software}{42}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}A Strange but Useful Property}{43}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Two's Complement Subtractor}{43}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Two's Complement Add/Subtract Unit}{44}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}Bounds Check Optimization}{44}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Floating Point Representation}{45}{section.5.6}%
+\contentsline {subsubsection}{Properties of Floating Point Numbers}{45}{section*.26}%
+\contentsline {subsubsection}{Standardization and Hardware Support}{45}{section*.27}%
+\contentsline {subsubsection}{Example: Decimal to IEEE 754 Simple Precision (32 Bits) Conversion}{45}{section*.28}%
+\contentsline {subsection}{\numberline {5.6.1}Sign-and-Magnitude Addition}{46}{subsection.5.6.1}%

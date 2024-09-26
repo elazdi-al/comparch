@@ -12,42 +12,41 @@
 \contentsline {subsection}{\numberline {1.4.3}Automating this process}{10}{subsection.1.4.3}%
 \contentsline {subsubsection}{Assembler}{10}{section*.6}%
 \contentsline {subsubsection}{Compiler}{10}{section*.7}%
-\contentsline {section}{\numberline {1.5}ISA (Instruction Set Architecture)}{10}{section.1.5}%
+\contentsline {section}{\numberline {1.5}ISA (Instruction Set Architecture)}{11}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Part I(b) - ISA, Functions, and Stack - W 1.2}{12}{chapter.2}%
-\contentsline {section}{\numberline {2.1}The Contract between HW and SW}{12}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Arithmetic and Logic Instructions in RISCV}{12}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Constants must be encoded on 12 bits}{13}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Assembler Directives}{13}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}The \texttt {x0} Register}{14}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}PseudoInstructions}{14}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Control flow instructions}{14}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}If-Then-Else}{14}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Jumps and Branches}{15}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Comparaisions}{15}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Do-While}{15}{subsection.2.3.5}%
-\contentsline {section}{\numberline {2.4}Functions}{15}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Jump to the Function/Retun control to the calling program}{16}{subsection.2.4.1}%
-\contentsline {subsubsection}{The too simple not working approach}{16}{section*.8}%
+\contentsline {section}{\numberline {2.1}Arithmetic and Logic Instructions in RISCV}{12}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Constants must be encoded on 12 bits}{12}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Assembler Directives}{12}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}The \texttt {x0} Register}{13}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}PseudoInstructions}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Control flow instructions}{14}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}If-Then-Else}{14}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Jumps and Branches}{14}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Comparaisions}{15}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Do-While}{15}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Functions}{15}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Jump to the Function/Retun control to the calling program}{15}{subsection.2.3.1}%
+\contentsline {subsubsection}{The too simple not working approach}{15}{section*.8}%
 \contentsline {subsubsection}{The Good Approach}{16}{section*.9}%
-\contentsline {subsection}{\numberline {2.4.2}Jump Instructions}{16}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Register Conventions}{17}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Back to the good (not so good) approach}{17}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}One simple solution (still not good)}{17}{subsection.2.4.5}%
-\contentsline {subsection}{\numberline {2.4.6}Acquire storage resources the function needs (still not it)}{18}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {2.3.2}Jump Instructions}{16}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Register Conventions}{17}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Back to the good (not so good) approach}{17}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}One simple solution (still not good)}{17}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Acquire storage resources the function needs (still not it)}{18}{subsection.2.3.6}%
 \contentsline {subsubsection}{Problem: Recursive Functions}{18}{section*.10}%
-\contentsline {subsection}{\numberline {2.4.7}The Stack}{18}{subsection.2.4.7}%
+\contentsline {subsection}{\numberline {2.3.7}The Stack}{18}{subsection.2.3.7}%
 \contentsline {subsubsection}{Dynamic Memory Allocation}{19}{section*.11}%
 \contentsline {subsubsection}{Retrieving Data from the Stack}{19}{section*.12}%
 \contentsline {subsubsection}{Memory Deallocation}{20}{section*.13}%
 \contentsline {subsubsection}{The Stack Pointer}{20}{section*.14}%
-\contentsline {subsection}{\numberline {2.4.8}Spilling Registers to Memory}{20}{subsection.2.4.8}%
-\contentsline {subsection}{\numberline {2.4.9}Register across functions}{20}{subsection.2.4.9}%
-\contentsline {subsection}{\numberline {2.4.10}Preserving Registers}{21}{subsection.2.4.10}%
-\contentsline {section}{\numberline {2.5}Passing Arguments in RISC-V}{21}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Option 1: Using Registers}{21}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Option 2: Using the Stack}{22}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}The RISC-V Approach}{22}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Summary of RISC-V Register Conventions}{22}{section.2.6}%
+\contentsline {subsection}{\numberline {2.3.8}Spilling Registers to Memory}{20}{subsection.2.3.8}%
+\contentsline {subsection}{\numberline {2.3.9}Register across functions}{20}{subsection.2.3.9}%
+\contentsline {subsection}{\numberline {2.3.10}Preserving Registers}{21}{subsection.2.3.10}%
+\contentsline {section}{\numberline {2.4}Passing Arguments in RISC-V}{21}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Option 1: Using Registers}{21}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Option 2: Using the Stack}{22}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}The RISC-V Approach}{22}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Summary of RISC-V Register Conventions}{22}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Part I(c) - ISA Memory and Addressing Modes - W 2.1}{23}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Memory}{23}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Address and Data}{23}{subsection.3.1.1}%

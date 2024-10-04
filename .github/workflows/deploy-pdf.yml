@@ -1,0 +1,38 @@
+name: Deploy PDF
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: comparch.tex
+      - name: Copy
+        run: |
+          mkdir out
+          cp ./comparch.pdf ./out/comparch.pdf
+      - uses: actions/upload-artifact@v3
+        with:
+          name: comparch-pdf
+          path: out/comparch.pdf
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.7
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          CLEAN: true
+          SINGLE_COMMIT: true
+          FOLDER: out
+          GIT_CONFIG_NAME: animarcus
+          GIT_CONFIG_EMAIL: marcus.hamelink@epfl.ch

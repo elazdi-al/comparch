@@ -35,5 +35,5 @@ jobs:
           CLEAN: true
           SINGLE_COMMIT: true
           FOLDER: out
-          GIT_CONFIG_NAME: animarcus
-          GIT_CONFIG_EMAIL: marcus.hamelink@epfl.ch
+          GIT_CONFIG_NAME: elazdi-al
+          GIT_CONFIG_EMAIL: alielazdi@gmail.com

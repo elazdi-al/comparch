@@ -22,6 +22,7 @@ jobs:
         run: |
           mkdir out
           cp ./comparch.pdf ./out/comparch.pdf
+          cp ./index.html ./out/index.html
       - uses: actions/upload-artifact@v3
         with:
           name: comparch-pdf

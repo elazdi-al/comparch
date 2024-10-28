@@ -133,5 +133,18 @@
 \contentsline {subsection}{\numberline {6.5.6}Guidelines for Writing Verilog}{56}{subsection.6.5.6}%
 \contentsline {subsection}{\numberline {6.5.7}Detailing Complex Combinational Modules (ALU)}{57}{subsection.6.5.7}%
 \contentsline {subsection}{\numberline {6.5.8}Verilog - Sticking to Basic Paterns}{57}{subsection.6.5.8}%
-\contentsline {chapter}{\numberline {7}Part II(b) - Processor, I/Os, and Exceptions W - 4.2}{58}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Part II(b) - Processor, I/Os, and Exceptions W - 4.1 - 4.2}{58}{chapter.7}%
 \contentsline {section}{\numberline {7.1}The CPU}{58}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Physical Memory Map}{59}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Connecting CPU and Memory}{59}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}Input/Output (I/O) Devices}{60}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Accessing I/Os: Port-Mapped I/O (PMIO)}{60}{subsection.7.3.1}%
+\contentsline {subsubsection}{Accessing I/Os: Memory Mapped I/O(MMIO)}{60}{section*.31}%
+\contentsline {subsection}{\numberline {7.3.2}Memory Mapped I/O (MMIO)}{61}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Example - A/D Converter}{62}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Bus Interface}{62}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Memory Mapping}{62}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Assembling everything}{63}{subsection.7.4.3}%
+\contentsline {subsubsection}{Software Implementation}{63}{section*.35}%
+\contentsline {section}{\numberline {7.5}What do these tri-state buffers do?}{64}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}A Classic UART}{65}{subsection.7.5.1}%

@@ -1,4 +1,4 @@
-\chapter{Part I(e) - ISA Arithmetic - W 3.1}
+\chapter{Part I(e) - ISA Arithmetic - W 3.1, 3.2}
 \section{Notation}
 Before we start, let's define some notation:
 \begin{itemize}
@@ -309,16 +309,6 @@ Overflow detection can be based on the following observations:
 \begin{itemize}
     \item[-] Add two 32-bit signed integers and detect overflow
     \begin{itemize}
-        \item At call time, a0 and a1 contain the two integers
-        \item On return, a0 contains the result and a1 must be nonzero in case of overflow
-    \end{itemize}
-\end{itemize}
-
-
-\subsection{Detect Addition Overflow in Software}
-\begin{itemize}
-    \item[-] Add two 32-bit signed integers and detect overflow
-    \begin{itemize}
         \item At call time, \texttt{a0} and \texttt{a1} contain the two integers.
         \item On return, \texttt{a0} contains the result and \texttt{a1} must be nonzero in case of overflow.
     \end{itemize}
@@ -514,30 +504,83 @@ In this exercise, we aim to write a function in RISC-V assembler to sum two 32-b
     \item[-] Overflow cases should be ignored.
 \end{itemize}
 
+\subsubsection{Solution 1}
+
+\textbf{Basic Algorithm:}
+\begin{itemize}
+    \item If the operands have the same sign:
+    \begin{itemize}
+        \item Add the absolute values
+        \item Attach to the result the same sign as the operands
+    \end{itemize}
+    \item If the operands have different signs:
+    \begin{itemize}
+        \item Subtract the smallest absolute value from the largest one
+        \item Attach to the result the sign of the largest value
+    \end{itemize}
+\end{itemize}
+
 \begin{assembly}
-# Load the operands from a0 and a1
-# Mask the sign bits
-andi t0, a0, 0x7FFFFFFF   # Extract magnitude of a0
-andi t1, a1, 0x7FFFFFFF   # Extract magnitude of a1
+add_sandm:
+    lui     t1, 0x80000         # mask for sign bit
+    and     t0, a0, t1          # check a0 sign
+    beqz    t0, a0_positive     # if positive, skip
+    xor     a0, a0, t1          # flip sign bit
+    neg     a0, a0              # negate a0
 
-# Extract the signs (MSB) of both operands
-srai t2, a0, 31           # Sign of a0
-srai t3, a1, 31           # Sign of a1
+a0_positive:
+    and     t0, a1, t1          # check a1 sign
+    beqz    t0, a1_positive     # if positive, skip
+    xor     a1, a1, t1          # flip sign bit
+    neg     a1, a1              # negate a1
 
-# Compare the signs
-beq t2, t3, same_sign     # If signs are equal, sum the magnitudes
-sub t0, t0, t1            # If signs differ, subtract the magnitudes
-j check_result            # Jump to check the result
+a1_positive:
+    add     a0, a0, a1          # add values
+    and     t0, a0, t1          # check result sign
+    beqz    t0, sum_positive    # if positive, skip
+    neg     a1, a1              # negate a1
+    xor     a0, a0, t1          # flip sign bit
 
-same_sign:
-    add t0, t0, t1            # Add magnitudes if signs are the same
-
-check_result:
-    # Restore the sign in the result
-    slli t0, t2, 31           # Shift the sign bit into position
-    or a0, t0, t1             # Combine sign and magnitude into a0
+sum_positive:
+    ret                         # return result
 \end{assembly}
+\newpage
+\subsubsection{Solution 2}
 
+\textbf{Basic Algorithm:}
+\begin{itemize}
+    \item Convert the two operands from sign-and-magnitude to 2's complement
+    \item Add the two operands
+    \item Convert the result from 2's complement back to sign-and-magnitude
+\end{itemize}
+
+\begin{assembly}
+convert_to_twos_comp:
+    lui     t1, 0x80000         # mask for sign bit
+    and     t0, a0, t1          # check a0 sign
+    beqz    t0, a0_twos_comp    # if positive, skip
+    xor     a0, a0, t1          # flip sign bit
+    neg     a0, a0              # negate a0
+
+a0_twos_comp:
+    and     t0, a1, t1          # check a1 sign
+    beqz    t0, a1_twos_comp    # if positive, skip
+    xor     a1, a1, t1          # flip sign bit
+    neg     a1, a1              # negate a1
+
+add_twos_comp:
+    add     a0, a0, a1          # add values
+
+convert_to_sign_mag:
+    lui     t1, 0x80000         # mask for sign bit
+    and     t0, a0, t1          # check result sign
+    beqz    t0, result_positive # if positive, skip
+    xor     a0, a0, t1          # flip sign bit
+    neg     a0, a0              # negate result
+
+result_positive:
+    ret                         # return result
+\end{assembly}
 
 
 

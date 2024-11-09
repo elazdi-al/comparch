@@ -1,4 +1,4 @@
-\chapter{Part II(d) - Processor, I/Os, and Exceptions}
+\chapter{Part II(d) - Processor, I/Os, and Exceptions W - 6.1 - 6.2}
 
 \section{Exceptions, Interrupts, Faults, Traps, and Checks}
 
@@ -38,7 +38,7 @@ Undefined instructions are instructions that the controller does not recognize, 
 \hfill
 \begin{minipage}[htp]{0.55\textwidth}
     \begin{center}
-        \includegraphics[width=1.2\textwidth]{chapters/chapter2d/images/undefined.png}
+        \includegraphics[width=1.1\textwidth]{chapters/chapter2d/images/undefined.png}
     \end{center}
 \end{minipage} \\
 \vspace{0.5cm}
@@ -116,3 +116,295 @@ Exceptions, interrupts, and related mechanisms handle critical events during exe
     \item \textbf{Coerced?} Specifies whether the exception is forced by the system (coerced) or triggered by a user request.
     \item \textbf{Resume?} Denotes whether the system can continue executing after handling the exception (resume) or must terminate.
 \end{itemize}
+\newpage
+\subsection{Watchpoint}
+A \textbf{watchpoint} is a debugging feature in a processor architecture that monitors specific registers and triggers an exception when predefined conditions are met. This mechanism allows developers to track changes in critical registers and execute exception handlers when necessary. \\
+\begin{minipage}[htp]{0.45\textwidth}
+\small
+\textbf{Key Components}
+\begin{itemize}
+    \item[-] \textbf{Register File:} Contains the set of registers, including special registers that can be configured by the user.
+    \item[-] \textbf{Watchpoint Logic:} Compares the monitored \textit{register} and its \textit{value} with user-defined conditions.
+    \item[-] \textbf{Next PC Logic:} Determines the next program counter (PC) value based on standard flow or exception handling.
+\end{itemize}
+\textbf{Functionality}
+\begin{itemize}
+    \item[-] When an instruction writes a specific \textit{value} into the monitored \textit{register}, the watchpoint logic evaluates the predefined conditions.
+    \item[-] If the conditions are met, the system triggers an exception by redirecting the program counter to the \textit{exception handler address}.
+    \item[-] Otherwise, normal program execution continues.
+\end{itemize}
+\end{minipage}
+\hfill
+\vline
+\hfill
+\begin{minipage}[htp]{0.45\textwidth}
+\begin{center}
+    \includegraphics[width=1.1\textwidth]{chapters/chapter2d/images/watchpoint.png}
+\end{center}
+\end{minipage}
+
+\subsection{Raising Exceptions}
+To handle exceptions, the processor must be able to provide which exact exception occurred. 
+\begin{itemize}
+    \item[] \textbf{Saving the Address:} The address of the current or next instruction must be stored in a dedicated register, typically the \textit{Exception Program Counter (EPC)}. This prevents overwriting the \texttt{ra} register, which is used for ordinary returns. A special instruction is required to resume execution using the \texttt{EPC}.
+    \item[] \textbf{Multiple Causes:} Since exceptions can arise from various causes, a mechanism is needed to identify the source:
+    \begin{itemize}
+        \item A single handler address with a \textit{cause register}.
+        \item A vector of handlers, where each handler corresponds to a specific cause.
+    \end{itemize}
+    \item[] \textbf{Nested Interrupts/Exceptions:} While handling an exception, another may occur. To manage this:
+    \begin{itemize}
+        \item Disable exceptions that can be suppressed (e.g., interrupts).
+        \item Avoid unpreventable exceptions (e.g., division by zero or undefined instructions).
+    \end{itemize}
+\end{itemize}
+
+\subsection{Assessing the Position of an Exception}
+When an exception occurs, it is essential to determine the position in the instruction flow to decide the appropriate handling strategy. Some key considerations are: \\
+- \textbf{Asynchronous Exceptions:} 
+\begin{itemize}
+    \item Identify the \textit{next instruction} to execute.
+\end{itemize}
+- \textbf{Synchronous Exceptions:} \\
+\begin{itemize}
+    \item Determine the \textit{instruction that caused the fault}.
+    \begin{itemize}
+        \item Restart from the faulting instruction if correction and retry are needed (e.g., invoking the operating system).
+        \item Restart from the next instruction if the functionality is implemented differently (e.g., emulating an undefined instruction in software).
+    \end{itemize}
+\end{itemize}
+- \textbf{Solutions:} \\
+\begin{itemize}
+    \item Reserve a dedicated ordinary register for the \textit{Exception Program Counter (EPC)} (e.g., Nios II).
+    \item Store the EPC on the stack (e.g., x86).
+    \item Use special registers dedicated to exception handling with specific instructions to access them (e.g., MIPS, RISC-V).
+\end{itemize}
+\subsection{Assessing the Cause of Exception}
+To handle exceptions, the processor must pass control to the appropriate handler. The mechanism for determining and invoking the correct handler can be categorized as follows:
+\begin{itemize}
+    \item[] \textbf{Single Handler with Cause Register (e.g., RISC-V, MIPS):}
+    \begin{itemize}
+        \item The processor executes a jump to a fixed address.
+        \item The handler performs the dispatching in software by reading a special \textit{cause register}.
+    \end{itemize}
+    \item[] \textbf{Vector of Handler Addresses (e.g., RISC-V, 68k):}
+    \begin{itemize}
+        \item The processor executes a jump to \texttt{mem[Exception Vector Address + (4 $\times$ Exception Number)]}.
+    \end{itemize}
+    \item[] \textbf{Vector of Handlers (e.g., PA-RISC 2.0, SPARC):}
+    \begin{itemize}
+        \item The processor directly jumps to \texttt{Exception Vector Address + (32 $\times$ Exception Number)}.
+    \end{itemize}
+\end{itemize}
+\begin{center}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter2d/images/position.png}
+\end{center}
+\subsection{RISC-V Machine-Mode Exception Handling}
+\subsubsection{Control and Status Registers (CSRs)}
+Control and Status Registers (CSRs) are essential for handling exceptions and managing processor states. Key registers include:
+
+\begin{itemize}
+    \item \textbf{mstatus:} Contains global interrupt enable flags (e.g., \texttt{MIE}) and status bits.
+    \item \textbf{mie:} Manages individual interrupt enable bits (e.g., \texttt{MEIE}, \texttt{MTIE}).
+    \item \textbf{mip:} Indicates pending interrupts (e.g., \texttt{MEIP}, \texttt{MTIP}).
+    \item \textbf{mtvec:} Stores the base address for exception vectors.
+    \item \textbf{mepc:} Holds the Program Counter (PC) value at the time of an exception.
+    \item \textbf{mcause:} Stores the cause of the exception, differentiating between interrupts and exception codes.
+\end{itemize}
+
+\subsubsection{Instructions for Accessing CSRs}
+The following instructions facilitate read/write operations on CSRs:
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Instruction} & \textbf{Pseudocode} & \textbf{Meaning} \\
+\hline
+\texttt{csrrw rd, csr, rs1} & \texttt{rd $\leftarrow$ csr; csr $\leftarrow$ rs1} & Read/Write CSR \\
+\texttt{csrrs rd, csr, rs1} & \texttt{rd $\leftarrow$ csr; csr $\leftarrow$ csr | rs1} & Read/Set Bits CSR \\
+\texttt{csrrc rd, csr, rs1} & \texttt{rd $\leftarrow$ csr; csr $\leftarrow$ csr \& (~rs1)} & Read/Clear Bits CSR \\
+\texttt{csrrwi rd, csr, imm} & \texttt{rd $\leftarrow$ csr; csr $\leftarrow$ imm} & Read/Write CSR (Immediate) \\
+\texttt{csrrsi rd, csr, imm} & \texttt{rd $\leftarrow$ csr; csr $\leftarrow$ csr | imm} & Read/Set Bits CSR (Immediate) \\
+\texttt{csrrci rd, csr, imm} & \texttt{rd $\leftarrow$ csr; csr $\leftarrow$ csr \& (~imm)} & Read/Clear Bits CSR (Immediate) \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection{Returning from Exceptions}
+The \texttt{mret} instruction is used to return from machine mode:
+\begin{itemize}
+    \item Restores the previous interrupt enable state (\texttt{mstatus.MIE $\leftarrow$ mstatus.MPIE}).
+    \item Updates the Program Counter (\texttt{pc $\leftarrow$ mepc}).
+\end{itemize}
+
+\subsection{RISC-V Interrupt and Exception Codes}
+
+The RISC-V architecture defines a set of interrupt and exception codes, categorized based on their source and purpose. These codes are represented in the \texttt{mcause} register, with the highest bit (\texttt{mcause[31]}) distinguishing between interrupts and exceptions.
+
+\subsubsection*{Interrupts}
+Interrupts occur asynchronously and are triggered by external or internal events. Key examples include:
+\begin{itemize}
+    \item \textbf{Supervisor software interrupt (Code 1):} Triggered by software at the supervisor level.
+    \item \textbf{Machine software interrupt (Code 3):} Triggered by software at the machine level.
+    \item \textbf{Supervisor timer interrupt (Code 5):} Indicates a timer interrupt at the supervisor level.
+    \item \textbf{Machine timer interrupt (Code 7):} Indicates a timer interrupt at the machine level.
+    \item \textbf{Supervisor external interrupt (Code 9):} Indicates an external I/O interrupt at the supervisor level.
+    \item \textbf{Machine external interrupt (Code 11):} Indicates an external I/O interrupt at the machine level.
+\end{itemize}
+
+\subsubsection*{Exceptions}
+Exceptions are synchronous events that occur during instruction execution. Common examples include:
+\begin{itemize}
+    \item \textbf{Instruction address misaligned (Code 0):} Caused by an attempt to fetch an instruction from a misaligned address.
+    \item \textbf{Instruction access fault (Code 1):} Occurs when an instruction fetch violates access permissions.
+    \item \textbf{Illegal instruction (Code 2):} Raised when an undefined or restricted instruction is executed.
+    \item \textbf{Breakpoint (Code 3):} Triggered by a breakpoint instruction for debugging.
+    \item \textbf{Page faults:}
+    \begin{itemize}
+        \item \textbf{Instruction page fault (Code 12):} Indicates a fault during instruction fetch due to virtual memory issues.
+        \item \textbf{Load page fault (Code 13):} Raised during a load operation when a page-related fault occurs.
+        \item \textbf{Store page fault (Code 15):} Raised during a store operation when a page-related fault occurs.
+    \end{itemize}
+\end{itemize}
+
+Understanding and properly handling these interrupts and exceptions is crucial for effective RISC-V programming and system design.
+
+\subsection{Possible Undefined Instruction Handler}
+Below is a possible implementation of an undefined instruction handler in RISC-V assembly:
+\begin{center}
+    \includegraphics[width=1\textwidth]{chapters/chapter2d/images/instr_handler.png}
+\end{center}
+
+\subsection{RISC-V Machine-Mode Interrupt Handling}
+
+In RISC-V architecture, machine-mode interrupt handling is managed through three key control and status registers: \texttt{mie}, \texttt{mip}, and \texttt{mstatus}. These registers play distinct roles in enabling, monitoring, and controlling interrupts.
+
+\begin{itemize}
+    \item \textbf{\texttt{mie} (Machine Interrupt Enable):} 
+    This register determines which interrupts the processor can take and which it must ignore. Key bits include:
+    \begin{itemize}
+        \item \texttt{MEIE}: Enables machine-level external interrupts.
+        \item \texttt{MTIE}: Enables machine-level timer interrupts.
+    \end{itemize}
+
+    \item \textbf{\texttt{mip} (Machine Interrupt Pending):} 
+    This register lists the interrupts that are currently pending. Key bits include:
+    \begin{itemize}
+        \item \texttt{MEIP}: Indicates a pending machine-level external interrupt.
+        \item \texttt{MTIP}: Indicates a pending machine-level timer interrupt.
+    \end{itemize}
+
+    \item \textbf{\texttt{mstatus} (Machine Status):} 
+    This register contains the global interrupt enable flag and other state information. Important fields include:
+    \begin{itemize}
+        \item \texttt{MIE}: Globally enables interrupts when set to 1, and disables them when set to 0.
+        \item \texttt{MPIE}: Holds the value of \texttt{MIE} prior to a trap.
+    \end{itemize}
+\end{itemize}
+
+The diagram below illustrates the structure of these registers:
+\begin{center}
+    \includegraphics[width=0.85\textwidth]{chapters/chapter2d/images/int_handl_reg.png}
+\end{center}
+
+These registers provide the foundation for interrupt handling in machine mode, ensuring efficient and precise interrupt management.
+
+\section{The Stack Problem}
+A few weeks ago, we discussed a potential issue with the stack, what was, "What should we do when the stack hits its limit?" \\
+We might be able to find a solution to this problem now.
+\begin{center}
+    \includegraphics[width=0.35\textwidth]{chapters/chapter2d/images/limit_stack.png}
+\end{center}
+
+\newpage
+\subsection{Stack-Full Detection ?}
+To detect when the stack is full, we can use a watchpoint. \\
+\begin{center}
+    \includegraphics[width=0.75\textwidth]{chapters/chapter2d/images/stack_full.png}
+\end{center}
+\subsection{Writing Handlers is Very Very Tricky}
+To write the exception handler for the stack-full detection, we \textbf{cannot} use the stack. \\
+Writing interrupt or exception handlers is inherently complex, particularly due to the restriction that the stack cannot be used. Additionally, many registers may be untouchable during execution. This necessitates careful design to handle these constraints. 
+
+\subsubsection*{Challenges}
+\begin{itemize}
+    \item[-] \textbf{Stack usage}: Direct stack usage is prohibited, necessitating alternative storage mechanisms.
+    \item[-] \textbf{Register constraints}: In many cases, touching any general-purpose register is disallowed.
+\end{itemize}
+
+\subsubsection*{Solutions}
+Various architectures provide mechanisms to address these challenges:
+\begin{itemize}
+    \item[-] \textbf{Reserved Registers}: As seen in MIPS, specific registers such as \texttt{\$k0} and \texttt{\$k1} are reserved for handler use.
+    \item[-] \textbf{Shadow Registers}: Early processors (e.g., x86 and earlier) employ shadow registers for temporary data storage.
+    \item[-] \textbf{Safe Stack Switching}: Architectures like x86 allow automatic switching to a predefined safe stack.
+\end{itemize}
+
+\subsubsection*{RISC-V Solution}
+The RISC-V architecture employs a dedicated Control and Status Register (CSR) called \texttt{mscratch} (Machine Scratch) to facilitate temporary data storage during handler execution. The \texttt{mscratch} register can:
+\begin{itemize}
+    \item[-] Store one word of data for temporary usage.
+    \item[-] Hold a pointer to an empty memory region or a predefined safe stack.
+\end{itemize}
+
+\subsection{Speaking of the Stack...}
+\textit{Speaking of the stack, when writing assembly code, we often ask ourselves: is the code on the right side as valid as the code on the left side? The answer is yes, but handling stack overflow, as we were planning to do using a watchpoint, would've made it impossible to write the right version.} \\
+\begin{minipage}[htp]{0.45\textwidth}
+\begin{assembly}
+funct:
+addi sp, sp, -12
+sw   ra, 0(sp)
+sw   s0, 4(sp)
+sw   s1, 8(sp)
+... etc. ...
+lw   ra, 0(sp)
+lw   s0, 4(sp)
+lw   s1, 8(sp)
+addi sp, sp, 12
+ret
+\end{assembly}    
+\end{minipage}
+\hfill
+\vline
+\hfill
+\begin{minipage}[htp]{0.45\textwidth}
+\begin{assembly}
+funct:
+sw   ra, -12(sp)
+sw   s0, -8(sp)
+sw   s1, -4(sp)
+addi sp, sp, -12
+... etc. ...
+addi sp, sp, 12
+lw   ra, -12(sp)
+lw   s0, -8(sp)
+lw   s1, -4(sp)
+ret
+\end{assembly}
+\end{minipage}
+
+\section{Protection: I/Os Are Not for Everyone}
+The system enforces restricted access to I/O peripherals to ensure security and proper operation. 
+\begin{center}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter2d/images/io_prot.png}
+\end{center}
+\begin{itemize}
+    \item[-] \textbf{Instruction Register (IR):} Holds the current instruction, e.g., \texttt{lw t5, 0(t7)}, which specifies a memory access operation.
+    \item[-] \textbf{Controller:} Generates the necessary control signals to manage instruction execution and memory access.
+    \item[-] \textbf{ALU (Arithmetic Logic Unit):} Computes addresses and performs arithmetic or logical operations. In this case, it calculates the effective memory address for the load instruction.
+    \item[-] \textbf{Peripheral Address Check:} Compares the computed address against a predefined address (\texttt{0x10000000}) to determine if the operation targets a restricted peripheral.
+    \item[-] \textbf{Privilege Mode:} Maintains the execution mode:
+        \begin{itemize}
+            \item \texttt{0:} Superuser mode.
+            \item \texttt{1:} User mode.
+        \end{itemize}
+        If a user-mode instruction attempts to access a restricted address, an exception is triggered.
+    \item[-] \textbf{Exception Handling:} Routes control to an exception handler when a violation occurs. This involves:
+        \begin{itemize}
+            \item Saving the next program counter (PC).
+            \item Redirecting execution to the exception handler address.
+        \end{itemize}
+    \item[-] \textbf{Interrupt Sources:} Includes various triggers such as undefined instructions (\texttt{undef}), IRQ, watchpoints, and stack violations, which can cause exceptions.
+\end{itemize}
+
+\noindent This mechanism ensures secure memory access, prevents unauthorized peripheral usage, and enforces privilege separation to maintain system stability and security.

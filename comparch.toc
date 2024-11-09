@@ -79,91 +79,107 @@
 \contentsline {subsubsection}{Counting Characters in a String}{32}{section*.20}%
 \contentsline {subsection}{\numberline {3.5.6}Loading Bytes (lb)}{33}{subsection.3.5.6}%
 \contentsline {subsubsection}{Which Byte Where?}{33}{section*.21}%
-\contentsline {chapter}{\numberline {4}Part I(d) - ISA Arrays and Data Structures - W 2.2}{34}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Arrays}{34}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Different Ways to Store Arrays}{34}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Adding Positive Elements}{35}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Pointer to Memory vs Index in Array}{36}{subsection.4.1.3}%
-\contentsline {subsubsection}{In C}{37}{section*.22}%
-\contentsline {subsubsection}{We need a good compiler}{37}{section*.23}%
-\contentsline {chapter}{\numberline {5}Part I(e) - ISA Arithmetic - W 3.1, 3.2}{38}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Notation}{38}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Numbers}{38}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Unsigned Integers}{38}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Signed Integers}{39}{subsection.5.2.2}%
-\contentsline {subsubsection}{Sign and Magnitude}{39}{section*.24}%
-\contentsline {subsection}{\numberline {5.2.3}Radix's Complement}{39}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Two's Complement Subtraction}{40}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Addition Is Unchanged from Unsigned}{41}{subsection.5.2.5}%
-\contentsline {subsection}{\numberline {5.2.6}Sign Extension}{41}{subsection.5.2.6}%
-\contentsline {subsubsection}{Example: 4-bit to 8-bit Conversion}{41}{section*.25}%
-\contentsline {subsection}{\numberline {5.2.7}Signed and Unsigned Instructions}{41}{subsection.5.2.7}%
-\contentsline {section}{\numberline {5.3}Overflow}{42}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Overflow in 2's Complement}{42}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Overflow in Software}{43}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Detect Addition Overflow in Software}{43}{subsection.5.3.3}%
-\contentsline {section}{\numberline {5.4}A Strange but Useful Property}{43}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Two's Complement Subtractor}{44}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Two's Complement Add/Subtract Unit}{44}{subsection.5.4.2}%
-\contentsline {section}{\numberline {5.5}Bounds Check Optimization}{45}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Floating Point Representation}{45}{section.5.6}%
-\contentsline {subsubsection}{Properties of Floating Point Numbers}{46}{section*.26}%
-\contentsline {subsubsection}{Standardization and Hardware Support}{46}{section*.27}%
-\contentsline {subsubsection}{Example: Decimal to IEEE 754 Simple Precision (32 Bits) Conversion}{46}{section*.28}%
-\contentsline {subsection}{\numberline {5.6.1}Sign-and-Magnitude Addition}{47}{subsection.5.6.1}%
-\contentsline {subsubsection}{Solution 1}{47}{section*.29}%
-\contentsline {subsubsection}{Solution 2}{48}{section*.30}%
-\contentsline {chapter}{\numberline {6}Part II(a) - I/O - Exceptions Multicycle Processor W - 3.2, 4.1}{49}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Processor}{49}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Unified Memory}{49}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Single-Cycle Processor}{50}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Propagation Time}{50}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Increasing the Frequency}{51}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Two-Cycle Processor}{51}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Not All Paths Are Born Equal}{51}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Asynchronous/Synchronous Memories}{52}{subsection.6.2.4}%
-\contentsline {section}{\numberline {6.3}Multicycle Processor}{52}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Mealy or Moore?}{53}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Processor - Building the Circuit}{53}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Adding the Instruction Register}{54}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}Adding functionality}{55}{subsection.6.5.2}%
-\contentsline {subsection}{\numberline {6.5.3}I-Type Instructions Need RF and ALU}{55}{subsection.6.5.3}%
-\contentsline {subsection}{\numberline {6.5.4}R-Type Instructions and Second Operand Selection}{56}{subsection.6.5.4}%
-\contentsline {subsection}{\numberline {6.5.5}And More, and More...}{57}{subsection.6.5.5}%
-\contentsline {subsection}{\numberline {6.5.6}Guidelines for Writing Verilog}{57}{subsection.6.5.6}%
-\contentsline {subsection}{\numberline {6.5.7}Detailing Complex Combinational Modules (ALU)}{58}{subsection.6.5.7}%
-\contentsline {subsection}{\numberline {6.5.8}Verilog - Sticking to Basic Paterns}{58}{subsection.6.5.8}%
-\contentsline {chapter}{\numberline {7}Part II(b) - Processor, I/Os, and Exceptions W - 4.1 - 4.2}{59}{chapter.7}%
-\contentsline {section}{\numberline {7.1}The CPU}{59}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Physical Memory Map}{60}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Connecting CPU and Memory}{60}{subsection.7.2.1}%
-\contentsline {section}{\numberline {7.3}Input/Output (I/O) Devices}{61}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Accessing I/Os: Port-Mapped I/O (PMIO)}{61}{subsection.7.3.1}%
-\contentsline {subsubsection}{Accessing I/Os: Memory Mapped I/O(MMIO)}{61}{section*.31}%
-\contentsline {subsection}{\numberline {7.3.2}Memory Mapped I/O (MMIO)}{62}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Example - A/D Converter}{63}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Bus Interface}{63}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Memory Mapping}{63}{subsection.7.4.2}%
-\contentsline {subsection}{\numberline {7.4.3}Assembling everything}{64}{subsection.7.4.3}%
-\contentsline {subsubsection}{Software Implementation}{64}{section*.35}%
-\contentsline {section}{\numberline {7.5}What do these tri-state buffers do?}{65}{section.7.5}%
-\contentsline {subsection}{\numberline {7.5.1}A Classic UART}{66}{subsection.7.5.1}%
-\contentsline {chapter}{\numberline {8}Part II(c) - Interrupts}{67}{chapter.8}%
-\contentsline {section}{\numberline {8.1}I/O Polling}{67}{section.8.1}%
-\contentsline {section}{\numberline {8.2}I/O Interrupts}{67}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}The Basic Concept of I/O Interrupts}{68}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Interrupt Cycle Description}{69}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}I/O Interrupt Priorities: Daisy Chain Arbitration}{70}{subsection.8.2.3}%
-\contentsline {section}{\numberline {8.3}Direct Memory Access (DMA)}{70}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Timer and Interrupt Mechanism}{72}{subsection.8.3.1}%
-\contentsline {chapter}{\numberline {9}Part II(d) - Processor, I/Os, and Exceptions}{73}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Exceptions, Interrupts, Faults, Traps, and Checks}{73}{section.9.1}%
-\contentsline {paragraph}{Control Flow}{73}{section*.36}%
-\contentsline {paragraph}{Exceptions}{73}{section*.37}%
-\contentsline {paragraph}{Exception Handlers}{73}{section*.38}%
-\contentsline {paragraph}{Naming Conventions}{73}{section*.39}%
-\contentsline {subsection}{\numberline {9.1.1}Undefined Instruction}{73}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}Optional \texttt {fadd.s} Instruction}{74}{subsection.9.1.2}%
-\contentsline {subsection}{\numberline {9.1.3}Outline of an Undefined Instruction Handler}{74}{subsection.9.1.3}%
-\contentsline {section}{\numberline {9.2}Exceptions and Interrupts}{75}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}A Possible Classification of Exceptions}{75}{subsection.9.2.1}%
+\contentsline {chapter}{\numberline {4}Part I(d) - ISA Arrays and Data Structures - W 2.2}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Arrays}{35}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Different Ways to Store Arrays}{35}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Adding Positive Elements}{36}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Pointer to Memory vs Index in Array}{37}{subsection.4.1.3}%
+\contentsline {subsubsection}{In C}{38}{section*.22}%
+\contentsline {subsubsection}{We need a good compiler}{38}{section*.23}%
+\contentsline {chapter}{\numberline {5}Part I(e) - ISA Arithmetic - W 3.1, 3.2}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Notation}{39}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Numbers}{39}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Unsigned Integers}{39}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Signed Integers}{40}{subsection.5.2.2}%
+\contentsline {subsubsection}{Sign and Magnitude}{40}{section*.24}%
+\contentsline {subsection}{\numberline {5.2.3}Radix's Complement}{40}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Two's Complement Subtraction}{41}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Addition Is Unchanged from Unsigned}{42}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Sign Extension}{42}{subsection.5.2.6}%
+\contentsline {subsubsection}{Example: 4-bit to 8-bit Conversion}{42}{section*.25}%
+\contentsline {subsection}{\numberline {5.2.7}Signed and Unsigned Instructions}{42}{subsection.5.2.7}%
+\contentsline {section}{\numberline {5.3}Overflow}{43}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Overflow in 2's Complement}{43}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Overflow in Software}{44}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Detect Addition Overflow in Software}{44}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}A Strange but Useful Property}{44}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Two's Complement Subtractor}{45}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Two's Complement Add/Subtract Unit}{45}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}Bounds Check Optimization}{46}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Floating Point Representation}{46}{section.5.6}%
+\contentsline {subsubsection}{Properties of Floating Point Numbers}{47}{section*.26}%
+\contentsline {subsubsection}{Standardization and Hardware Support}{47}{section*.27}%
+\contentsline {subsubsection}{Example: Decimal to IEEE 754 Simple Precision (32 Bits) Conversion}{47}{section*.28}%
+\contentsline {subsection}{\numberline {5.6.1}Sign-and-Magnitude Addition}{48}{subsection.5.6.1}%
+\contentsline {subsubsection}{Solution 1}{48}{section*.29}%
+\contentsline {subsubsection}{Solution 2}{49}{section*.30}%
+\contentsline {chapter}{\numberline {6}Part II(a) - I/O - Exceptions Multicycle Processor W - 3.2, 4.1}{50}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Processor}{50}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Unified Memory}{50}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Single-Cycle Processor}{51}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Propagation Time}{51}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Increasing the Frequency}{52}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Two-Cycle Processor}{52}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Not All Paths Are Born Equal}{52}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Asynchronous/Synchronous Memories}{53}{subsection.6.2.4}%
+\contentsline {section}{\numberline {6.3}Multicycle Processor}{53}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Mealy or Moore?}{54}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Processor - Building the Circuit}{54}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Adding the Instruction Register}{55}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Adding functionality}{56}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}I-Type Instructions Need RF and ALU}{56}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.4}R-Type Instructions and Second Operand Selection}{57}{subsection.6.5.4}%
+\contentsline {subsection}{\numberline {6.5.5}And More, and More...}{58}{subsection.6.5.5}%
+\contentsline {subsection}{\numberline {6.5.6}Guidelines for Writing Verilog}{58}{subsection.6.5.6}%
+\contentsline {subsection}{\numberline {6.5.7}Detailing Complex Combinational Modules (ALU)}{59}{subsection.6.5.7}%
+\contentsline {subsection}{\numberline {6.5.8}Verilog - Sticking to Basic Paterns}{59}{subsection.6.5.8}%
+\contentsline {chapter}{\numberline {7}Part II(b) - Processor, I/Os, and Exceptions W - 4.1 - 4.2}{60}{chapter.7}%
+\contentsline {section}{\numberline {7.1}The CPU}{60}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Physical Memory Map}{61}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Connecting CPU and Memory}{61}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}Input/Output (I/O) Devices}{62}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Accessing I/Os: Port-Mapped I/O (PMIO)}{62}{subsection.7.3.1}%
+\contentsline {subsubsection}{Accessing I/Os: Memory Mapped I/O(MMIO)}{62}{section*.31}%
+\contentsline {subsection}{\numberline {7.3.2}Memory Mapped I/O (MMIO)}{63}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Example - A/D Converter}{64}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Bus Interface}{64}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Memory Mapping}{64}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Assembling everything}{65}{subsection.7.4.3}%
+\contentsline {subsubsection}{Software Implementation}{65}{section*.35}%
+\contentsline {section}{\numberline {7.5}What do these tri-state buffers do?}{66}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}A Classic UART}{67}{subsection.7.5.1}%
+\contentsline {chapter}{\numberline {8}Part II(c) - Interrupts W - 5.1 - 5.2}{68}{chapter.8}%
+\contentsline {section}{\numberline {8.1}I/O Polling}{68}{section.8.1}%
+\contentsline {section}{\numberline {8.2}I/O Interrupts}{68}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}The Basic Concept of I/O Interrupts}{69}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Interrupt Cycle Description}{70}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}I/O Interrupt Priorities: Daisy Chain Arbitration}{71}{subsection.8.2.3}%
+\contentsline {section}{\numberline {8.3}Direct Memory Access (DMA)}{71}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Timer and Interrupt Mechanism}{73}{subsection.8.3.1}%
+\contentsline {chapter}{\numberline {9}Part II(d) - Processor, I/Os, and Exceptions W - 6.1 - 6.2}{74}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Exceptions, Interrupts, Faults, Traps, and Checks}{74}{section.9.1}%
+\contentsline {paragraph}{Control Flow}{74}{section*.36}%
+\contentsline {paragraph}{Exceptions}{74}{section*.37}%
+\contentsline {paragraph}{Exception Handlers}{74}{section*.38}%
+\contentsline {paragraph}{Naming Conventions}{74}{section*.39}%
+\contentsline {subsection}{\numberline {9.1.1}Undefined Instruction}{74}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Optional \texttt {fadd.s} Instruction}{75}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Outline of an Undefined Instruction Handler}{75}{subsection.9.1.3}%
+\contentsline {section}{\numberline {9.2}Exceptions and Interrupts}{76}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}A Possible Classification of Exceptions}{76}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Watchpoint}{77}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Raising Exceptions}{77}{subsection.9.2.3}%
+\contentsline {subsection}{\numberline {9.2.4}Assessing the Position of an Exception}{77}{subsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.2.5}Assessing the Cause of Exception}{78}{subsection.9.2.5}%
+\contentsline {subsection}{\numberline {9.2.6}RISC-V Machine-Mode Exception Handling}{78}{subsection.9.2.6}%
+\contentsline {subsubsection}{Control and Status Registers (CSRs)}{78}{section*.40}%
+\contentsline {subsubsection}{Instructions for Accessing CSRs}{78}{section*.41}%
+\contentsline {subsubsection}{Returning from Exceptions}{78}{section*.42}%
+\contentsline {subsection}{\numberline {9.2.7}RISC-V Interrupt and Exception Codes}{79}{subsection.9.2.7}%
+\contentsline {subsection}{\numberline {9.2.8}Possible Undefined Instruction Handler}{79}{subsection.9.2.8}%
+\contentsline {subsection}{\numberline {9.2.9}RISC-V Machine-Mode Interrupt Handling}{80}{subsection.9.2.9}%
+\contentsline {section}{\numberline {9.3}The Stack Problem}{80}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Stack-Full Detection ?}{81}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Writing Handlers is Very Very Tricky}{81}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}Speaking of the Stack...}{81}{subsection.9.3.3}%
+\contentsline {section}{\numberline {9.4}Protection: I/Os Are Not for Everyone}{82}{section.9.4}%

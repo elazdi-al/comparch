@@ -56,8 +56,8 @@ slti x8, x6, 321
 The left-hand side code snippet shows an assembly sequence where a 32-bit constant value (\texttt{0x12345678}) is loaded into a register (\texttt{x5}). Since immediate values are 16-bit limited, this requires splitting the 32-bit value into two instructions: 
 
 \begin{itemize}
-    \item[-] The first instruction, \texttt{lui}, loads the upper 16 bits (\texttt{0x12345}) into the register \texttt{x5}.
-    \item[-] The second instruction, \texttt{addiu}, adds the lower 16 bits (\texttt{0x678}) to \texttt{x5}, completing the full 32-bit value in the register.
+    \item[-] The first instruction, \texttt{lui}, loads the upper 20 bits (\texttt{0x12345}) into the register \texttt{x5}.
+    \item[-] The second instruction, \texttt{addiu}, adds the lower 12 bits (\texttt{0x678}) to \texttt{x5}, completing the full 32-bit value in the register.
 \end{itemize}
 
 \textit{This approach, while functional, can become cumbersome when dealing with multiple constants, making the code less readable and harder to maintain. \\
@@ -66,8 +66,8 @@ The left-hand side code snippet shows an assembly sequence where a 32-bit consta
 The right-hand side shows the same functionality but makes use of assembler directives, specifically the \texttt{.equ} directive to define a label (\texttt{something}) for the constant \texttt{0x12345678}. Using the \texttt{\%hi()} and \texttt{\%lo()} pseudo-instructions, the assembler automatically splits the constant into its upper and lower parts:
 
 \begin{itemize}
-    \item[-] The \texttt{\%hi(something)} loads the upper 16 bits into \texttt{x5}.
-    \item[-] The \texttt{\%lo(something)} adds the lower 16 bits to \texttt{x5}.
+    \item[-] The \texttt{\%hi(something)} loads the upper 20 bits into \texttt{x5}.
+    \item[-] The \texttt{\%lo(something)} adds the lower 12 bits to \texttt{x5}.
 \end{itemize}
 
 This method enhances code clarity and maintainability, especially when working with multiple constants, by using human-readable labels instead of raw numeric values. The assembler handles the details of splitting the 32-bit constant into its upper and lower parts.

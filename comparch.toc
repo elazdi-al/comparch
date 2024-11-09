@@ -148,3 +148,9 @@
 \contentsline {subsubsection}{Software Implementation}{63}{section*.35}%
 \contentsline {section}{\numberline {7.5}What do these tri-state buffers do?}{64}{section.7.5}%
 \contentsline {subsection}{\numberline {7.5.1}A Classic UART}{65}{subsection.7.5.1}%
+\contentsline {chapter}{\numberline {8}Part II(c) - Interrupts}{66}{chapter.8}%
+\contentsline {section}{\numberline {8.1}I/O Polling}{66}{section.8.1}%
+\contentsline {section}{\numberline {8.2}I/O Interrupts}{66}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}The Basic Concept of I/O Interrupts}{67}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Interrupt Cycle Description}{68}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}I/O Interrupt Priorities: Daisy Chain Arbitration}{69}{subsection.8.2.3}%

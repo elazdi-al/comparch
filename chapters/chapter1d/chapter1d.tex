@@ -100,8 +100,9 @@ end_c:               # End label
 
 \subsection{Pointer to Memory vs Index in Array}
 \textit{Now we're wodnering which one of these two ways of accessing the array is better.} \\
-\textbf{Obviously the less instructions the better (not always true actually but well),\\ Pointer to Memory.} \\
+\textbf{Obviously the less instructions the better (not always true actually but well), Pointer to Memory.} \\
 \begin{minipage}[htpb]{0.45\textwidth}
+\textbf{Pointer to Memory} \\
 \begin{assembly}
 add_positive:
     li t0, 0
@@ -124,6 +125,7 @@ ret
 \vline
 \hfill
 \begin{minipage}[htp]{0.45\textwidth}
+\textbf{Index in array} \\
 \begin{assembly}
 add_positive:
     li t0, 0

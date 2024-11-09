@@ -106,3 +106,59 @@ This method, while simple and easy to implement, has some limitations:
 In this setup, the bus arbiter, which acts as the processor or a proxy for the processor, grants access in a priority chain from the highest-priority device to the lowest. This method is suitable for systems where simplicity is valued over flexibility and speed.
 
 \section{Direct Memory Access (DMA)}
+
+Direct Memory Access (\textit{DMA}) is an efficient mechanism designed to offload the processor from managing repetitive and resource-intensive data transfers. Key considerations include:
+
+\begin{itemize}
+    \item \textbf{Interrupts Efficiency:} \textit{Interrupts} save the processor from continuously polling Input/Output (I/O) devices, allowing it to focus on computation.
+    \item \textbf{Large Data Transfers:} Despite the use of interrupts, the processor may still spend considerable time transferring large chunks of data to and from high-throughput peripherals (e.g., disks, networks).
+    \item \textbf{Solution:} A dedicated peripheral, known as the \textit{DMA Controller}, is introduced. This controller autonomously handles data transfers between memory and peripherals (read/write operations), freeing the processor to focus on more critical tasks.
+\end{itemize}
+
+\vspace{0.5cm}
+\noindent
+DMA significantly enhances system performance by reducing processor overhead during data transfer operations.
+
+\vspace{0.8cm}
+\begin{center} 
+    \includegraphics[width=0.65\textwidth]{chapters/chapter2c/images/DMA.png}
+\end{center}
+\vspace{0.5cm}
+
+The diagram above illustrates a key inefficiency: \textit{using the processor—a complex and expensive machine—to handle simple data transfer operations}. This inefficiency forms the basis for introducing DMA. 
+
+\vspace{1cm}
+\begin{center}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter2c/images/DMA2.png}
+\end{center}
+\vspace{0.5cm}
+
+When initiating a data transfer, the \textbf{CPU} communicates with the \textbf{DMA Controller} to start the operation with a specific peripheral. The \textbf{DMA Controller} then handles communication with the \textbf{I/O device}, transferring the data to or from memory. 
+
+\vspace{0.5cm}
+\noindent
+However, this introduces a new challenge. Previously, the \textit{CPU} was the sole \textbf{master of the BUS}. With the \textbf{DMA Controller} capable of two-way communication with the BUS (on its A input), it also becomes a master of the BUS. This requires a mechanism to manage BUS access between the processor and the DMA Controller.
+\vspace{1cm}
+\begin{center}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter2c/images/DMA3.png}
+\end{center}
+\vspace{0.5cm}
+\noindent
+This is achieved using a \textbf{Tri-State Buffer}. However, during the data transfer, the processor is temporarily \textit{disconnected from the BUS}, meaning it cannot track the progress of the transfer. Once the transfer is complete, an \textbf{interrupt} is required to notify the processor, ensuring it can resume operations with the updated data.
+\newpage
+\subsection{Timer and Interrupt Mechanism}
+
+A \textbf{timer} is a critical hardware component used to manage periodic tasks in embedded systems. The timer operates by incrementing a \texttt{count} register until it reaches a programmable \texttt{max} value, at which point it generates an \textbf{interrupt request (IRQ)}. The key features of this mechanism are outlined below:
+
+\begin{center}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter2c/images/timer.png}
+\end{center}
+\begin{itemize}
+    \item \textbf{Programmable Frequency:} The \texttt{max} value is configurable, allowing the processor to adjust the interrupt frequency based on system requirements.
+    \item \textbf{Interrupt Handling:} Upon reaching the \texttt{max} value, the timer sends an IRQ signal to the processor. This allows the processor to execute specific tasks at regular intervals.
+    \item \textbf{System Integration:} The timer interacts with the processor, memory, and peripherals via the system bus, ensuring synchronized operation.
+    \item \textbf{Task Management:} Without a timer, it would be impossible for a processor to manage multiple tasks simultaneously, as there would be no mechanism to divide time between different operations. The timer enables multitasking by providing precise time slicing for task scheduling.
+\end{itemize}
+
+This mechanism is essential for time-sensitive operations such as task scheduling, event triggering, and real-time control in embedded systems, enabling efficient multitasking and coordination between components.
+

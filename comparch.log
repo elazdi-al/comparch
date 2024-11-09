@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  9 NOV 2024 09:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  9 NOV 2024 11:11
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -880,7 +880,7 @@ File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@math@for@depth=\count365
 \tikz@math@dimen=\dimen361
 \tikz@math@toks=\toks58
-) (./comparch.aux (./chapters/front/front.aux) (./chapters/chapter1a/chapter1a.aux) (./chapters/chapter1b/chapter1b.aux) (./chapters/chapter1c/chapter1c.aux) (./chapters/chapter1d/chapter1d.aux) (./chapters/chapter1e/chapter1e.aux) (./chapters/chapter2a/chapter2a.aux) (./chapters/chapter2b/chapter2b.aux) (./chapters/chapter2c/chapter2c.aux))
+) (./comparch.aux (./chapters/front/front.aux) (./chapters/chapter1a/chapter1a.aux) (./chapters/chapter1b/chapter1b.aux) (./chapters/chapter1c/chapter1c.aux) (./chapters/chapter1d/chapter1d.aux) (./chapters/chapter1e/chapter1e.aux) (./chapters/chapter2a/chapter2a.aux) (./chapters/chapter2b/chapter2b.aux) (./chapters/chapter2c/chapter2c.aux) (./chapters/chapter2d/chapter2d.aux))
 \openout1 = `comparch.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 185.
@@ -994,13 +994,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1023,7 +1023,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4])
+[4]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[5])
 \tf@toc=\write5
 \openout5 = `comparch.toc'.
 
@@ -1035,7 +1043,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[5]
+[6]
 \openout2 = `chapters/chapter1a/chapter1a.aux'.
 
  (./chapters/chapter1a/chapter1a.tex
@@ -1044,7 +1052,7 @@ Chapter 1.
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
-) [6
+) [7
 
 
 
@@ -1056,17 +1064,17 @@ File: lstlang2.sty 2024/02/21 1.10 listings language file
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2024/02/21 1.10 listings language file
 )
-<chapters/chapter1a/images/processor.png, id=700, 599.23875pt x 389.455pt>
+<chapters/chapter1a/images/processor.png, id=751, 599.23875pt x 389.455pt>
 File: chapters/chapter1a/images/processor.png Graphic file (type png)
 <use chapters/chapter1a/images/processor.png>
 Package pdftex.def Info: chapters/chapter1a/images/processor.png  used on input line 75.
 (pdftex.def)             Requested size: 241.84843pt x 157.18169pt.
-<chapters/chapter1a/images/encoding.png, id=702, 656.4525pt x 328.22626pt>
+<chapters/chapter1a/images/encoding.png, id=753, 656.4525pt x 328.22626pt>
 File: chapters/chapter1a/images/encoding.png Graphic file (type png)
 <use chapters/chapter1a/images/encoding.png>
 Package pdftex.def Info: chapters/chapter1a/images/encoding.png  used on input line 81.
 (pdftex.def)             Requested size: 314.40001pt x 157.20123pt.
-<chapters/chapter1a/images/fetching.png, id=703, 719.68875pt x 350.30875pt>
+<chapters/chapter1a/images/fetching.png, id=754, 719.68875pt x 350.30875pt>
 File: chapters/chapter1a/images/fetching.png Graphic file (type png)
 <use chapters/chapter1a/images/fetching.png>
 Package pdftex.def Info: chapters/chapter1a/images/fetching.png  used on input line 85.
@@ -1079,8 +1087,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[7 <./chapters/chapter1a/images/processor.png> <./chapters/chapter1a/images/encoding.png>]
-<chapters/chapter1a/images/executing.png, id=724, 719.68875pt x 381.425pt>
+[8 <./chapters/chapter1a/images/processor.png> <./chapters/chapter1a/images/encoding.png>]
+<chapters/chapter1a/images/executing.png, id=774, 719.68875pt x 381.425pt>
 File: chapters/chapter1a/images/executing.png Graphic file (type png)
 <use chapters/chapter1a/images/executing.png>
 Package pdftex.def Info: chapters/chapter1a/images/executing.png  used on input line 89.
@@ -1090,12 +1098,12 @@ Overfull \hbox (0.24121pt too wide) in paragraph at lines 94--94
 \OT1/cmr/m/it/10.95 (+5) the memory are seperate) and pne called Unified Architecture (where data is shared with the program 
  []
 
-<chapters/chapter1a/images/harvard.png, id=725, 209.78375pt x 208.78pt>
+<chapters/chapter1a/images/harvard.png, id=775, 209.78375pt x 208.78pt>
 File: chapters/chapter1a/images/harvard.png Graphic file (type png)
 <use chapters/chapter1a/images/harvard.png>
 Package pdftex.def Info: chapters/chapter1a/images/harvard.png  used on input line 100.
 (pdftex.def)             Requested size: 116.08664pt x 115.5302pt.
-<chapters/chapter1a/images/unified.png, id=726, 244.915pt x 240.9pt>
+<chapters/chapter1a/images/unified.png, id=776, 244.915pt x 240.9pt>
 File: chapters/chapter1a/images/unified.png Graphic file (type png)
 <use chapters/chapter1a/images/unified.png>
 Package pdftex.def Info: chapters/chapter1a/images/unified.png  used on input line 110.
@@ -1107,12 +1115,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8 <./chapters/chapter1a/images/fetching.png> <./chapters/chapter1a/images/executing.png> <./chapters/chapter1a/images/harvard.png> <./chapters/chapter1a/images/unified.png>]
+[9 <./chapters/chapter1a/images/fetching.png> <./chapters/chapter1a/images/executing.png> <./chapters/chapter1a/images/harvard.png> <./chapters/chapter1a/images/unified.png>]
 File: chapters/chapter1a/images/encoding.png Graphic file (type png)
 <use chapters/chapter1a/images/encoding.png>
 Package pdftex.def Info: chapters/chapter1a/images/encoding.png  used on input line 118.
 (pdftex.def)             Requested size: 338.58632pt x 169.29633pt.
-<chapters/chapter1a/images/riscv.png, id=737, 677.53125pt x 325.215pt>
+<chapters/chapter1a/images/riscv.png, id=787, 677.53125pt x 325.215pt>
 File: chapters/chapter1a/images/riscv.png Graphic file (type png)
 <use chapters/chapter1a/images/riscv.png>
 Package pdftex.def Info: chapters/chapter1a/images/riscv.png  used on input line 126.
@@ -1125,17 +1133,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[9 <./chapters/chapter1a/images/riscv.png>]
+[10 <./chapters/chapter1a/images/riscv.png>]
 Overfull \hbox (0.10022pt too wide) in paragraph at lines 133--133
 \OT1/cmr/m/it/10.95 (+7) Now to automate the processes of decoding assembler code into machine code we use an \OT1/cmr/bx/it/10.95 (+7) Assembler\OT1/cmr/m/it/10.95 (+7) , 
  []
 
-<chapters/chapter1a/images/assembler.png, id=743, 692.5875pt x 294.09875pt>
+<chapters/chapter1a/images/assembler.png, id=793, 692.5875pt x 294.09875pt>
 File: chapters/chapter1a/images/assembler.png Graphic file (type png)
 <use chapters/chapter1a/images/assembler.png>
 Package pdftex.def Info: chapters/chapter1a/images/assembler.png  used on input line 137.
 (pdftex.def)             Requested size: 338.58632pt x 143.77756pt.
-<chapters/chapter1a/images/compiler.png, id=744, 600.2425pt x 290.08376pt>
+<chapters/chapter1a/images/compiler.png, id=794, 600.2425pt x 290.08376pt>
 File: chapters/chapter1a/images/compiler.png Graphic file (type png)
 <use chapters/chapter1a/images/compiler.png>
 Package pdftex.def Info: chapters/chapter1a/images/compiler.png  used on input line 144.
@@ -1147,8 +1155,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[10 <./chapters/chapter1a/images/assembler.png> <./chapters/chapter1a/images/compiler.png>]
-<chapters/chapter1a/images/contract.png, id=754, 761.84625pt x 300.12125pt>
+[11 <./chapters/chapter1a/images/assembler.png> <./chapters/chapter1a/images/compiler.png>]
+<chapters/chapter1a/images/contract.png, id=804, 761.84625pt x 300.12125pt>
 File: chapters/chapter1a/images/contract.png Graphic file (type png)
 <use chapters/chapter1a/images/contract.png>
 Package pdftex.def Info: chapters/chapter1a/images/contract.png  used on input line 153.
@@ -1161,22 +1169,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[11 <./chapters/chapter1a/images/contract.png>]
+[12 <./chapters/chapter1a/images/contract.png>]
 \openout2 = `chapters/chapter1b/chapter1b.aux'.
 
  (./chapters/chapter1b/chapter1b.tex
 Chapter 2.
-<chapters/chapter1b/images/riscv.png, id=760, 706.64pt x 165.61874pt>
+<chapters/chapter1b/images/riscv.png, id=810, 706.64pt x 165.61874pt>
 File: chapters/chapter1b/images/riscv.png Graphic file (type png)
 <use chapters/chapter1b/images/riscv.png>
 Package pdftex.def Info: chapters/chapter1b/images/riscv.png  used on input line 49.
 (pdftex.def)             Requested size: 386.95897pt x 90.69382pt.
-<chapters/chapter1b/images/directives.png, id=761, 801.99625pt x 143.53625pt>
+<chapters/chapter1b/images/directives.png, id=811, 801.99625pt x 143.53625pt>
 File: chapters/chapter1b/images/directives.png Graphic file (type png)
 <use chapters/chapter1b/images/directives.png>
 Package pdftex.def Info: chapters/chapter1b/images/directives.png  used on input line 54.
 (pdftex.def)             Requested size: 314.40001pt x 56.2702pt.
-[12
+[13
 
 
 
@@ -1191,7 +1199,7 @@ Overfull \hbox (0.1289pt too wide) in paragraph at lines 66--67
 \OT1/cmtt/m/n/10.95 %lo() \OT1/cmr/m/n/10.95 (+20) pseudo-instructions, the assembler automatically splits the constant into its upper and lower 
  []
 
-<chapters/chapter1b/images/directives2.png, id=778, 699.61375pt x 174.6525pt>
+<chapters/chapter1b/images/directives2.png, id=830, 699.61375pt x 174.6525pt>
 File: chapters/chapter1b/images/directives2.png Graphic file (type png)
 <use chapters/chapter1b/images/directives2.png>
 Package pdftex.def Info: chapters/chapter1b/images/directives2.png  used on input line 74.
@@ -1205,7 +1213,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[13 <./chapters/chapter1b/images/directives.png> <./chapters/chapter1b/images/directives2.png>]
+[14 <./chapters/chapter1b/images/directives.png> <./chapters/chapter1b/images/directives2.png>]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 101.
 
@@ -1216,13 +1224,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[14]
-<chapters/chapter1b/images/comp.png, id=821, 1442.38875pt x 409.53pt>
+[15]
+<chapters/chapter1b/images/comp.png, id=871, 1442.38875pt x 409.53pt>
 File: chapters/chapter1b/images/comp.png Graphic file (type png)
 <use chapters/chapter1b/images/comp.png>
 Package pdftex.def Info: chapters/chapter1b/images/comp.png  used on input line 154.
 (pdftex.def)             Requested size: 362.77264pt x 103.00089pt.
-<chapters/chapter1b/images/function.png, id=822, 936.49875pt x 401.5pt>
+<chapters/chapter1b/images/function.png, id=872, 936.49875pt x 401.5pt>
 File: chapters/chapter1b/images/function.png Graphic file (type png)
 <use chapters/chapter1b/images/function.png>
 Package pdftex.def Info: chapters/chapter1b/images/function.png  used on input line 195.
@@ -1235,12 +1243,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[15 <./chapters/chapter1b/images/comp.png>]
+[16 <./chapters/chapter1b/images/comp.png>]
 Overfull \hbox (0.10135pt too wide) in paragraph at lines 200--200
 \OT1/cmr/m/it/10.95 (+10) The right ap-proach in-volves us-ing the Jump and Link in-struc-tion \OT1/cmtt/m/it/10.95 jal\OT1/cmr/m/it/10.95 (+10) , here load-ing PC + 4 (re-mem- 
  []
 
-<chapters/chapter1b/images/jump.png, id=848, 1092.08pt x 212.795pt>
+<chapters/chapter1b/images/jump.png, id=898, 1092.08pt x 212.795pt>
 File: chapters/chapter1b/images/jump.png Graphic file (type png)
 <use chapters/chapter1b/images/jump.png>
 Package pdftex.def Info: chapters/chapter1b/images/jump.png  used on input line 228.
@@ -1252,18 +1260,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[16 <./chapters/chapter1b/images/function.png> <./chapters/chapter1b/images/jump.png>]
-<chapters/chapter1b/images/conventions.png, id=868, 462.72874pt x 73.27374pt>
+[17 <./chapters/chapter1b/images/function.png> <./chapters/chapter1b/images/jump.png>]
+<chapters/chapter1b/images/conventions.png, id=918, 462.72874pt x 73.27374pt>
 File: chapters/chapter1b/images/conventions.png Graphic file (type png)
 <use chapters/chapter1b/images/conventions.png>
 Package pdftex.def Info: chapters/chapter1b/images/conventions.png  used on input line 234.
 (pdftex.def)             Requested size: 362.77264pt x 57.4462pt.
-<chapters/chapter1b/images/function2.png, id=869, 1120.185pt x 508.90125pt>
+<chapters/chapter1b/images/function2.png, id=919, 1120.185pt x 508.90125pt>
 File: chapters/chapter1b/images/function2.png Graphic file (type png)
 <use chapters/chapter1b/images/function2.png>
 Package pdftex.def Info: chapters/chapter1b/images/function2.png  used on input line 240.
 (pdftex.def)             Requested size: 362.77264pt x 164.80855pt.
-<chapters/chapter1b/images/function3.png, id=870, 1131.22626pt x 516.93124pt>
+<chapters/chapter1b/images/function3.png, id=920, 1131.22626pt x 516.93124pt>
 File: chapters/chapter1b/images/function3.png Graphic file (type png)
 <use chapters/chapter1b/images/function3.png>
 Package pdftex.def Info: chapters/chapter1b/images/function3.png  used on input line 246.
@@ -1276,8 +1284,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[17 <./chapters/chapter1b/images/conventions.png> <./chapters/chapter1b/images/function2.png> <./chapters/chapter1b/images/function3.png>]
-<chapters/chapter1b/images/stack.png, id=878, 358.33875pt x 391.4625pt>
+[18 <./chapters/chapter1b/images/conventions.png> <./chapters/chapter1b/images/function2.png> <./chapters/chapter1b/images/function3.png>]
+<chapters/chapter1b/images/stack.png, id=928, 358.33875pt x 391.4625pt>
 File: chapters/chapter1b/images/stack.png Graphic file (type png)
 <use chapters/chapter1b/images/stack.png>
 Package pdftex.def Info: chapters/chapter1b/images/stack.png  used on input line 298.
@@ -1290,13 +1298,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[18 <./chapters/chapter1b/images/stack.png>]
-<chapters/chapter1b/images/stack2.png, id=914, 367.3725pt x 391.4625pt>
+[19 <./chapters/chapter1b/images/stack.png>]
+<chapters/chapter1b/images/stack2.png, id=965, 367.3725pt x 391.4625pt>
 File: chapters/chapter1b/images/stack2.png Graphic file (type png)
 <use chapters/chapter1b/images/stack2.png>
 Package pdftex.def Info: chapters/chapter1b/images/stack2.png  used on input line 316.
 (pdftex.def)             Requested size: 145.10683pt x 154.623pt.
-<chapters/chapter1b/images/stack3.png, id=915, 392.46625pt x 417.56pt>
+<chapters/chapter1b/images/stack3.png, id=966, 392.46625pt x 417.56pt>
 File: chapters/chapter1b/images/stack3.png Graphic file (type png)
 <use chapters/chapter1b/images/stack3.png>
 Package pdftex.def Info: chapters/chapter1b/images/stack3.png  used on input line 336.
@@ -1309,22 +1317,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[19 <./chapters/chapter1b/images/stack2.png> <./chapters/chapter1b/images/stack3.png>]
+[20 <./chapters/chapter1b/images/stack2.png> <./chapters/chapter1b/images/stack3.png>]
 Overfull \hbox (0.1452pt too wide) in paragraph at lines 342--343
 \OT1/cmr/m/n/10.95 (+19) ensure proper management of the stack. We deallocate memory by adjusting the stack pointer (x2) 
  []
 
-<chapters/chapter1b/images/stack4.png, id=931, 392.46625pt x 417.56pt>
+<chapters/chapter1b/images/stack4.png, id=981, 392.46625pt x 417.56pt>
 File: chapters/chapter1b/images/stack4.png Graphic file (type png)
 <use chapters/chapter1b/images/stack4.png>
 Package pdftex.def Info: chapters/chapter1b/images/stack4.png  used on input line 355.
 (pdftex.def)             Requested size: 145.10683pt x 154.38646pt.
-<chapters/chapter1b/images/conventions2.png, id=932, 1255.69125pt x 97.36375pt>
+<chapters/chapter1b/images/conventions2.png, id=982, 1255.69125pt x 97.36375pt>
 File: chapters/chapter1b/images/conventions2.png Graphic file (type png)
 <use chapters/chapter1b/images/conventions2.png>
 Package pdftex.def Info: chapters/chapter1b/images/conventions2.png  used on input line 362.
 (pdftex.def)             Requested size: 362.77264pt x 28.12779pt.
-<chapters/chapter1b/images/spilling.png, id=933, 1307.88625pt x 601.24625pt>
+<chapters/chapter1b/images/spilling.png, id=983, 1307.88625pt x 601.24625pt>
 File: chapters/chapter1b/images/spilling.png Graphic file (type png)
 <use chapters/chapter1b/images/spilling.png>
 Package pdftex.def Info: chapters/chapter1b/images/spilling.png  used on input line 386.
@@ -1336,8 +1344,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[20 <./chapters/chapter1b/images/stack4.png> <./chapters/chapter1b/images/conventions2.png> <./chapters/chapter1b/images/spilling.png>]
-<chapters/chapter1b/images/registers.png, id=950, 755.82375pt x 279.0425pt>
+[21 <./chapters/chapter1b/images/stack4.png> <./chapters/chapter1b/images/conventions2.png> <./chapters/chapter1b/images/spilling.png>]
+<chapters/chapter1b/images/registers.png, id=1000, 755.82375pt x 279.0425pt>
 File: chapters/chapter1b/images/registers.png Graphic file (type png)
 <use chapters/chapter1b/images/registers.png>
 Package pdftex.def Info: chapters/chapter1b/images/registers.png  used on input line 401.
@@ -1350,13 +1358,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[21{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./chapters/chapter1b/images/registers.png>]
-<chapters/chapter1b/images/arguments.png, id=957, 1215.54124pt x 141.52875pt>
+[22{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./chapters/chapter1b/images/registers.png>]
+<chapters/chapter1b/images/arguments.png, id=1007, 1215.54124pt x 141.52875pt>
 File: chapters/chapter1b/images/arguments.png Graphic file (type png)
 <use chapters/chapter1b/images/arguments.png>
 Package pdftex.def Info: chapters/chapter1b/images/arguments.png  used on input line 452.
 (pdftex.def)             Requested size: 362.77264pt x 42.23866pt.
-<chapters/chapter1b/images/summary.png, id=958, 1307.88625pt x 554.07pt>
+<chapters/chapter1b/images/summary.png, id=1008, 1307.88625pt x 554.07pt>
 File: chapters/chapter1b/images/summary.png Graphic file (type png)
 <use chapters/chapter1b/images/summary.png>
 Package pdftex.def Info: chapters/chapter1b/images/summary.png  used on input line 458.
@@ -1369,7 +1377,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[22 <./chapters/chapter1b/images/arguments.png> <./chapters/chapter1b/images/summary.png>]
+[23 <./chapters/chapter1b/images/arguments.png> <./chapters/chapter1b/images/summary.png>]
 \openout2 = `chapters/chapter1c/chapter1c.aux'.
 
  (./chapters/chapter1c/chapter1c.tex
@@ -1386,18 +1394,18 @@ Overfull \hbox (0.12302pt too wide) in paragraph at lines 74--74
 \OT1/cmr/m/n/10 (+2) EPROM, and Flash, and their \OT1/cmr/bx/n/10 (+2) capabilities\OT1/cmr/m/n/10 (+2) , including \OT1/cmr/bx/n/10 (+2) speed\OT1/cmr/m/n/10 (+2) , \OT1/cmr/bx/n/10 (+2) capacity\OT1/cmr/m/n/10 (+2) , \OT1/cmr/bx/n/10 (+2) density\OT1/cmr/m/n/10 (+2) , \OT1/cmr/bx/n/10 (+2) writability \OT1/cmr/m/n/10 (+2) (whether they 
  []
 
-[23
+[24
 
 
 
 
 ]
-<chapters/chapter1c/images/funct_tax.png, id=969, 569.12625pt x 313.17pt>
+<chapters/chapter1c/images/funct_tax.png, id=1019, 569.12625pt x 313.17pt>
 File: chapters/chapter1c/images/funct_tax.png Graphic file (type png)
 <use chapters/chapter1c/images/funct_tax.png>
 Package pdftex.def Info: chapters/chapter1c/images/funct_tax.png  used on input line 76.
 (pdftex.def)             Requested size: 217.66211pt x 119.7704pt.
-<chapters/chapter1c/images/ram_tax.png, id=970, 506.89375pt x 289.08pt>
+<chapters/chapter1c/images/ram_tax.png, id=1020, 506.89375pt x 289.08pt>
 File: chapters/chapter1c/images/ram_tax.png Graphic file (type png)
 <use chapters/chapter1c/images/ram_tax.png>
 Package pdftex.def Info: chapters/chapter1c/images/ram_tax.png  used on input line 89.
@@ -1410,22 +1418,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[24 <./chapters/chapter1c/images/funct_tax.png> <./chapters/chapter1c/images/ram_tax.png>]
+[25 <./chapters/chapter1c/images/funct_tax.png> <./chapters/chapter1c/images/ram_tax.png>]
 Overfull \hbox (0.14948pt too wide) in paragraph at lines 93--93
 \OT1/cmr/m/it/10 (+13) Remember, a Data Flip Flop, stores a 1 bit value by updating the output value to the input value at the rising 
  []
 
-<chapters/chapter1c/images/structure.png, id=977, 261.97874pt x 566.115pt>
+<chapters/chapter1c/images/structure.png, id=1028, 261.97874pt x 566.115pt>
 File: chapters/chapter1c/images/structure.png Graphic file (type png)
 <use chapters/chapter1c/images/structure.png>
 Package pdftex.def Info: chapters/chapter1c/images/structure.png  used on input line 141.
 (pdftex.def)             Requested size: 76.18306pt x 164.61833pt.
-<chapters/chapter1c/images/write.png, id=978, 508.90125pt x 425.59pt>
+<chapters/chapter1c/images/write.png, id=1029, 508.90125pt x 425.59pt>
 File: chapters/chapter1c/images/write.png Graphic file (type png)
 <use chapters/chapter1c/images/write.png>
 Package pdftex.def Info: chapters/chapter1c/images/write.png  used on input line 149.
 (pdftex.def)             Requested size: 97.94728pt x 81.90846pt.
-<chapters/chapter1c/images/read.png, id=979, 508.90125pt x 425.59pt>
+<chapters/chapter1c/images/read.png, id=1030, 508.90125pt x 425.59pt>
 File: chapters/chapter1c/images/read.png Graphic file (type png)
 <use chapters/chapter1c/images/read.png>
 Package pdftex.def Info: chapters/chapter1c/images/read.png  used on input line 159.
@@ -1435,12 +1443,12 @@ Overfull \hbox (0.11113pt too wide) in paragraph at lines 165--165
 \OT1/cmr/bx/n/10 (+1) unpredictable timing, simulation and synthesis issues, excessive power consumption, and lack of 
  []
 
-<chapters/chapter1c/images/ram.png, id=980, 263.98625pt x 230.8625pt>
+<chapters/chapter1c/images/ram.png, id=1031, 263.98625pt x 230.8625pt>
 File: chapters/chapter1c/images/ram.png Graphic file (type png)
 <use chapters/chapter1c/images/ram.png>
 Package pdftex.def Info: chapters/chapter1c/images/ram.png  used on input line 169.
 (pdftex.def)             Requested size: 119.71481pt x 104.69385pt.
-<chapters/chapter1c/images/sram.png, id=981, 311.1625pt x 167.62625pt>
+<chapters/chapter1c/images/sram.png, id=1032, 311.1625pt x 167.62625pt>
 File: chapters/chapter1c/images/sram.png Graphic file (type png)
 <use chapters/chapter1c/images/sram.png>
 Package pdftex.def Info: chapters/chapter1c/images/sram.png  used on input line 177.
@@ -1457,8 +1465,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[25 <./chapters/chapter1c/images/structure.png> <./chapters/chapter1c/images/write.png> <./chapters/chapter1c/images/read.png> <./chapters/chapter1c/images/ram.png> <./chapters/chapter1c/images/sram.png>]
-<chapters/chapter1c/images/dram.png, id=992, 363.3575pt x 664.4825pt>
+[26 <./chapters/chapter1c/images/structure.png> <./chapters/chapter1c/images/write.png> <./chapters/chapter1c/images/read.png> <./chapters/chapter1c/images/ram.png> <./chapters/chapter1c/images/sram.png>]
+<chapters/chapter1c/images/dram.png, id=1042, 363.3575pt x 664.4825pt>
 File: chapters/chapter1c/images/dram.png Graphic file (type png)
 <use chapters/chapter1c/images/dram.png>
 Package pdftex.def Info: chapters/chapter1c/images/dram.png  used on input line 193.
@@ -1468,12 +1476,12 @@ Overfull \hbox (0.2158pt too wide) in paragraph at lines 198--199
 \OT1/cmr/m/it/10 (+16) A memory array uses an $\OML/cmm/m/it/10 n$\OT1/cmr/m/it/10 (+16) -to-$\OT1/cmr/m/n/10 (+16) 2[]$ \OT1/cmr/m/it/10 (+16) decoder to select a word line based on the input address, enabling data to be 
  []
 
-<chapters/chapter1c/images/ideal_ram.png, id=993, 1031.855pt x 575.14874pt>
+<chapters/chapter1c/images/ideal_ram.png, id=1043, 1031.855pt x 575.14874pt>
 File: chapters/chapter1c/images/ideal_ram.png Graphic file (type png)
 <use chapters/chapter1c/images/ideal_ram.png>
 Package pdftex.def Info: chapters/chapter1c/images/ideal_ram.png  used on input line 200.
 (pdftex.def)             Requested size: 217.66211pt x 121.32013pt.
-<chapters/chapter1c/images/organisation.png, id=994, 825.0825pt x 492.84125pt>
+<chapters/chapter1c/images/organisation.png, id=1044, 825.0825pt x 492.84125pt>
 File: chapters/chapter1c/images/organisation.png Graphic file (type png)
 <use chapters/chapter1c/images/organisation.png>
 Package pdftex.def Info: chapters/chapter1c/images/organisation.png  used on input line 204.
@@ -1490,13 +1498,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[26 <./chapters/chapter1c/images/dram.png> <./chapters/chapter1c/images/ideal_ram.png> <./chapters/chapter1c/images/organisation.png>]
-<chapters/chapter1c/images/rom.png, id=1003, 1020.81375pt x 481.8pt>
+[27 <./chapters/chapter1c/images/dram.png> <./chapters/chapter1c/images/ideal_ram.png> <./chapters/chapter1c/images/organisation.png>]
+<chapters/chapter1c/images/rom.png, id=1053, 1020.81375pt x 481.8pt>
 File: chapters/chapter1c/images/rom.png Graphic file (type png)
 <use chapters/chapter1c/images/rom.png>
 Package pdftex.def Info: chapters/chapter1c/images/rom.png  used on input line 210.
 (pdftex.def)             Requested size: 217.66211pt x 102.73218pt.
-<chapters/chapter1c/images/sram_interface.png, id=1004, 799.98875pt x 340.27126pt>
+<chapters/chapter1c/images/sram_interface.png, id=1054, 799.98875pt x 340.27126pt>
 File: chapters/chapter1c/images/sram_interface.png Graphic file (type png)
 <use chapters/chapter1c/images/sram_interface.png>
 Package pdftex.def Info: chapters/chapter1c/images/sram_interface.png  used on input line 216.
@@ -1506,17 +1514,17 @@ Overfull \hbox (0.20587pt too wide) in paragraph at lines 220--220
 \OT1/cmr/m/it/10 (+6) The read cycle of an asynchronous SRAM is initiated by the address input, which is decoded to select the word 
  []
 
-<chapters/chapter1c/images/sram_read.png, id=1005, 888.31876pt x 295.1025pt>
+<chapters/chapter1c/images/sram_read.png, id=1055, 888.31876pt x 295.1025pt>
 File: chapters/chapter1c/images/sram_read.png Graphic file (type png)
 <use chapters/chapter1c/images/sram_read.png>
 Package pdftex.def Info: chapters/chapter1c/images/sram_read.png  used on input line 225.
 (pdftex.def)             Requested size: 97.94728pt x 32.53792pt.
-<chapters/chapter1c/images/sram_read2.png, id=1006, 391.4625pt x 501.875pt>
+<chapters/chapter1c/images/sram_read2.png, id=1056, 391.4625pt x 501.875pt>
 File: chapters/chapter1c/images/sram_read2.png Graphic file (type png)
 <use chapters/chapter1c/images/sram_read2.png>
 Package pdftex.def Info: chapters/chapter1c/images/sram_read2.png  used on input line 233.
 (pdftex.def)             Requested size: 97.94728pt x 125.568pt.
-<chapters/chapter1c/images/read_cycle.png, id=1007, 906.38625pt x 376.40625pt>
+<chapters/chapter1c/images/read_cycle.png, id=1057, 906.38625pt x 376.40625pt>
 File: chapters/chapter1c/images/read_cycle.png Graphic file (type png)
 <use chapters/chapter1c/images/read_cycle.png>
 Package pdftex.def Info: chapters/chapter1c/images/read_cycle.png  used on input line 240.
@@ -1528,23 +1536,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[27 <./chapters/chapter1c/images/rom.png> <./chapters/chapter1c/images/sram_interface.png> <./chapters/chapter1c/images/sram_read.png> <./chapters/chapter1c/images/sram_read2.png> <./chapters/chapter1c/images/read_cycle.png>]
-<chapters/chapter1c/images/write_cycle.png, id=1018, 888.31876pt x 483.8075pt>
+[28 <./chapters/chapter1c/images/rom.png> <./chapters/chapter1c/images/sram_interface.png> <./chapters/chapter1c/images/sram_read.png> <./chapters/chapter1c/images/sram_read2.png> <./chapters/chapter1c/images/read_cycle.png>]
+<chapters/chapter1c/images/write_cycle.png, id=1069, 888.31876pt x 483.8075pt>
 File: chapters/chapter1c/images/write_cycle.png Graphic file (type png)
 <use chapters/chapter1c/images/write_cycle.png>
 Package pdftex.def Info: chapters/chapter1c/images/write_cycle.png  used on input line 245.
 (pdftex.def)             Requested size: 217.66211pt x 118.54494pt.
-<chapters/chapter1c/images/processor.png, id=1019, 824.07875pt x 555.07375pt>
+<chapters/chapter1c/images/processor.png, id=1070, 824.07875pt x 555.07375pt>
 File: chapters/chapter1c/images/processor.png Graphic file (type png)
 <use chapters/chapter1c/images/processor.png>
 Package pdftex.def Info: chapters/chapter1c/images/processor.png  used on input line 252.
 (pdftex.def)             Requested size: 217.66211pt x 146.61105pt.
-<chapters/chapter1c/images/arith_logic.png, id=1020, 470.75874pt x 301.125pt>
+<chapters/chapter1c/images/arith_logic.png, id=1071, 470.75874pt x 301.125pt>
 File: chapters/chapter1c/images/arith_logic.png Graphic file (type png)
 <use chapters/chapter1c/images/arith_logic.png>
 Package pdftex.def Info: chapters/chapter1c/images/arith_logic.png  used on input line 257.
 (pdftex.def)             Requested size: 217.66211pt x 139.23137pt.
-<chapters/chapter1c/images/load.png, id=1021, 671.50874pt x 280.04625pt>
+<chapters/chapter1c/images/load.png, id=1072, 671.50874pt x 280.04625pt>
 File: chapters/chapter1c/images/load.png Graphic file (type png)
 <use chapters/chapter1c/images/load.png>
 Package pdftex.def Info: chapters/chapter1c/images/load.png  used on input line 261.
@@ -1557,7 +1565,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[28 <./chapters/chapter1c/images/write_cycle.png> <./chapters/chapter1c/images/processor.png> <./chapters/chapter1c/images/arith_logic.png>]
+[29 <./chapters/chapter1c/images/write_cycle.png> <./chapters/chapter1c/images/processor.png> <./chapters/chapter1c/images/arith_logic.png>]
 File: chapters/chapter1c/images/load.png Graphic file (type png)
 <use chapters/chapter1c/images/load.png>
 Package pdftex.def Info: chapters/chapter1c/images/load.png  used on input line 266.
@@ -1574,13 +1582,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[29 <./chapters/chapter1c/images/load.png>]
-<chapters/chapter1c/images/word_add.png, id=1038, 657.45625pt x 399.4925pt>
+[30 <./chapters/chapter1c/images/load.png>]
+<chapters/chapter1c/images/word_add.png, id=1089, 657.45625pt x 399.4925pt>
 File: chapters/chapter1c/images/word_add.png Graphic file (type png)
 <use chapters/chapter1c/images/word_add.png>
 Package pdftex.def Info: chapters/chapter1c/images/word_add.png  used on input line 309.
 (pdftex.def)             Requested size: 217.66211pt x 132.25352pt.
-<chapters/chapter1c/images/lw.png, id=1039, 741.77126pt x 306.14375pt>
+<chapters/chapter1c/images/lw.png, id=1090, 741.77126pt x 306.14375pt>
 File: chapters/chapter1c/images/lw.png Graphic file (type png)
 <use chapters/chapter1c/images/lw.png>
 Package pdftex.def Info: chapters/chapter1c/images/lw.png  used on input line 316.
@@ -1590,7 +1598,7 @@ Overfull \hbox (0.24411pt too wide) in paragraph at lines 320--320
 \OT1/cmr/m/it/10 (+19) accessed at any memory address, unlike \OT1/cmtt/m/it/10 lw \OT1/cmr/m/it/10 (+19) which requires word alignment to efficiently load 4 bytes (32 bits). 
  []
 
-<chapters/chapter1c/images/lb.png, id=1040, 741.77126pt x 277.035pt>
+<chapters/chapter1c/images/lb.png, id=1091, 741.77126pt x 277.035pt>
 File: chapters/chapter1c/images/lb.png Graphic file (type png)
 <use chapters/chapter1c/images/lb.png>
 Package pdftex.def Info: chapters/chapter1c/images/lb.png  used on input line 323.
@@ -1606,13 +1614,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[30 <./chapters/chapter1c/images/word_add.png> <./chapters/chapter1c/images/lw.png> <./chapters/chapter1c/images/lb.png>]
-<chapters/chapter1c/images/hello.png, id=1048, 337.26pt x 428.60126pt>
+[31 <./chapters/chapter1c/images/word_add.png> <./chapters/chapter1c/images/lw.png> <./chapters/chapter1c/images/lb.png>]
+<chapters/chapter1c/images/hello.png, id=1100, 337.26pt x 428.60126pt>
 File: chapters/chapter1c/images/hello.png Graphic file (type png)
 <use chapters/chapter1c/images/hello.png>
 Package pdftex.def Info: chapters/chapter1c/images/hello.png  used on input line 334.
 (pdftex.def)             Requested size: 97.94728pt x 124.47429pt.
-<chapters/chapter1c/images/hello2.png, id=1049, 185.69376pt x 442.65375pt>
+<chapters/chapter1c/images/hello2.png, id=1101, 185.69376pt x 442.65375pt>
 File: chapters/chapter1c/images/hello2.png Graphic file (type png)
 <use chapters/chapter1c/images/hello2.png>
 Package pdftex.def Info: chapters/chapter1c/images/hello2.png  used on input line 342.
@@ -1629,17 +1637,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[31 <./chapters/chapter1c/images/hello.png> <./chapters/chapter1c/images/hello2.png>]
+[32 <./chapters/chapter1c/images/hello.png> <./chapters/chapter1c/images/hello2.png>]
 File: chapters/chapter1c/images/lb.png Graphic file (type png)
 <use chapters/chapter1c/images/lb.png>
 Package pdftex.def Info: chapters/chapter1c/images/lb.png  used on input line 396.
 (pdftex.def)             Requested size: 266.03474pt x 99.36052pt.
-<chapters/chapter1c/images/bytes.png, id=1072, 237.88875pt x 317.185pt>
+<chapters/chapter1c/images/bytes.png, id=1122, 237.88875pt x 317.185pt>
 File: chapters/chapter1c/images/bytes.png Graphic file (type png)
 <use chapters/chapter1c/images/bytes.png>
 Package pdftex.def Info: chapters/chapter1c/images/bytes.png  used on input line 403.
 (pdftex.def)             Requested size: 119.71481pt x 159.62299pt.
-<chapters/chapter1c/images/bytes2.png, id=1073, 237.88875pt x 317.185pt>
+<chapters/chapter1c/images/bytes2.png, id=1123, 237.88875pt x 317.185pt>
 File: chapters/chapter1c/images/bytes2.png Graphic file (type png)
 <use chapters/chapter1c/images/bytes2.png>
 Package pdftex.def Info: chapters/chapter1c/images/bytes2.png  used on input line 412.
@@ -1652,7 +1660,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[32 <./chapters/chapter1c/images/bytes.png> <./chapters/chapter1c/images/bytes2.png>]
+[33 <./chapters/chapter1c/images/bytes.png> <./chapters/chapter1c/images/bytes2.png>]
 \openout2 = `chapters/chapter1d/chapter1d.aux'.
 
  (./chapters/chapter1d/chapter1d.tex
@@ -1660,7 +1668,7 @@ Chapter 4.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
-<chapters/chapter1d/images/arrays.png, id=1099, 789.95125pt x 379.4175pt>
+<chapters/chapter1d/images/arrays.png, id=1149, 789.95125pt x 379.4175pt>
 File: chapters/chapter1d/images/arrays.png Graphic file (type png)
 <use chapters/chapter1d/images/arrays.png>
 Package pdftex.def Info: chapters/chapter1d/images/arrays.png  used on input line 9.
@@ -1670,18 +1678,18 @@ Overfull \hbox (0.17952pt too wide) in paragraph at lines 16--17
 []\OT1/cmr/m/n/10 (+16) This method is common when the array size is unknown in advance, and the null terminator acts 
  []
 
-[33
+[34
 
 
 
 
  <./chapters/chapter1d/images/arrays.png>]
-<chapters/chapter1d/images/A.png, id=1107, 169.63374pt x 325.215pt>
+<chapters/chapter1d/images/A.png, id=1157, 169.63374pt x 325.215pt>
 File: chapters/chapter1d/images/A.png Graphic file (type png)
 <use chapters/chapter1d/images/A.png>
 Package pdftex.def Info: chapters/chapter1d/images/A.png  used on input line 40.
 (pdftex.def)             Requested size: 67.71725pt x 129.82068pt.
-<chapters/chapter1d/images/B.png, id=1108, 169.63374pt x 325.215pt>
+<chapters/chapter1d/images/B.png, id=1158, 169.63374pt x 325.215pt>
 File: chapters/chapter1d/images/B.png Graphic file (type png)
 <use chapters/chapter1d/images/B.png>
 Package pdftex.def Info: chapters/chapter1d/images/B.png  used on input line 58.
@@ -1694,8 +1702,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[34 <./chapters/chapter1d/images/A.png> <./chapters/chapter1d/images/B.png>]
-<chapters/chapter1d/images/C.png, id=1140, 169.63374pt x 330.23375pt>
+[35 <./chapters/chapter1d/images/A.png> <./chapters/chapter1d/images/B.png>]
+<chapters/chapter1d/images/C.png, id=1191, 169.63374pt x 330.23375pt>
 File: chapters/chapter1d/images/C.png Graphic file (type png)
 <use chapters/chapter1d/images/C.png>
 Package pdftex.def Info: chapters/chapter1d/images/C.png  used on input line 81.
@@ -1708,12 +1716,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[35 <./chapters/chapter1d/images/C.png>]
+[36 <./chapters/chapter1d/images/C.png>]
 Overfull \hbox (0.16257pt too wide) in paragraph at lines 182--182
 \OT1/cmr/m/it/10 (+4) Seeing this, the idea would be to have a sufficiently good \OT1/cmr/bx/it/10 (+4) compiler \OT1/cmr/m/it/10 (+4) (check I.4.3.2 if needed) such that we write 
  []
 
-<chapters/chapter1d/images/linked_list.png, id=1193, 557.08125pt x 436.63126pt>
+<chapters/chapter1d/images/linked_list.png, id=1243, 557.08125pt x 436.63126pt>
 File: chapters/chapter1d/images/linked_list.png Graphic file (type png)
 <use chapters/chapter1d/images/linked_list.png>
 Package pdftex.def Info: chapters/chapter1d/images/linked_list.png  used on input line 195.
@@ -1726,18 +1734,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[36 <./chapters/chapter1d/images/linked_list.png>]
+[37 <./chapters/chapter1d/images/linked_list.png>]
 \openout2 = `chapters/chapter1e/chapter1e.aux'.
 
  (./chapters/chapter1e/chapter1e.tex
 Chapter 5.
-[37
+[38
 
 
 
 
 ]
-<chapters/chapter1e/images/twoscomplement.png, id=1226, 1365.1pt x 257.96375pt>
+<chapters/chapter1e/images/twoscomplement.png, id=1276, 1365.1pt x 257.96375pt>
 File: chapters/chapter1e/images/twoscomplement.png Graphic file (type png)
 <use chapters/chapter1e/images/twoscomplement.png>
 Package pdftex.def Info: chapters/chapter1e/images/twoscomplement.png  used on input line 96.
@@ -1750,7 +1758,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[38 <./chapters/chapter1e/images/twoscomplement.png>]
+[39 <./chapters/chapter1e/images/twoscomplement.png>]
 Overfull \hbox (0.16945pt too wide) in paragraph at lines 106--106
 []\OT1/cmr/m/n/10 (+11) For binary numbers, radix's complement is known as \OT1/cmr/bx/n/10 (+11) two's complement\OT1/cmr/m/n/10 (+11) , which is the most commonly used 
  []
@@ -1767,8 +1775,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[39]
-<chapters/chapter1e/images/addition.png, id=1238, 703.62875pt x 82.3075pt>
+[40]
+<chapters/chapter1e/images/addition.png, id=1288, 703.62875pt x 82.3075pt>
 File: chapters/chapter1e/images/addition.png Graphic file (type png)
 <use chapters/chapter1e/images/addition.png>
 Package pdftex.def Info: chapters/chapter1e/images/addition.png  used on input line 198.
@@ -1778,7 +1786,7 @@ Overfull \hbox (0.12437pt too wide) in paragraph at lines 208--209
 \OT1/cmr/m/n/10 (+4) Sign-and-magnitude addition presents unique challenges, making \OT1/cmr/bx/n/10 (+4) two's complement \OT1/cmr/m/n/10 (+4) the standard for signed 
  []
 
-<chapters/chapter1e/images/ref_card.png, id=1239, 996.72375pt x 550.055pt>
+<chapters/chapter1e/images/ref_card.png, id=1289, 996.72375pt x 550.055pt>
 File: chapters/chapter1e/images/ref_card.png Graphic file (type png)
 <use chapters/chapter1e/images/ref_card.png>
 Package pdftex.def Info: chapters/chapter1e/images/ref_card.png  used on input line 237.
@@ -1790,8 +1798,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[40 <./chapters/chapter1e/images/addition.png> <./chapters/chapter1e/images/ref_card.png>]
-<chapters/chapter1e/images/sum.png, id=1247, 818.05624pt x 308.15125pt>
+[41 <./chapters/chapter1e/images/addition.png> <./chapters/chapter1e/images/ref_card.png>]
+<chapters/chapter1e/images/sum.png, id=1297, 818.05624pt x 308.15125pt>
 File: chapters/chapter1e/images/sum.png Graphic file (type png)
 <use chapters/chapter1e/images/sum.png>
 Package pdftex.def Info: chapters/chapter1e/images/sum.png  used on input line 285.
@@ -1808,8 +1816,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[41 <./chapters/chapter1e/images/sum.png>]
-<chapters/chapter1e/images/overflow.png, id=1253, 606.265pt x 175.65625pt>
+[42 <./chapters/chapter1e/images/sum.png>]
+<chapters/chapter1e/images/overflow.png, id=1304, 606.265pt x 175.65625pt>
 File: chapters/chapter1e/images/overflow.png Graphic file (type png)
 <use chapters/chapter1e/images/overflow.png>
 Package pdftex.def Info: chapters/chapter1e/images/overflow.png  used on input line 301.
@@ -1826,8 +1834,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[42 <./chapters/chapter1e/images/overflow.png>]
-<chapters/chapter1e/images/substractor.png, id=1268, 770.88pt x 414.54875pt>
+[43 <./chapters/chapter1e/images/overflow.png>]
+<chapters/chapter1e/images/substractor.png, id=1320, 770.88pt x 414.54875pt>
 File: chapters/chapter1e/images/substractor.png Graphic file (type png)
 <use chapters/chapter1e/images/substractor.png>
 Package pdftex.def Info: chapters/chapter1e/images/substractor.png  used on input line 371.
@@ -1840,8 +1848,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[43 <./chapters/chapter1e/images/substractor.png>]
-<chapters/chapter1e/images/adder_substractor.png, id=1275, 943.525pt x 494.84875pt>
+[44 <./chapters/chapter1e/images/substractor.png>]
+<chapters/chapter1e/images/adder_substractor.png, id=1326, 943.525pt x 494.84875pt>
 File: chapters/chapter1e/images/adder_substractor.png Graphic file (type png)
 <use chapters/chapter1e/images/adder_substractor.png>
 Package pdftex.def Info: chapters/chapter1e/images/adder_substractor.png  used on input line 388.
@@ -1854,7 +1862,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[44 <./chapters/chapter1e/images/adder_substractor.png>]
+[45 <./chapters/chapter1e/images/adder_substractor.png>]
 Overfull \hbox (7.54958pt too wide) detected at line 494
 []
  []
@@ -1866,7 +1874,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[45]
+[46]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1874,7 +1882,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[46])
+[47])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1882,12 +1890,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[47]
+[48]
 \openout2 = `chapters/chapter2a/chapter2a.aux'.
 
  (./chapters/chapter2a/chapter2a.tex
 Chapter 6.
-<chapters/chapter2a/images/processor.png, id=1352, 855.195pt x 568.1225pt>
+<chapters/chapter2a/images/processor.png, id=1402, 855.195pt x 568.1225pt>
 File: chapters/chapter2a/images/processor.png Graphic file (type png)
 <use chapters/chapter2a/images/processor.png>
 Package pdftex.def Info: chapters/chapter2a/images/processor.png  used on input line 26.
@@ -1897,23 +1905,23 @@ Overfull \hbox (43.53175pt too wide) in paragraph at lines 26--27
  [] 
  []
 
-<chapters/chapter2a/images/unified.png, id=1353, 1138.2525pt x 579.16376pt>
+<chapters/chapter2a/images/unified.png, id=1403, 1138.2525pt x 579.16376pt>
 File: chapters/chapter2a/images/unified.png Graphic file (type png)
 <use chapters/chapter2a/images/unified.png>
 Package pdftex.def Info: chapters/chapter2a/images/unified.png  used on input line 33.
 (pdftex.def)             Requested size: 362.77264pt x 184.585pt.
-[48
+[49
 
 
 
 
  <./chapters/chapter2a/images/processor.png>]
-<chapters/chapter2a/images/fsm.png, id=1362, 417.56pt x 309.155pt>
+<chapters/chapter2a/images/fsm.png, id=1413, 417.56pt x 309.155pt>
 File: chapters/chapter2a/images/fsm.png Graphic file (type png)
 <use chapters/chapter2a/images/fsm.png>
 Package pdftex.def Info: chapters/chapter2a/images/fsm.png  used on input line 38.
 (pdftex.def)             Requested size: 169.29684pt x 125.34389pt.
-<chapters/chapter2a/images/prop_time.png, id=1363, 685.56125pt x 339.2675pt>
+<chapters/chapter2a/images/prop_time.png, id=1414, 685.56125pt x 339.2675pt>
 File: chapters/chapter2a/images/prop_time.png Graphic file (type png)
 <use chapters/chapter2a/images/prop_time.png>
 Package pdftex.def Info: chapters/chapter2a/images/prop_time.png  used on input line 59.
@@ -1930,18 +1938,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[49 <./chapters/chapter2a/images/unified.png> <./chapters/chapter2a/images/fsm.png> <./chapters/chapter2a/images/prop_time.png>]
-<chapters/chapter2a/images/incr_freq.png, id=1372, 1505.625pt x 614.79688pt>
+[50 <./chapters/chapter2a/images/unified.png> <./chapters/chapter2a/images/fsm.png> <./chapters/chapter2a/images/prop_time.png>]
+<chapters/chapter2a/images/incr_freq.png, id=1423, 1505.625pt x 614.79688pt>
 File: chapters/chapter2a/images/incr_freq.png Graphic file (type png)
 <use chapters/chapter2a/images/incr_freq.png>
 Package pdftex.def Info: chapters/chapter2a/images/incr_freq.png  used on input line 68.
 (pdftex.def)             Requested size: 217.66211pt x 88.8759pt.
-<chapters/chapter2a/images/two_cyc_processor.png, id=1373, 721.69624pt x 553.06625pt>
+<chapters/chapter2a/images/two_cyc_processor.png, id=1424, 721.69624pt x 553.06625pt>
 File: chapters/chapter2a/images/two_cyc_processor.png Graphic file (type png)
 <use chapters/chapter2a/images/two_cyc_processor.png>
 Package pdftex.def Info: chapters/chapter2a/images/two_cyc_processor.png  used on input line 76.
 (pdftex.def)             Requested size: 217.66211pt x 166.79881pt.
-<chapters/chapter2a/images/paths.png, id=1374, 1203.49625pt x 597.23125pt>
+<chapters/chapter2a/images/paths.png, id=1425, 1203.49625pt x 597.23125pt>
 File: chapters/chapter2a/images/paths.png Graphic file (type png)
 <use chapters/chapter2a/images/paths.png>
 Package pdftex.def Info: chapters/chapter2a/images/paths.png  used on input line 83.
@@ -1954,18 +1962,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[50 <./chapters/chapter2a/images/incr_freq.png> <./chapters/chapter2a/images/two_cyc_processor.png> <./chapters/chapter2a/images/paths.png>]
-<chapters/chapter2a/images/seq_memory.png, id=1382, 440.64626pt x 326.21875pt>
+[51 <./chapters/chapter2a/images/incr_freq.png> <./chapters/chapter2a/images/two_cyc_processor.png> <./chapters/chapter2a/images/paths.png>]
+<chapters/chapter2a/images/seq_memory.png, id=1433, 440.64626pt x 326.21875pt>
 File: chapters/chapter2a/images/seq_memory.png Graphic file (type png)
 <use chapters/chapter2a/images/seq_memory.png>
 Package pdftex.def Info: chapters/chapter2a/images/seq_memory.png  used on input line 92.
 (pdftex.def)             Requested size: 141.47903pt x 104.74055pt.
-<chapters/chapter2a/images/seq_memory2.png, id=1383, 763.85374pt x 307.1475pt>
+<chapters/chapter2a/images/seq_memory2.png, id=1434, 763.85374pt x 307.1475pt>
 File: chapters/chapter2a/images/seq_memory2.png Graphic file (type png)
 <use chapters/chapter2a/images/seq_memory2.png>
 Package pdftex.def Info: chapters/chapter2a/images/seq_memory2.png  used on input line 100.
 (pdftex.def)             Requested size: 185.01411pt x 74.39178pt.
-<chapters/chapter2a/images/multi_cyc.png, id=1384, 787.94376pt x 745.78625pt>
+<chapters/chapter2a/images/multi_cyc.png, id=1435, 787.94376pt x 745.78625pt>
 File: chapters/chapter2a/images/multi_cyc.png Graphic file (type png)
 <use chapters/chapter2a/images/multi_cyc.png>
 Package pdftex.def Info: chapters/chapter2a/images/multi_cyc.png  used on input line 142.
@@ -1978,8 +1986,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[51 <./chapters/chapter2a/images/seq_memory.png> <./chapters/chapter2a/images/seq_memory2.png> <./chapters/chapter2a/images/multi_cyc.png>]
-<chapters/chapter2a/images/moore_mealy.png, id=1392, 1456.44125pt x 746.79pt>
+[52 <./chapters/chapter2a/images/seq_memory.png> <./chapters/chapter2a/images/seq_memory2.png> <./chapters/chapter2a/images/multi_cyc.png>]
+<chapters/chapter2a/images/moore_mealy.png, id=1443, 1456.44125pt x 746.79pt>
 File: chapters/chapter2a/images/moore_mealy.png Graphic file (type png)
 <use chapters/chapter2a/images/moore_mealy.png>
 Package pdftex.def Info: chapters/chapter2a/images/moore_mealy.png  used on input line 157.
@@ -1989,7 +1997,7 @@ Overfull \hbox (0.24902pt too wide) in paragraph at lines 159--159
 \OT1/cmr/m/it/9 (+17) plex-ity and po-ten-tial glitches. So un-less the spe-icif-ca-tions re-quires us to do oth-er-wise, we'll gen-er-ally tend to rep-re-sent 
  []
 
-<chapters/chapter2a/images/p1.png, id=1393, 1494.58376pt x 699.61375pt>
+<chapters/chapter2a/images/p1.png, id=1444, 1494.58376pt x 699.61375pt>
 File: chapters/chapter2a/images/p1.png Graphic file (type png)
 <use chapters/chapter2a/images/p1.png>
 Package pdftex.def Info: chapters/chapter2a/images/p1.png  used on input line 184.
@@ -2006,8 +2014,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[52 <./chapters/chapter2a/images/moore_mealy.png> <./chapters/chapter2a/images/p1.png>]
-<chapters/chapter2a/images/p2.png, id=1401, 1274.7625pt x 681.54625pt>
+[53 <./chapters/chapter2a/images/moore_mealy.png> <./chapters/chapter2a/images/p1.png>]
+<chapters/chapter2a/images/p2.png, id=1452, 1274.7625pt x 681.54625pt>
 File: chapters/chapter2a/images/p2.png Graphic file (type png)
 <use chapters/chapter2a/images/p2.png>
 Package pdftex.def Info: chapters/chapter2a/images/p2.png  used on input line 191.
@@ -2024,8 +2032,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[53 <./chapters/chapter2a/images/p2.png>]
-<chapters/chapter2a/images/p3.png, id=1407, 1355.0625pt x 726.715pt>
+[54 <./chapters/chapter2a/images/p2.png>]
+<chapters/chapter2a/images/p3.png, id=1458, 1355.0625pt x 726.715pt>
 File: chapters/chapter2a/images/p3.png Graphic file (type png)
 <use chapters/chapter2a/images/p3.png>
 Package pdftex.def Info: chapters/chapter2a/images/p3.png  used on input line 259.
@@ -2035,7 +2043,7 @@ Overfull \hbox (43.53175pt too wide) in paragraph at lines 259--260
  [] 
  []
 
-<chapters/chapter2a/images/p4.png, id=1408, 1552.80125pt x 772.8875pt>
+<chapters/chapter2a/images/p4.png, id=1459, 1552.80125pt x 772.8875pt>
 File: chapters/chapter2a/images/p4.png Graphic file (type png)
 <use chapters/chapter2a/images/p4.png>
 Package pdftex.def Info: chapters/chapter2a/images/p4.png  used on input line 268.
@@ -2047,8 +2055,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[54 <./chapters/chapter2a/images/p3.png> <./chapters/chapter2a/images/p4.png>]
-<chapters/chapter2a/images/p5.png, id=1415, 1518.67375pt x 778.91pt>
+[55 <./chapters/chapter2a/images/p3.png> <./chapters/chapter2a/images/p4.png>]
+<chapters/chapter2a/images/p5.png, id=1467, 1518.67375pt x 778.91pt>
 File: chapters/chapter2a/images/p5.png Graphic file (type png)
 <use chapters/chapter2a/images/p5.png>
 Package pdftex.def Info: chapters/chapter2a/images/p5.png  used on input line 313.
@@ -2061,8 +2069,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[55 <./chapters/chapter2a/images/p5.png>]
-<chapters/chapter2a/images/pend.png, id=1423, 1074.0125pt x 564.1075pt>
+[56 <./chapters/chapter2a/images/p5.png>]
+<chapters/chapter2a/images/pend.png, id=1473, 1074.0125pt x 564.1075pt>
 File: chapters/chapter2a/images/pend.png Graphic file (type png)
 <use chapters/chapter2a/images/pend.png>
 Package pdftex.def Info: chapters/chapter2a/images/pend.png  used on input line 384.
@@ -2077,7 +2085,7 @@ Overfull \hbox (0.12144pt too wide) in paragraph at lines 409--410
 []\OT1/cmr/m/it/9 (+2) For example, for our processor, identifying that a register file is sequential while a PC is combinational is crucial before 
  []
 
-<chapters/chapter2a/images/ALU.png, id=1424, 1134.2375pt x 799.98875pt>
+<chapters/chapter2a/images/ALU.png, id=1474, 1134.2375pt x 799.98875pt>
 File: chapters/chapter2a/images/ALU.png Graphic file (type png)
 <use chapters/chapter2a/images/ALU.png>
 Package pdftex.def Info: chapters/chapter2a/images/ALU.png  used on input line 414.
@@ -2089,7 +2097,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[56 <./chapters/chapter2a/images/pend.png>]
+[57 <./chapters/chapter2a/images/pend.png>]
 Overfull \hbox (0.14665pt too wide) in paragraph at lines 437--438
 \OT1/cmr/m/n/9 (+4) When writing Verilog, it is essential to adhere to basic patterns for describing combinational and sequential logic. This 
  []
@@ -2108,12 +2116,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[57 <./chapters/chapter2a/images/ALU.png>]
+[58 <./chapters/chapter2a/images/ALU.png>]
 \openout2 = `chapters/chapter2b/chapter2b.aux'.
 
  (./chapters/chapter2b/chapter2b.tex
 Chapter 7.
-<chapters/chapter2b/images/cpu.png, id=1450, 453.695pt x 224.84pt>
+<chapters/chapter2b/images/cpu.png, id=1500, 453.695pt x 224.84pt>
 File: chapters/chapter2b/images/cpu.png Graphic file (type png)
 <use chapters/chapter2b/images/cpu.png>
 Package pdftex.def Info: chapters/chapter2b/images/cpu.png  used on input line 6.
@@ -2123,23 +2131,23 @@ Overfull \hbox (0.21652pt too wide) in paragraph at lines 17--18
 []\OT1/cmr/bx/n/9 (+15) Circuit Enable (CE)\OT1/cmr/m/n/9 (+15) : Validates the address, indicating that the address provided is active and the operation 
  []
 
-<chapters/chapter2b/images/tristate.png, id=1451, 247.92625pt x 405.515pt>
+<chapters/chapter2b/images/tristate.png, id=1501, 247.92625pt x 405.515pt>
 File: chapters/chapter2b/images/tristate.png Graphic file (type png)
 <use chapters/chapter2b/images/tristate.png>
 Package pdftex.def Info: chapters/chapter2b/images/tristate.png  used on input line 30.
 (pdftex.def)             Requested size: 76.18306pt x 124.60693pt.
-[58
+[59
 
 
 
 
  <./chapters/chapter2b/images/cpu.png> <./chapters/chapter2b/images/tristate.png>]
-<chapters/chapter2b/images/memorymap.png, id=1458, 722.7pt x 748.7975pt>
+<chapters/chapter2b/images/memorymap.png, id=1508, 722.7pt x 748.7975pt>
 File: chapters/chapter2b/images/memorymap.png Graphic file (type png)
 <use chapters/chapter2b/images/memorymap.png>
 Package pdftex.def Info: chapters/chapter2b/images/memorymap.png  used on input line 36.
 (pdftex.def)             Requested size: 169.29684pt x 175.40758pt.
-<chapters/chapter2b/images/cpu_memorymap.png, id=1459, 1664.2175pt x 556.0775pt>
+<chapters/chapter2b/images/cpu_memorymap.png, id=1509, 1664.2175pt x 556.0775pt>
 File: chapters/chapter2b/images/cpu_memorymap.png Graphic file (type png)
 <use chapters/chapter2b/images/cpu_memorymap.png>
 Package pdftex.def Info: chapters/chapter2b/images/cpu_memorymap.png  used on input line 40.
@@ -2156,13 +2164,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[59 <./chapters/chapter2b/images/memorymap.png> <./chapters/chapter2b/images/cpu_memorymap.png>]
-<chapters/chapter2b/images/io.png, id=1466, 574.145pt x 660.4675pt>
+[60 <./chapters/chapter2b/images/memorymap.png> <./chapters/chapter2b/images/cpu_memorymap.png>]
+<chapters/chapter2b/images/io.png, id=1516, 574.145pt x 660.4675pt>
 File: chapters/chapter2b/images/io.png Graphic file (type png)
 <use chapters/chapter2b/images/io.png>
 Package pdftex.def Info: chapters/chapter2b/images/io.png  used on input line 87.
 (pdftex.def)             Requested size: 120.92421pt x 139.10538pt.
-<chapters/chapter2b/images/io_memory.png, id=1467, 783.92876pt x 741.77126pt>
+<chapters/chapter2b/images/io_memory.png, id=1517, 783.92876pt x 741.77126pt>
 File: chapters/chapter2b/images/io_memory.png Graphic file (type png)
 <use chapters/chapter2b/images/io_memory.png>
 Package pdftex.def Info: chapters/chapter2b/images/io_memory.png  used on input line 122.
@@ -2175,8 +2183,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[60 <./chapters/chapter2b/images/io.png>]
-<chapters/chapter2b/images/complete.png, id=1475, 1657.19125pt x 759.83875pt>
+[61 <./chapters/chapter2b/images/io.png>]
+<chapters/chapter2b/images/complete.png, id=1526, 1657.19125pt x 759.83875pt>
 File: chapters/chapter2b/images/complete.png Graphic file (type png)
 <use chapters/chapter2b/images/complete.png>
 Package pdftex.def Info: chapters/chapter2b/images/complete.png  used on input line 133.
@@ -2189,7 +2197,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[61 <./chapters/chapter2b/images/io_memory.png> <./chapters/chapter2b/images/complete.png>]
+[62 <./chapters/chapter2b/images/io_memory.png> <./chapters/chapter2b/images/complete.png>]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 149.
 
@@ -2204,8 +2212,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[62]
-<chapters/chapter2b/images/adc.png, id=1497, 996.72375pt x 661.47125pt>
+[63]
+<chapters/chapter2b/images/adc.png, id=1547, 996.72375pt x 661.47125pt>
 File: chapters/chapter2b/images/adc.png Graphic file (type png)
 <use chapters/chapter2b/images/adc.png>
 Package pdftex.def Info: chapters/chapter2b/images/adc.png  used on input line 179.
@@ -2218,17 +2226,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[63 <./chapters/chapter2b/images/adc.png>]
+[64 <./chapters/chapter2b/images/adc.png>]
 Overfull \hbox (0.23444pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/it/9 (+17) Tri-state buffers are crucial components used to control data flow on a bus. They can exist in one of three states: high 
  []
 
-<chapters/chapter2b/images/tris1.png, id=1537, 307.1475pt x 481.8pt>
+<chapters/chapter2b/images/tris1.png, id=1588, 307.1475pt x 481.8pt>
 File: chapters/chapter2b/images/tris1.png Graphic file (type png)
 <use chapters/chapter2b/images/tris1.png>
 Package pdftex.def Info: chapters/chapter2b/images/tris1.png  used on input line 224.
 (pdftex.def)             Requested size: 96.73788pt x 151.74574pt.
-<chapters/chapter2b/images/tris2.png, id=1538, 1145.27875pt x 481.8pt>
+<chapters/chapter2b/images/tris2.png, id=1589, 1145.27875pt x 481.8pt>
 File: chapters/chapter2b/images/tris2.png Graphic file (type png)
 <use chapters/chapter2b/images/tris2.png>
 Package pdftex.def Info: chapters/chapter2b/images/tris2.png  used on input line 228.
@@ -2240,7 +2248,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[64 <./chapters/chapter2b/images/tris1.png> <./chapters/chapter2b/images/tris2.png>]
+[65 <./chapters/chapter2b/images/tris1.png> <./chapters/chapter2b/images/tris2.png>]
 Overfull \hbox (0.10736pt too wide) in paragraph at lines 238--239
 []\OT1/cmr/bx/n/9 (+3) Status register\OT1/cmr/m/n/9 (+3) : Provides the current status of the UART. Bit 1 indicates if data is available, and bit 0 signals 
  []
@@ -2253,28 +2261,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[65]
+[66]
 \openout2 = `chapters/chapter2c/chapter2c.aux'.
 
  (./chapters/chapter2c/chapter2c.tex
 Chapter 8.
-<chapters/chapter2c/images/IOP.png, id=1585, 1125.20375pt x 339.2675pt>
+<chapters/chapter2c/images/IOP.png, id=1635, 1125.20375pt x 339.2675pt>
 File: chapters/chapter2c/images/IOP.png Graphic file (type png)
 <use chapters/chapter2c/images/IOP.png>
 Package pdftex.def Info: chapters/chapter2c/images/IOP.png  used on input line 7.
 (pdftex.def)             Requested size: 314.40001pt x 94.79753pt.
-<chapters/chapter2c/images/IOI.png, id=1586, 806.01125pt x 325.215pt>
+<chapters/chapter2c/images/IOI.png, id=1636, 806.01125pt x 325.215pt>
 File: chapters/chapter2c/images/IOI.png Graphic file (type png)
 <use chapters/chapter2c/images/IOI.png>
 Package pdftex.def Info: chapters/chapter2c/images/IOI.png  used on input line 22.
 (pdftex.def)             Requested size: 314.40001pt x 126.85318pt.
-[66
+[67
 
 
 
 
  <./chapters/chapter2c/images/IOP.png> <./chapters/chapter2c/images/IOI.png>]
-<chapters/chapter2c/images/basic_idea.png, id=1593, 1274.7625pt x 641.39626pt>
+<chapters/chapter2c/images/basic_idea.png, id=1644, 1274.7625pt x 641.39626pt>
 File: chapters/chapter2c/images/basic_idea.png Graphic file (type png)
 <use chapters/chapter2c/images/basic_idea.png>
 Package pdftex.def Info: chapters/chapter2c/images/basic_idea.png  used on input line 30.
@@ -2296,8 +2304,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[67 <./chapters/chapter2c/images/basic_idea.png>]
-<chapters/chapter2c/images/interrupt.png, id=1600, 935.495pt x 456.20438pt>
+[68 <./chapters/chapter2c/images/basic_idea.png>]
+<chapters/chapter2c/images/interrupt.png, id=1650, 935.495pt x 456.20438pt>
 File: chapters/chapter2c/images/interrupt.png Graphic file (type png)
 <use chapters/chapter2c/images/interrupt.png>
 Package pdftex.def Info: chapters/chapter2c/images/interrupt.png  used on input line 64.
@@ -2314,16 +2322,53 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[68 <./chapters/chapter2c/images/interrupt.png>]
+[69 <./chapters/chapter2c/images/interrupt.png>]
 Overfull \hbox (0.19324pt too wide) in paragraph at lines 98--99
 []\OT1/cmr/bx/n/9 (+16) Slow Performance: \OT1/cmr/m/n/9 (+16) Due to the sequential nature of signal passing, response times can be slower as the chain 
  []
 
-<chapters/chapter2c/images/bus_arbiter.png, id=1609, 557.08125pt x 167.62625pt>
+<chapters/chapter2c/images/bus_arbiter.png, id=1659, 557.08125pt x 167.62625pt>
 File: chapters/chapter2c/images/bus_arbiter.png Graphic file (type png)
 <use chapters/chapter2c/images/bus_arbiter.png>
 Package pdftex.def Info: chapters/chapter2c/images/bus_arbiter.png  used on input line 103.
 (pdftex.def)             Requested size: 362.77264pt x 109.16037pt.
+<chapters/chapter2c/images/DMA.png, id=1660, 1427.3325pt x 580.1675pt>
+File: chapters/chapter2c/images/DMA.png Graphic file (type png)
+<use chapters/chapter2c/images/DMA.png>
+Package pdftex.def Info: chapters/chapter2c/images/DMA.png  used on input line 124.
+(pdftex.def)             Requested size: 314.40001pt x 127.78773pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[70 <./chapters/chapter2c/images/bus_arbiter.png> <./chapters/chapter2c/images/DMA.png>]
+<chapters/chapter2c/images/DMA2.png, id=1667, 1427.3325pt x 580.1675pt>
+File: chapters/chapter2c/images/DMA2.png Graphic file (type png)
+<use chapters/chapter2c/images/DMA2.png>
+Package pdftex.def Info: chapters/chapter2c/images/DMA2.png  used on input line 132.
+(pdftex.def)             Requested size: 314.40001pt x 127.78773pt.
+<chapters/chapter2c/images/DMA3.png, id=1668, 1427.3325pt x 580.1675pt>
+File: chapters/chapter2c/images/DMA3.png Graphic file (type png)
+<use chapters/chapter2c/images/DMA3.png>
+Package pdftex.def Info: chapters/chapter2c/images/DMA3.png  used on input line 143.
+(pdftex.def)             Requested size: 314.40001pt x 127.78773pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[71 <./chapters/chapter2c/images/DMA2.png> <./chapters/chapter2c/images/DMA3.png>]
+<chapters/chapter2c/images/timer.png, id=1675, 1424.32124pt x 669.50125pt>
+File: chapters/chapter2c/images/timer.png Graphic file (type png)
+<use chapters/chapter2c/images/timer.png>
+Package pdftex.def Info: chapters/chapter2c/images/timer.png  used on input line 154.
+(pdftex.def)             Requested size: 314.40001pt x 147.78108pt.
 )
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2332,27 +2377,63 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[69 <./chapters/chapter2c/images/bus_arbiter.png>] (./comparch.aux (./chapters/front/front.aux) (./chapters/chapter1a/chapter1a.aux) (./chapters/chapter1b/chapter1b.aux) (./chapters/chapter1c/chapter1c.aux) (./chapters/chapter1d/chapter1d.aux) (./chapters/chapter1e/chapter1e.aux) (./chapters/chapter2a/chapter2a.aux) (./chapters/chapter2b/chapter2b.aux) (./chapters/chapter2c/chapter2c.aux))
+[72 <./chapters/chapter2c/images/timer.png>]
+\openout2 = `chapters/chapter2d/chapter2d.aux'.
+
+ (./chapters/chapter2d/chapter2d.tex
+Chapter 9.
+<chapters/chapter2d/images/undefined.png, id=1682, 1676.2625pt x 586.19pt>
+File: chapters/chapter2d/images/undefined.png Graphic file (type png)
+<use chapters/chapter2d/images/undefined.png>
+Package pdftex.def Info: chapters/chapter2d/images/undefined.png  used on input line 41.
+(pdftex.def)             Requested size: 319.24088pt x 111.63664pt.
+
+Overfull \hbox (53.20613pt too wide) in paragraph at lines 41--42
+ [] 
+ []
+
+[73
+
+
+
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[74 <./chapters/chapter2d/images/undefined.png>])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[75] (./comparch.aux (./chapters/front/front.aux) (./chapters/chapter1a/chapter1a.aux) (./chapters/chapter1b/chapter1b.aux) (./chapters/chapter1c/chapter1c.aux) (./chapters/chapter1d/chapter1d.aux) (./chapters/chapter1e/chapter1e.aux) (./chapters/chapter2a/chapter2a.aux) (./chapters/chapter2b/chapter2b.aux) (./chapters/chapter2c/chapter2c.aux) (./chapters/chapter2d/chapter2d.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `comparch.out' has not changed.
-(rerunfilecheck)             Checksum: 43887B6746108C6839AC75830E9B6FC0;25315.
+(rerunfilecheck)             Checksum: 36CDDE3C2EFA413F89D03454BE17F69A;27463.
  ) 
 Here is how much of TeX's memory you used:
- 51041 strings out of 474116
- 1151855 string characters out of 5743683
- 2395257 words of memory out of 5000000
- 71733 multiletter control sequences out of 15000+600000
- 589796 words of font info for 269 fonts, out of 8000000 for 9000
+ 51148 strings out of 474116
+ 1154899 string characters out of 5743683
+ 2395859 words of memory out of 5000000
+ 71803 multiletter control sequences out of 15000+600000
+ 590086 words of font info for 273 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,12n,100p,1046b,1783s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on comparch.pdf (69 pages, 16522695 bytes).
+Output written on comparch.pdf (75 pages, 19288719 bytes).
 PDF statistics:
- 1872 PDF objects out of 2073 (max. 8388607)
- 1530 compressed objects within 16 object streams
- 639 named destinations out of 1000 (max. 500000)
- 67580 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1966 PDF objects out of 2073 (max. 8388607)
+ 1607 compressed objects within 17 object streams
+ 660 named destinations out of 1000 (max. 500000)
+ 67677 words of extra memory for PDF output out of 74296 (max. 10000000)
 

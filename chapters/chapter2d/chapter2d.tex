@@ -352,16 +352,16 @@ The RISC-V architecture employs a dedicated Control and Status Register (CSR) ca
 \begin{minipage}[htp]{0.45\textwidth}
 \begin{assembly}
 funct:
-addi sp, sp, -12
-sw   ra, 0(sp)
-sw   s0, 4(sp)
-sw   s1, 8(sp)
-... etc. ...
-lw   ra, 0(sp)
-lw   s0, 4(sp)
-lw   s1, 8(sp)
-addi sp, sp, 12
-ret
+    addi sp, sp, -12
+    sw   ra, 0(sp)
+    sw   s0, 4(sp)
+    sw   s1, 8(sp)
+    ... etc. ...
+    lw   ra, 0(sp)
+    lw   s0, 4(sp)
+    lw   s1, 8(sp)
+    addi sp, sp, 12
+    ret
 \end{assembly}    
 \end{minipage}
 \hfill
@@ -370,23 +370,23 @@ ret
 \begin{minipage}[htp]{0.45\textwidth}
 \begin{assembly}
 funct:
-sw   ra, -12(sp)
-sw   s0, -8(sp)
-sw   s1, -4(sp)
-addi sp, sp, -12
-... etc. ...
-addi sp, sp, 12
-lw   ra, -12(sp)
-lw   s0, -8(sp)
-lw   s1, -4(sp)
-ret
+    sw   ra, -12(sp)
+    sw   s0, -8(sp)
+    sw   s1, -4(sp)
+    addi sp, sp, -12
+    ... etc. ...
+    addi sp, sp, 12
+    lw   ra, -12(sp)
+    lw   s0, -8(sp)
+    lw   s1, -4(sp)
+    ret
 \end{assembly}
 \end{minipage}
 
 \section{Protection: I/Os Are Not for Everyone}
 The system enforces restricted access to I/O peripherals to ensure security and proper operation. 
 \begin{center}
-    \includegraphics[width=0.65\textwidth]{chapters/chapter2d/images/io_prot.png}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter2d/images/admin.png}
 \end{center}
 \begin{itemize}
     \item[-] \textbf{Instruction Register (IR):} Holds the current instruction, e.g., \texttt{lw t5, 0(t7)}, which specifies a memory access operation.
@@ -407,4 +407,179 @@ The system enforces restricted access to I/O peripherals to ensure security and 
     \item[-] \textbf{Interrupt Sources:} Includes various triggers such as undefined instructions (\texttt{undef}), IRQ, watchpoints, and stack violations, which can cause exceptions.
 \end{itemize}
 
-\noindent This mechanism ensures secure memory access, prevents unauthorized peripheral usage, and enforces privilege separation to maintain system stability and security.
+\noindent This mechanism ensures secure memory access, prevents unauthorized peripheral usage, and enforces privilege separation to maintain system security.
+
+\subsection{Levels of Privilege: Processor Modes}
+Modern processors are designed with multiple levels of privilege to ensure proper execution of user programs and operating system tasks. These levels are referred to as \textbf{processor modes} and include:
+\vspace{5px}
+- \textbf{Distinction Between Processor Modes:} \\
+\begin{itemize}
+    \item \textbf{User Mode:} For executing user programs.
+    \item \textbf{Kernel/Supervisor/Executive Mode:} For handling operating system tasks and privileged instructions.
+    \item \textbf{RISC-V:} Includes up to three modes: Machine, Supervisor, and User.
+\end{itemize}
+\vspace{5px}
+- \textbf{Processor State and Privilege Levels:} \\ 
+\begin{itemize}
+    \item Some parts of the processor state are \textit{readable by all} privilege levels, but can only be \textit{written to} by the highest privilege levels.
+    \item Examples include:
+    \begin{itemize}
+        \item The \textbf{current mode register}.
+        \item Configuration registers (e.g., memory hierarchy configuration).
+    \end{itemize}
+\end{itemize}
+\vspace{5px}
+- \textbf{Methods for Switching Between Modes:} \\ 
+\begin{itemize}
+    \item Processors provide:
+    \begin{itemize}
+        \item A \textit{dedicated instruction} to trigger a software exception.
+        \item An instruction to reset the mode.
+    \end{itemize}
+    \item In RISC-V:
+    \begin{itemize}
+        \item \texttt{ecall} is used for system calls.
+        \item \texttt{mret/sret} are used to return from exceptions.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Processor Tasks on Exception}
+When an exception is raised, the processor typically performs a series of tasks. These tasks depend on the processor architecture and the type of exception. The main steps include:
+
+\begin{enumerate}
+    \item \textbf{Mask further interrupts:} Prevent additional interrupts to ensure the exception is handled correctly.
+    \item \textbf{Save the Exception Program Counter (EPC):} Store the address of the instruction causing the exception.
+    \item \textbf{Save exception details:} Record the reason or context for the exception.
+    \item \textbf{Modify privilege level:} Switch to a higher privilege level as exception handlers often run in privileged mode.
+    \item \textbf{Free up registers:} Temporarily save or copy certain registers to shadow registers if supported.
+    \item \textbf{Jump to the exception handler:} Transfer control to the handler routine.
+\end{enumerate}
+
+\noindent After the exception is handled, most or all of these tasks are \textit{implicitly reverted} using special instructions. For example, the \texttt{mret} instruction in RISC-V resets the privilege level and re-enables interrupts. \\
+\vspace{5px}
+Some tasks, however, must be \textit{explicitly reverted} by the handler. For instance, programmers may need to unmask further interrupts manually as soon as it is safe to do so.
+
+\subsection{Priorities in Interrupt Handling}
+
+\textit{Interrupt controllers} play a critical role in managing priorities, determining which interrupt is more urgent to serve. \\
+
+While hardware mechanisms primarily affect the order in which Interrupt Requests (IRQs) are presented to the processor, there are scenarios where it is desirable to serve a high-priority interrupt even while handling a lower-priority one.
+
+However, there is a limitation: the processor architecture typically provides only a single \texttt{mepc} (Machine Exception Program Counter) and \texttt{mcause} (Machine Cause Register) register. Consequently, as soon as the processor accepts an interrupt, it must disable further interrupts to preserve critical state information.
+\subsubsection*{Potential Solutions}
+To address this limitation, we can implement the following strategies:
+\begin{itemize}
+    \item \textbf{Saving State:} Critical information about the interrupt (\texttt{mepc}, \texttt{mcause}, \texttt{mstatus}) can be saved on a safe stack. This ensures that Control and Status Registers (CSRs) can be overwritten by subsequent interrupts without losing essential context.
+    \item \textbf{Re-enabling Interrupts:} The \texttt{mstatus} register can be manually updated to re-enable interrupts without returning from the handler, allowing higher-priority interrupts to preempt the current one.
+\end{itemize}
+
+\subsection{More challenges in Writing Exception Handlers}
+
+Writing exception handlers is a complex and challenging task due to the following reasons:
+
+\begin{itemize}
+    \item \textbf{Stack Constraints:} In some cases, the stack cannot be used, such as when the exception arises from a stack overflow.
+    \item \textbf{Non-Interruptibility:} Exception handlers may not be interruptible if they rely on static locations to save data, including registers like \texttt{mscratch}, making them non-reentrant.
+    \item \textbf{System Limitations:} The system might be unable to tolerate prolonged interruptions, for instance, when I/O buffers risk filling up due to unserved interrupts.
+\end{itemize}
+
+Additionally, buggy \textbf{device drivers} from peripheral vendors often run in privileged mode, invoked by the operating system's interrupt handler, and can destabilize the system. 
+
+\section{Example - Back to Our A/D Converter}
+Let's revisit the example of an A/D converter, which converts analog signals to digital data. This device is connected to the processor via an I/O port, and the processor reads the converted data from the device. \\
+\begin{center}
+    \includegraphics[width=0.65\textwidth]{chapters/chapter2d/images/adc.png}
+\end{center}
+\textit{Here though, we used to have an efficient approach to read the data from the A/D converter which was that we used to keep reading the Data Valid signal waiting for it to become active. (highly inneficient)} \\
+
+\subsection{Simple IREQ and IACK Mechanism}
+
+In an 8-bit processor with an internal interrupt controller, various \texttt{IREQ/IACK} signal pairs are used for I/O interrupt requests. For the Analog-to-Digital Converter (ADC), the following signals are assigned:
+
+\begin{itemize}
+    \item \textbf{\texttt{IREQ3}}: An input signal dedicated to the peripheral to request attention from the processor.
+    \item \textbf{\texttt{IACK3}}: An output signal used by the processor to acknowledge the request and signal that it is being served.
+\end{itemize}
+
+The interaction between the peripheral and the processor can be described as follows:
+\begin{center}
+    \includegraphics[width=0.75\textwidth]{chapters/chapter2d/images/mecanism.png}
+\end{center}
+\begin{enumerate}
+    \item The interrupt request (\texttt{IREQ}) is activated asynchronously by the peripheral.
+    \item The request remains active until it is acknowledged by the processor.
+    \item Once the processor acknowledges the request using \texttt{IACK}, the interrupt is served, and \texttt{IREQ} is deactivated asynchronously.
+\end{enumerate}
+
+This mechanism ensures smooth communication and handling of interrupt-driven tasks between the peripheral and the processor.
+
+\subsection{A/D Converter - startADC}
+The \texttt{startADC} function initiates the Analog-to-Digital Conversion process by setting the \texttt{start} bit in the control register of the A/D converter. \\
+\begin{assembly}
+    lui t0, 0xfff
+    addi t0, t0, 0xff0 #t0 = 0xfffff0
+    sw zero, 0(t0)     # start conversion
+    ret
+\end{assembly}
+\subsection{A/D Converter - Software:handler}
+\begin{assembly}
+handler:
+    addi sp, sp, -120          # Save all registers but zero and sp
+    sw x1, 0(sp)
+    sw x3, 4(sp)
+    ...                        # etc.
+    sw x31, 116(sp)
+
+    csrr s0, mcause            # Read exception cause
+    bgez s0, handleExceptions  # Branch if not an interrupt (MSB = 0, 
+                                # looks like zero or a positive number...)
+    slli s0, s0, 1             # Get rid of the MSB of s0,
+    srli s0, s0, 1             # so that what is left is the cause
+    li s1, 11                  # s1 = external interrupt cause
+    bne s1, s2, handleOtherInts # Branch if not an external interrupt
+
+    jal readADC                # Returns a0 = ADC result
+    jal insertIntoBuffer       # Gets a0 = value to add to a circular buffer
+
+restore:
+    lw x1, 0(sp)               # Restore all registers but zero and sp
+    lw x3, 4(sp)
+    ...                        # etc.
+    lw x31, 116(sp)
+    addi sp, sp, 120
+
+    mret                       # Return from interrupt
+\end{assembly}
+
+\subsection{A/D Converter - insertIntoBuffer}
+\begin{assembly}
+.section .data
+    .equ bufferSize, 1024              # Define buffer size (must be a power of two)
+    .equ bufferBytes, bufferSize * 4  # Compute the total size in bytes for the buffer
+    bufferPointer:
+        .word 0                       # Initialize the pointer to index 0
+    buffer:
+        .space bufferBytes            # Allocate space for bufferSize * wordSize bytes
+
+.section .text
+insertIntoBuffer:
+    la    t0, bufferPointer           # Load address of bufferPointer into t0
+    lw    t1, 0(t0)                   # Load current buffer pointer into t1
+    la    t2, buffer                  # Load base address of the buffer into t2
+    slli  t3, t1, 2                   # Multiply buffer pointer (t1) by 4 to get byte offset
+    add   t4, t2, t3                  # Add offset to buffer base address (= next word)
+    sw    a0, 0(t4)                   # Store a0 into buffer at calculated position
+    addi  t1, t1, 1                   # Increment buffer pointer by 1
+    li    t5, bufferSize - 1          # Load bufferSize - 1 into t5 (mask for power of 2)
+    and   t1, t1, t5                  # Apply bitwise AND to wrap around
+    sw    t1, 0(t0)                   # Store updated buffer pointer
+    ret                               # Return from the function
+\end{assembly}
+    \newpage
+\subsection{A/D Converter - readADC}
+\begin{assembly}
+readADC: 
+    li t0, 0xfffff0 # t0 = 0xfffff0
+    lw a0, 8(t0) # get ADC data output
+    ret
+\end{assembly}

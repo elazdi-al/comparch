@@ -183,3 +183,24 @@
 \contentsline {subsection}{\numberline {9.3.2}Writing Handlers is Very Very Tricky}{81}{subsection.9.3.2}%
 \contentsline {subsection}{\numberline {9.3.3}Speaking of the Stack...}{81}{subsection.9.3.3}%
 \contentsline {section}{\numberline {9.4}Protection: I/Os Are Not for Everyone}{82}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Levels of Privilege: Processor Modes}{82}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}Processor Tasks on Exception}{83}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.4.3}Priorities in Interrupt Handling}{83}{subsection.9.4.3}%
+\contentsline {subsection}{\numberline {9.4.4}More challenges in Writing Exception Handlers}{83}{subsection.9.4.4}%
+\contentsline {section}{\numberline {9.5}Example - Back to Our A/D Converter}{84}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}Simple IREQ and IACK Mechanism}{84}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {9.5.2}A/D Converter - startADC}{84}{subsection.9.5.2}%
+\contentsline {subsection}{\numberline {9.5.3}A/D Converter - Software:handler}{85}{subsection.9.5.3}%
+\contentsline {subsection}{\numberline {9.5.4}A/D Converter - insertIntoBuffer}{85}{subsection.9.5.4}%
+\contentsline {subsection}{\numberline {9.5.5}A/D Converter - readADC}{86}{subsection.9.5.5}%
+\contentsline {chapter}{\numberline {10}Part II(e) - Processor, I/Os, and Exceptions - Example W - 6.2}{87}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Part Ia: Connecitng an Input Peripheral}{87}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Bus Protocol}{87}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Assembling the Circuit}{88}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Part 1b: Reading the Input Ports}{88}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Software: buttons}{88}{subsection.10.4.1}%
+\contentsline {section}{\numberline {10.5}Part 2a - Connecting an Output Peripheral}{89}{section.10.5}%
+\contentsline {section}{\numberline {10.6}Assembling everything}{89}{section.10.6}%
+\contentsline {section}{\numberline {10.7}Part 3a: Use Interrupts}{89}{section.10.7}%
+\contentsline {subsection}{\numberline {10.7.1}Interrupt Acknowledgement Process}{90}{subsection.10.7.1}%
+\contentsline {subsection}{\numberline {10.7.2}Solution}{91}{subsection.10.7.2}%

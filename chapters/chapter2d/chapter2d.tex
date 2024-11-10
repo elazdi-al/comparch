@@ -18,7 +18,7 @@ The terminology for exceptions and related events varies widely across systems. 
     \item \textbf{Interrupts:} A specific type of exception generated outside the processor.
 \end{itemize}
 Thus far, interrupts are the only form of exception encountered.
-
+\newpage
 \subsection{Undefined Instruction}
 
 Undefined instructions are instructions that the controller does not recognize, as they do not correspond to any valid operation in the Instruction Register (IR). These scenarios require special handling to ensure system stability and proper exception processing.
@@ -116,7 +116,7 @@ Exceptions, interrupts, and related mechanisms handle critical events during exe
     \item \textbf{Coerced?} Specifies whether the exception is forced by the system (coerced) or triggered by a user request.
     \item \textbf{Resume?} Denotes whether the system can continue executing after handling the exception (resume) or must terminate.
 \end{itemize}
-\newpage
+
 \subsection{Watchpoint}
 A \textbf{watchpoint} is a debugging feature in a processor architecture that monitors specific registers and triggers an exception when predefined conditions are met. This mechanism allows developers to track changes in critical registers and execute exception handlers when necessary. \\
 \begin{minipage}[htp]{0.45\textwidth}

@@ -156,7 +156,7 @@
 \contentsline {subsection}{\numberline {8.2.3}I/O Interrupt Priorities: Daisy Chain Arbitration}{72}{subsection.8.2.3}%
 \contentsline {section}{\numberline {8.3}Direct Memory Access (DMA)}{72}{section.8.3}%
 \contentsline {subsection}{\numberline {8.3.1}Timer and Interrupt Mechanism}{74}{subsection.8.3.1}%
-\contentsline {chapter}{\numberline {9}Part II(d) - Processor, I/Os, and Exceptions W - 6.1 - 6.2}{75}{chapter.9}%
+\contentsline {chapter}{\numberline {9}Part II(d) - Processor, I/Os, and Exceptions W - 5.1}{75}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Exceptions, Interrupts, Faults, Traps, and Checks}{75}{section.9.1}%
 \contentsline {paragraph}{Control Flow}{75}{section*.36}%
 \contentsline {paragraph}{Exceptions}{75}{section*.37}%
@@ -193,7 +193,7 @@
 \contentsline {subsection}{\numberline {9.5.3}A/D Converter - Software:handler}{86}{subsection.9.5.3}%
 \contentsline {subsection}{\numberline {9.5.4}A/D Converter - insertIntoBuffer}{86}{subsection.9.5.4}%
 \contentsline {subsection}{\numberline {9.5.5}A/D Converter - readADC}{87}{subsection.9.5.5}%
-\contentsline {chapter}{\numberline {10}Part II(e) - Processor, I/Os, and Exceptions - Example W - 6.2}{88}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Part II(e) - Processor, I/Os, and Exceptions - Example W - 6.1}{88}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Part Ia: Connecitng an Input Peripheral}{88}{section.10.1}%
 \contentsline {section}{\numberline {10.2}Bus Protocol}{88}{section.10.2}%
 \contentsline {section}{\numberline {10.3}Assembling the Circuit}{89}{section.10.3}%
@@ -204,7 +204,7 @@
 \contentsline {section}{\numberline {10.7}Part 3a: Use Interrupts}{90}{section.10.7}%
 \contentsline {subsection}{\numberline {10.7.1}Interrupt Acknowledgement Process}{91}{subsection.10.7.1}%
 \contentsline {subsection}{\numberline {10.7.2}Solution}{92}{subsection.10.7.2}%
-\contentsline {chapter}{\numberline {11}Part III(a) - Memory Hierarchy - Caches}{93}{chapter.11}%
+\contentsline {chapter}{\numberline {11}Part III(a) - Memory Hierarchy - Caches - W.6.2 - 7.1}{93}{chapter.11}%
 \contentsline {section}{\numberline {11.1}Our Goal : Use Different Memories}{93}{section.11.1}%
 \contentsline {subsection}{\numberline {11.1.1}What Memory ot Use?}{94}{subsection.11.1.1}%
 \contentsline {subsection}{\numberline {11.1.2}Spatial and Temporal Locality}{94}{subsection.11.1.2}%
@@ -221,4 +221,33 @@
 \contentsline {subsection}{\numberline {11.3.2}Cache Miss}{98}{subsection.11.3.2}%
 \contentsline {section}{\numberline {11.4}What if the Cache is Full?}{99}{section.11.4}%
 \contentsline {subsection}{\numberline {11.4.1}Eviction Policies}{99}{subsection.11.4.1}%
-\contentsline {subsection}{\numberline {11.4.2}Only Exploiting Spatial Locality}{99}{subsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.4.2}Only Exploiting Temporal Locality}{100}{subsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.4.3}Exploiting Spatial Locality}{100}{subsection.11.4.3}%
+\contentsline {subsection}{\numberline {11.4.4}Why Not This ?}{101}{subsection.11.4.4}%
+\contentsline {subsection}{\numberline {11.4.5}Solution}{102}{subsection.11.4.5}%
+\contentsline {subsection}{\numberline {11.4.6}Simplifying Cache Design}{103}{subsection.11.4.6}%
+\contentsline {section}{\numberline {11.5}Generating \texttt {Addr} and \texttt {Tag}}{103}{section.11.5}%
+\contentsline {subsection}{\numberline {11.5.1}The Simplest Hash Function}{104}{subsection.11.5.1}%
+\contentsline {subsubsection}{Direct-Mapped Cache}{104}{section*.53}%
+\contentsline {section}{\numberline {11.6}Which One is the Best Cache ?}{105}{section.11.6}%
+\contentsline {section}{\numberline {11.7}Associativity}{106}{section.11.7}%
+\contentsline {subsection}{\numberline {11.7.1}Set-Associative Cache}{107}{subsection.11.7.1}%
+\contentsline {subsection}{\numberline {11.7.2}A Continuum of Possibilities}{108}{subsection.11.7.2}%
+\contentsline {subsection}{\numberline {11.7.3}Cache Validity}{108}{subsection.11.7.3}%
+\contentsline {subsection}{\numberline {11.7.4}Addressing by Byte vs Addressing by Word}{109}{subsection.11.7.4}%
+\contentsline {section}{\numberline {11.8}Loading Bytes(lb)}{109}{section.11.8}%
+\contentsline {subsection}{\numberline {11.8.1}Write Hit}{110}{subsection.11.8.1}%
+\contentsline {subsubsection}{Write Policies in Cache Memory}{110}{section*.58}%
+\contentsline {subsection}{\numberline {11.8.2}Write Miss in Cache Memory}{111}{subsection.11.8.2}%
+\contentsline {subsubsection}{Allocation Policies}{111}{section*.59}%
+\contentsline {paragraph}{Write-Allocate:}{111}{section*.60}%
+\contentsline {paragraph}{Write-Around (or Write-No-Allocate):}{111}{section*.61}%
+\contentsline {section}{\numberline {11.9}Summary}{112}{section.11.9}%
+\contentsline {subsection}{\numberline {11.9.1}The ``3 Cs'' of Caches}{112}{subsection.11.9.1}%
+\contentsline {paragraph}{Compulsory Misses:}{112}{section*.62}%
+\contentsline {paragraph}{Capacity Misses:}{112}{section*.63}%
+\contentsline {paragraph}{Conflict Misses:}{112}{section*.64}%
+\contentsline {subsection}{\numberline {11.9.2}Summary of Cache Features}{112}{subsection.11.9.2}%
+\contentsline {chapter}{\numberline {12}Part III(a) - Memory Hierarchy - Virtual Memory - W.7.2}{113}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Segmentation Fault: Understanding the Cause}{113}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}Overview - Problems to Solve}{113}{subsection.12.1.1}%

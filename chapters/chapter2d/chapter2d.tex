@@ -25,7 +25,7 @@ Undefined instructions are instructions that the controller does not recognize, 
 
 \vspace{0.5cm}
 \begin{minipage}[htp]{0.35\textwidth}
-- \textbf{Detection:} When an undefined instruction is detected in the IR, the controller generates a signal (\texttt{undef}) indicating the presence of an invalid operation. \\ 
+- \textbf{Detection:} When an undefined instruction is detected in the IR, the controller generates a signal (\texttt{undef}) indicating the presence of an invalid operation. \\
 - \textbf{Exception Handling:} The Program Counter (PC) is updated to the address of the Exception Handler to manage the undefined instruction. This involves: \\
 \begin{itemize}
 \item Saving the current PC for potential recovery.
@@ -144,7 +144,7 @@ A \textbf{watchpoint} is a debugging feature in a processor architecture that mo
 \end{minipage}
 
 \subsection{Raising Exceptions}
-To handle exceptions, the processor must be able to provide which exact exception occurred. 
+To handle exceptions, the processor must be able to provide which exact exception occurred.
 \begin{itemize}
     \item[] \textbf{Saving the Address:} The address of the current or next instruction must be stored in a dedicated register, typically the \textit{Exception Program Counter (EPC)}. This prevents overwriting the \texttt{ra} register, which is used for ordinary returns. A special instruction is required to resume execution using the \texttt{EPC}.
     \item[] \textbf{Multiple Causes:} Since exceptions can arise from various causes, a mechanism is needed to identify the source:
@@ -161,7 +161,7 @@ To handle exceptions, the processor must be able to provide which exact exceptio
 
 \subsection{Assessing the Position of an Exception}
 When an exception occurs, it is essential to determine the position in the instruction flow to decide the appropriate handling strategy. Some key considerations are: \\
-- \textbf{Asynchronous Exceptions:} 
+- \textbf{Asynchronous Exceptions:}
 \begin{itemize}
     \item Identify the \textit{next instruction} to execute.
 \end{itemize}
@@ -280,21 +280,21 @@ Below is a possible implementation of an undefined instruction handler in RISC-V
 In RISC-V architecture, machine-mode interrupt handling is managed through three key control and status registers: \texttt{mie}, \texttt{mip}, and \texttt{mstatus}. These registers play distinct roles in enabling, monitoring, and controlling interrupts.
 
 \begin{itemize}
-    \item \textbf{\texttt{mie} (Machine Interrupt Enable):} 
+    \item \textbf{\texttt{mie} (Machine Interrupt Enable):}
     This register determines which interrupts the processor can take and which it must ignore. Key bits include:
     \begin{itemize}
         \item \texttt{MEIE}: Enables machine-level external interrupts.
         \item \texttt{MTIE}: Enables machine-level timer interrupts.
     \end{itemize}
 
-    \item \textbf{\texttt{mip} (Machine Interrupt Pending):} 
+    \item \textbf{\texttt{mip} (Machine Interrupt Pending):}
     This register lists the interrupts that are currently pending. Key bits include:
     \begin{itemize}
         \item \texttt{MEIP}: Indicates a pending machine-level external interrupt.
         \item \texttt{MTIP}: Indicates a pending machine-level timer interrupt.
     \end{itemize}
 
-    \item \textbf{\texttt{mstatus} (Machine Status):} 
+    \item \textbf{\texttt{mstatus} (Machine Status):}
     This register contains the global interrupt enable flag and other state information. Important fields include:
     \begin{itemize}
         \item \texttt{MIE}: Globally enables interrupts when set to 1, and disables them when set to 0.
@@ -310,7 +310,7 @@ The diagram below illustrates the structure of these registers:
 These registers provide the foundation for interrupt handling in machine mode, ensuring efficient and precise interrupt management.
 
 \section{The Stack Problem}
-A few weeks ago, we discussed a potential issue with the stack, what was, "What should we do when the stack hits its limit?" \\
+A few weeks ago, we discussed a potential issue with the stack, that was,\\ "What should we do when the stack hits its limit?" \\
 We might be able to find a solution to this problem now.
 \begin{center}
     \includegraphics[width=0.35\textwidth]{chapters/chapter2d/images/limit_stack.png}
@@ -324,7 +324,7 @@ To detect when the stack is full, we can use a watchpoint. \\
 \end{center}
 \subsection{Writing Handlers is Very Very Tricky}
 To write the exception handler for the stack-full detection, we \textbf{cannot} use the stack. \\
-Writing interrupt or exception handlers is inherently complex, particularly due to the restriction that the stack cannot be used. Additionally, many registers may be untouchable during execution. This necessitates careful design to handle these constraints. 
+Writing interrupt or exception handlers is inherently complex, particularly due to the restriction that the stack cannot be used. Additionally, many registers may be untouchable during execution. This necessitates careful design to handle these constraints.
 
 \subsubsection*{Challenges}
 \begin{itemize}
@@ -362,7 +362,7 @@ funct:
     lw   s1, 8(sp)
     addi sp, sp, 12
     ret
-\end{assembly}    
+\end{assembly}
 \end{minipage}
 \hfill
 \vline
@@ -384,7 +384,7 @@ funct:
 \end{minipage}
 
 \section{Protection: I/Os Are Not for Everyone}
-The system enforces restricted access to I/O peripherals to ensure security and proper operation. 
+The system enforces restricted access to I/O peripherals to ensure security and proper operation.
 \begin{center}
     \includegraphics[width=0.65\textwidth]{chapters/chapter2d/images/admin.png}
 \end{center}
@@ -419,7 +419,7 @@ Modern processors are designed with multiple levels of privilege to ensure prope
     \item \textbf{RISC-V:} Includes up to three modes: Machine, Supervisor, and User.
 \end{itemize}
 \vspace{5px}
-- \textbf{Processor State and Privilege Levels:} \\ 
+- \textbf{Processor State and Privilege Levels:} \\
 \begin{itemize}
     \item Some parts of the processor state are \textit{readable by all} privilege levels, but can only be \textit{written to} by the highest privilege levels.
     \item Examples include:
@@ -429,7 +429,7 @@ Modern processors are designed with multiple levels of privilege to ensure prope
     \end{itemize}
 \end{itemize}
 \vspace{5px}
-- \textbf{Methods for Switching Between Modes:} \\ 
+- \textbf{Methods for Switching Between Modes:} \\
 \begin{itemize}
     \item Processors provide:
     \begin{itemize}
@@ -483,7 +483,7 @@ Writing exception handlers is a complex and challenging task due to the followin
     \item \textbf{System Limitations:} The system might be unable to tolerate prolonged interruptions, for instance, when I/O buffers risk filling up due to unserved interrupts.
 \end{itemize}
 
-Additionally, buggy \textbf{device drivers} from peripheral vendors often run in privileged mode, invoked by the operating system's interrupt handler, and can destabilize the system. 
+Additionally, buggy \textbf{device drivers} from peripheral vendors often run in privileged mode, invoked by the operating system's interrupt handler, and can destabilize the system.
 
 \section{Example - Back to Our A/D Converter}
 Let's revisit the example of an A/D converter, which converts analog signals to digital data. This device is connected to the processor via an I/O port, and the processor reads the converted data from the device. \\
@@ -531,7 +531,7 @@ handler:
     sw x31, 116(sp)
 
     csrr s0, mcause            # Read exception cause
-    bgez s0, handleExceptions  # Branch if not an interrupt (MSB = 0, 
+    bgez s0, handleExceptions  # Branch if not an interrupt (MSB = 0,
                                 # looks like zero or a positive number...)
     slli s0, s0, 1             # Get rid of the MSB of s0,
     srli s0, s0, 1             # so that what is left is the cause
@@ -578,7 +578,7 @@ insertIntoBuffer:
     \newpage
 \subsection{A/D Converter - readADC}
 \begin{assembly}
-readADC: 
+readADC:
     li t0, 0xfffff0 # t0 = 0xfffff0
     lw a0, 8(t0) # get ADC data output
     ret

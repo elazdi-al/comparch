@@ -1,0 +1,42 @@
+Start ---------------+
+                     |
+                     v
+        +--------------------+
+        |  Text Format       |
+        | Identification     |
+        +--------------------+
+                     |
+         Text format identified
+                     |
+                     v
+        +--------------------+
+        | First LLM:         |
+        | Instruction/Barrier|
+        | Processing         |
+        +--------------------+
+           |              |
+      Valid task     Task invalid
+           |              |
+           v              v
+  +----------------+  +-------------------+
+  | Cleaned        |  | Generate Error    |
+  | Instruction    |  | Message: Out of   |
+  | Generated      |  | Scope or Not      |
+  |                |  | Supported         |
+  +----------------+  +-------------------+
+           |
+     Send to Second LLM
+           |
+           v
+        +--------------------+
+        | Second LLM:        |
+        | Generate Perl Code |
+        | with Regex         |
+        +--------------------+
+           |
+      Run Perl Code
+           |
+           v
+  +-------------------------+
+  | Output Transformed Text |
+  +-------------------------+

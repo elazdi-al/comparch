@@ -4,7 +4,7 @@
 \textit{Memory is a really important component of a computing system, we store our programs in it, we store our data in it, and it's through memory that we receive and send data.} \\ \vspace*{5px}
 \textbf{Though memory is very useful it has three main drawbacks:} \\ \vspace*{5px}
 \begin{itemize}
-    \item[-] It's \textbf{slow} $\rightarrow$ Caches 
+    \item[-] It's \textbf{slow} $\rightarrow$ Caches
     \item[-] It's \textbf{finite} $\rightarrow$ Virtual Memory
     \item[-] It can make an ISA \textbf{too complex} $\rightarrow$ Pipelining
 \end{itemize}
@@ -12,7 +12,7 @@
 
 \subsection{Address and Data}
 \textit{Data in Memory can be accessed by an adress, meaning i's a \textit{Random Access} (it can access a memory value without going through the preceding ones).} \\ \vspace*{5px}
-\textit{Professor Remark: "There's not anything random about this memory, we'd better call it and abitrary access memory. (!not and official  name)"} \\ \vspace*{5px}
+\textit{Professor Remark: "There's not anything random about this memory, we'd better call it and abitrary access memory."} \\ \vspace*{5px}
 \vspace*{5px}
 \begin{minipage}[htp]{0.45\textwidth}
 \begin{center}
@@ -20,37 +20,37 @@
     \hline
     \textbf{Address} & \textbf{Value} \\
     \hline
-    \texttt{0} & 12 \\ 
+    \texttt{0} & 12 \\
     \hline
-    \texttt{1} & 6 \\ 
+    \texttt{1} & 6 \\
     \hline
-    \texttt{2} & 4 \\ 
+    \texttt{2} & 4 \\
     \hline
-    \texttt{3} & 1 \\ 
+    \texttt{3} & 1 \\
     \hline
-    \texttt{4} & 0 \\ 
+    \texttt{4} & 0 \\
     \hline
-    \texttt{5} & 3 \\ 
+    \texttt{5} & 3 \\
     \hline
-    \texttt{6} & 1 \\ 
+    \texttt{6} & 1 \\
     \hline
-    \texttt{7} & 13 \\ 
+    \texttt{7} & 13 \\
     \hline
-    \texttt{8} & 15 \\ 
+    \texttt{8} & 15 \\
     \hline
-    \texttt{9} & 9 \\ 
+    \texttt{9} & 9 \\
     \hline
-    \texttt{10} & 3 \\ 
+    \texttt{10} & 3 \\
     \hline
-    \texttt{11} & 5 \\ 
+    \texttt{11} & 5 \\
     \hline
-    \texttt{12} & 0 \\ 
+    \texttt{12} & 0 \\
     \hline
-    \texttt{13} & 0 \\ 
+    \texttt{13} & 0 \\
     \hline
-    \texttt{14} & 0 \\ 
+    \texttt{14} & 0 \\
     \hline
-    \texttt{15} & 0 \\ 
+    \texttt{15} & 0 \\
     \hline
     \end{tabular}
 \end{center}
@@ -62,9 +62,9 @@
 \begin{center}
     \begin{tabular}{|c|c|}
     \hline
-    \textbf{Write} & \textbf{Read} \\ 
+    \textbf{Write} & \textbf{Read} \\
     \hline
-    \texttt{\textbf{Memory[5] = 3}} & \texttt{Memory[5]?} \\ 
+    \texttt{\textbf{Memory[5] = 3}} & \texttt{Memory[5]?} \\
     \hline
     \end{tabular}
 \end{center}
@@ -91,43 +91,43 @@ We may distinguish between different types of memories based on their \textbf{te
 \newpage
 \subsection{Basic Structure}
 \textit{Remember, a Data Flip Flop, stores a 1 bit value by updating the output value to the input value at the rising edge of the clock signal.} \\ \vspace*{5px}
-\begin{minipage}[htp]{0.35\textwidth} 
+\begin{minipage}[htp]{0.35\textwidth}
 \begin{center}
     \begin{tabular}{|c|c|}
         \hline
-        \textbf{Address} & \textbf{Value} \\ 
+        \textbf{Address} & \textbf{Value} \\
         \hline
-        \texttt{0} & 12 \\ 
+        \texttt{0} & 12 \\
         \hline
-        \texttt{1} & 6 \\ 
+        \texttt{1} & 6 \\
         \hline
-        \texttt{2} & 4 \\ 
+        \texttt{2} & 4 \\
         \hline
-        \texttt{3} & 1 \\ 
+        \texttt{3} & 1 \\
         \hline
-        \texttt{4} & 0 \\ 
+        \texttt{4} & 0 \\
         \hline
-        \texttt{5} & 3 \\ 
+        \texttt{5} & 3 \\
         \hline
-        \texttt{6} & 1 \\ 
+        \texttt{6} & 1 \\
         \hline
-        \texttt{7} & 13 \\ 
+        \texttt{7} & 13 \\
         \hline
-        \texttt{8} & 15 \\ 
+        \texttt{8} & 15 \\
         \hline
-        \texttt{9} & 9 \\ 
+        \texttt{9} & 9 \\
         \hline
-        \texttt{10} & 3 \\ 
+        \texttt{10} & 3 \\
         \hline
-        \texttt{11} & 5 \\ 
+        \texttt{11} & 5 \\
         \hline
-        \texttt{12} & 0 \\ 
+        \texttt{12} & 0 \\
         \hline
-        \texttt{13} & 0 \\ 
+        \texttt{13} & 0 \\
         \hline
-        \texttt{14} & 0 \\ 
+        \texttt{14} & 0 \\
         \hline
-        \texttt{15} & 0 \\ 
+        \texttt{15} & 0 \\
         \hline
         \end{tabular}
 \end{center}
@@ -142,14 +142,14 @@ We may distinguish between different types of memories based on their \textbf{te
 \end{center}
 \end{minipage} \\
 \vfill
-\begin{minipage}[htp]{0.45\textwidth}   
+\begin{minipage}[htp]{0.45\textwidth}
     \subsection{Write Operations}
     \textit{The D is connected to the Data outside of the system and at the risiing edge it updates the value of the DFF.} \textbf{The AND gate ensures that the write signal is high when the clock signal is high.} \\ \vspace*{5px}
     \begin{center}
         \includegraphics[width=0.45\textwidth]{chapters/chapter1c/images/write.png}
     \end{center}
 \end{minipage}
-\hfill  
+\hfill
 \vline
 \hfill
 \begin{minipage}[htp]{0.45\textwidth}
@@ -164,7 +164,7 @@ We may distinguish between different types of memories based on their \textbf{te
 \subsection{Practical SRAMs}
 \textbf{DISCLAIMER !!: Combinational loops are prohibited as they can lead to unstable behavior, unpredictable timing, simulation and synthesis issues, excessive power consumption, and lack of a defined reset state, making them unsuitable for reliable digital circuit design.} \\ \vspace*{5px}
 \textit{While the type of memory we've juste seen is small, and very fast, SRAM memories uses 6 transitors per cell (less than the previous design). We've also seen (in Taxonomy) that SRAM is \textbf{static} meaning it doesn't require periodic refresh.} \\ \vspace*{5px}
-\begin{minipage}[htp]{0.45\textwidth} 
+\begin{minipage}[htp]{0.45\textwidth}
     \begin{center}
         \includegraphics[width=0.55\textwidth]{chapters/chapter1c/images/ram.png}
     \end{center}
@@ -186,11 +186,11 @@ We may distinguish between different types of memories based on their \textbf{te
     \textit{Personal Remark: Dynamic = Bad, data dissapears and needs refresh}
 \end{minipage}
 \hfill
-\vline  
+\vline
 \hfill
 \begin{minipage}[htp]{0.45\textwidth}
     \begin{center}
-        \includegraphics[width=0.5\textwidth]{chapters/chapter1c/images/dram.png}  
+        \includegraphics[width=0.5\textwidth]{chapters/chapter1c/images/dram.png}
     \end{center}
 \end{minipage}
 
@@ -232,7 +232,7 @@ We may distinguish between different types of memories based on their \textbf{te
     \begin{center}
         \includegraphics[width=0.45\textwidth]{chapters/chapter1c/images/sram_read2.png}
     \end{center}
-\end{minipage}  
+\end{minipage}
 
 \subsubsection{Read Cycle}
 \textit{Latency} defined as the number of cycles between the address asserted and data available \\ \vspace*{5px}
@@ -271,13 +271,13 @@ We may distinguish between different types of memories based on their \textbf{te
 \begin{center}
     \begin{tabular}{|c|c|c|c|c|}
         \hline
-        \multicolumn{2}{|c|}{\textbf{Load}} & \textbf{I} & 0x2 & 0x03 \\ 
+        \multicolumn{2}{|c|}{\textbf{Load}} & \textbf{I} & 0x2 & 0x03 \\
         \hline
-        \texttt{lw} & \texttt{rd,imm(rs1)} & \multicolumn{3}{c|}{\texttt{rd $\leftarrow$ mem[rs1 + sext(imm)]}} \\ 
+        \texttt{lw} & \texttt{rd,imm(rs1)} & \multicolumn{3}{c|}{\texttt{rd $\leftarrow$ mem[rs1 + sext(imm)]}} \\
         \hline
-        \multicolumn{2}{|c|}{\textbf{Store}} & \textbf{S} & 0x2 & 0x23 \\ 
+        \multicolumn{2}{|c|}{\textbf{Store}} & \textbf{S} & 0x2 & 0x23 \\
         \hline
-        \texttt{sw} & \texttt{rs2,imm(rs1)} & \multicolumn{3}{c|}{\texttt{mem[rs1 + sext(imm)] $\leftarrow$ rs2}} \\ 
+        \texttt{sw} & \texttt{rs2,imm(rs1)} & \multicolumn{3}{c|}{\texttt{mem[rs1 + sext(imm)] $\leftarrow$ rs2}} \\
         \hline
     \end{tabular}
 \end{center}
@@ -299,25 +299,25 @@ We may distinguish between different types of memories based on their \textbf{te
 \textbf{PC-Relative}              & \texttt{add x0, x1, 123(pc)}                              & Adds the value of \texttt{x1} and the value in memory at \texttt{pc} plus 123, stores in \texttt{x0}.    \\ \hline
 \end{tabular}}
 \end{center}
-    
+
 \textit{Syntax here looks like RISC-V but most of these instructions do not exist in RISC-V.}
 \newpage
 \subsection{Word Adressed Memory}
-\textit{In a word addressed memory, the address is the index of the word in the memory.} \\ 
+\textit{In a word addressed memory, the address is the index of the word in the memory.} \\
 \textit{The letters inside the word are identified as eg. for Hello World, H:3980, E:3981, L:3982, \dots}.
 \begin{center}
     \includegraphics[width=0.45\textwidth]{chapters/chapter1c/images/word_add.png}
 \end{center}
 
 \subsection{Loading Words (lw) and Instructions}
-\textit{The lw instruction is used to load a word from memory into a register.} \\ 
-\textit{The adress of such words would necessarly be a multiple of 4 meaning the two least significant bits must be 0s.(to the ensure the data is word aligned\dots)} \\ 
+\textit{The lw instruction is used to load a word from memory into a register.} \\
+\textit{The adress of such words would necessarly be a multiple of 4 meaning the two least significant bits must be 0s.(to the ensure the data is word aligned\dots)} \\
 \begin{center}
     \includegraphics[width=0.45\textwidth]{chapters/chapter1c/images/lw.png}
 \end{center}
 \subsection{Loading Bytes (lb)}
 \textit{The \texttt{lb} (Load Byte) instruction doesn't require alignment because it only loads 1 byte (8 bits), which can be accessed at any memory address, unlike \texttt{lw} which requires word alignment to efficiently load 4 bytes (32 bits).
-}\textit{The lb instruction is used to load a byte from memory into a register.} \\ 
+}\textit{The lb instruction is used to load a byte from memory into a register.} \\
 
 \begin{center}
     \includegraphics[width=0.45\textwidth]{chapters/chapter1c/images/lb.png}
@@ -401,7 +401,7 @@ end:
     \begin{center}
         \textbf{Little Endian} \\ \vspace*{5px}
         \includegraphics[width=0.55\textwidth]{chapters/chapter1c/images/bytes.png}
-    \end{center}   
+    \end{center}
 \end{minipage}
 \hfill
 \vline

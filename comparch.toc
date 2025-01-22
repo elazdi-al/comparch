@@ -1,307 +1,376 @@
 \contentsline {paragraph}{short}{2}{section*.1}%
 \contentsline {chapter}{Contents}{3}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}Part I(a) - ISA Reminder, Assembly Language, Compiler - W 1.1}{9}{chapter.1}%
-\contentsline {section}{\numberline {1.1}From High Level Languages to Assembly Language}{9}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}High Level Languages}{9}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Assembly Language}{9}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Processors}{10}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Joint or Disjoint Program and Data Memories}{11}{section.1.3}%
-\contentsline {section}{\numberline {1.4}The Encoding problem}{12}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}The Stupid Solution}{12}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}RISC-V Encoding (The Solution)}{12}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Automating this process}{13}{subsection.1.4.3}%
-\contentsline {subsubsection}{Assembler}{13}{section*.6}%
-\contentsline {subsubsection}{Compiler}{13}{section*.7}%
-\contentsline {section}{\numberline {1.5}ISA (Instruction Set Architecture)}{14}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Part I(b) - ISA, Functions, and Stack - W 1.2}{15}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Arithmetic and Logic Instructions in RISCV}{15}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Constants must be encoded on 12 bits}{15}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Assembler Directives}{15}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}The \texttt {x0} Register}{16}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}PseudoInstructions}{16}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Control flow instructions}{17}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}If-Then-Else}{17}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Jumps and Branches}{17}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Comparaisions}{18}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Do-While}{18}{subsection.2.2.5}%
-\contentsline {section}{\numberline {2.3}Functions}{18}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Jump to the Function/Retun control to the calling program}{18}{subsection.2.3.1}%
-\contentsline {subsubsection}{The too simple not working approach}{18}{section*.8}%
-\contentsline {subsubsection}{The Good Approach}{19}{section*.9}%
-\contentsline {subsection}{\numberline {2.3.2}Jump Instructions}{19}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Register Conventions}{20}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Back to the good (not so good) approach}{20}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}One simple solution (still not good)}{20}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}Acquire storage resources the function needs (still not it)}{21}{subsection.2.3.6}%
-\contentsline {subsubsection}{Problem: Recursive Functions}{21}{section*.10}%
-\contentsline {subsection}{\numberline {2.3.7}The Stack}{21}{subsection.2.3.7}%
-\contentsline {subsubsection}{Dynamic Memory Allocation}{22}{section*.11}%
-\contentsline {subsubsection}{Retrieving Data from the Stack}{22}{section*.12}%
-\contentsline {subsubsection}{Memory Deallocation}{23}{section*.13}%
-\contentsline {subsubsection}{The Stack Pointer}{23}{section*.14}%
-\contentsline {subsection}{\numberline {2.3.8}Spilling Registers to Memory}{23}{subsection.2.3.8}%
-\contentsline {subsection}{\numberline {2.3.9}Register across functions}{23}{subsection.2.3.9}%
-\contentsline {subsection}{\numberline {2.3.10}Preserving Registers}{24}{subsection.2.3.10}%
-\contentsline {section}{\numberline {2.4}Passing Arguments in RISC-V}{24}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Option 1: Using Registers}{24}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Option 2: Using the Stack}{25}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}The RISC-V Approach}{25}{subsection.2.4.3}%
-\contentsline {section}{\numberline {2.5}Summary of RISC-V Register Conventions}{25}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Part I(c) - ISA Memory and Addressing Modes - W 2.1}{26}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Memory}{26}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Address and Data}{26}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Many Types of Memories}{27}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Functional Taxonomy of Memories}{27}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Taxonomy of Random Access Memories}{27}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Basic Structure}{28}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Write Operations}{28}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Read Operations}{28}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Practical SRAMs}{28}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}DRAMs}{29}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}Ideal Random Access Memory}{29}{subsection.3.2.8}%
-\contentsline {subsection}{\numberline {3.2.9}Physical Organisation }{29}{subsection.3.2.9}%
-\contentsline {subsection}{\numberline {3.2.10}Realistic ROM Array}{30}{subsection.3.2.10}%
-\contentsline {subsection}{\numberline {3.2.11}Static Ram Typical Interface}{30}{subsection.3.2.11}%
-\contentsline {section}{\numberline {3.3}Typical Asynchronous SRAM Read Cycle}{30}{section.3.3}%
-\contentsline {subsubsection}{Read Cycle}{30}{section*.15}%
-\contentsline {subsubsection}{Write Cycle}{31}{section*.16}%
-\contentsline {section}{\numberline {3.4}Where is Memory in the Processor?}{31}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Arithmetic and Logic Instructions}{31}{subsection.3.4.1}%
-\contentsline {subsubsection}{Load Instructions}{32}{section*.17}%
-\contentsline {subsubsection}{Load and Store: The RiSC-V Way}{32}{section*.18}%
-\contentsline {subsubsection}{A Load/Store Architecture}{32}{section*.19}%
-\contentsline {section}{\numberline {3.5}More Addressing Modes? Not in RISC-V!}{32}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Word Adressed Memory}{33}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Loading Words (lw) and Instructions}{33}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Loading Bytes (lb)}{33}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}A Few More Load/Store Instructions}{33}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Access as it is more suitable}{34}{subsection.3.5.5}%
-\contentsline {subsubsection}{Counting Characters in a String}{34}{section*.20}%
-\contentsline {subsection}{\numberline {3.5.6}Loading Bytes (lb)}{35}{subsection.3.5.6}%
-\contentsline {subsubsection}{Which Byte Where?}{35}{section*.21}%
-\contentsline {chapter}{\numberline {4}Part I(d) - ISA Arrays and Data Structures - W 2.2}{37}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Arrays}{37}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Different Ways to Store Arrays}{37}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Adding Positive Elements}{38}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Pointer to Memory vs Index in Array}{39}{subsection.4.1.3}%
-\contentsline {subsubsection}{In C}{40}{section*.22}%
-\contentsline {subsubsection}{We need a good compiler}{40}{section*.23}%
-\contentsline {chapter}{\numberline {5}Part I(e) - ISA Arithmetic - W 3.1, 3.2}{41}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Notation}{41}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Numbers}{41}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Unsigned Integers}{41}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Signed Integers}{42}{subsection.5.2.2}%
-\contentsline {subsubsection}{Sign and Magnitude}{42}{section*.24}%
-\contentsline {subsection}{\numberline {5.2.3}Radix's Complement}{42}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Two's Complement Subtraction}{43}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Addition Is Unchanged from Unsigned}{44}{subsection.5.2.5}%
-\contentsline {subsection}{\numberline {5.2.6}Sign Extension}{44}{subsection.5.2.6}%
-\contentsline {subsubsection}{Example: 4-bit to 8-bit Conversion}{44}{section*.25}%
-\contentsline {subsection}{\numberline {5.2.7}Signed and Unsigned Instructions}{44}{subsection.5.2.7}%
-\contentsline {section}{\numberline {5.3}Overflow}{45}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Overflow in 2's Complement}{45}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Overflow in Software}{46}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Detect Addition Overflow in Software}{46}{subsection.5.3.3}%
-\contentsline {section}{\numberline {5.4}A Strange but Useful Property}{46}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Two's Complement Subtractor}{47}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Two's Complement Add/Subtract Unit}{47}{subsection.5.4.2}%
-\contentsline {section}{\numberline {5.5}Bounds Check Optimization}{48}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Floating Point Representation}{48}{section.5.6}%
-\contentsline {subsubsection}{Properties of Floating Point Numbers}{49}{section*.26}%
-\contentsline {subsubsection}{Standardization and Hardware Support}{49}{section*.27}%
-\contentsline {subsubsection}{Example: Decimal to IEEE 754 Simple Precision (32 Bits) Conversion}{49}{section*.28}%
-\contentsline {subsection}{\numberline {5.6.1}Sign-and-Magnitude Addition}{50}{subsection.5.6.1}%
-\contentsline {subsubsection}{Solution 1}{50}{section*.29}%
-\contentsline {subsubsection}{Solution 2}{51}{section*.30}%
-\contentsline {chapter}{\numberline {6}Part II(a) - I/O - Exceptions Multicycle Processor W - 3.2, 4.1}{52}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Processor}{52}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Unified Memory}{52}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Single-Cycle Processor}{53}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Propagation Time}{53}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Increasing the Frequency}{54}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Two-Cycle Processor}{54}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Not All Paths Are Born Equal}{54}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Asynchronous/Synchronous Memories}{55}{subsection.6.2.4}%
-\contentsline {section}{\numberline {6.3}Multicycle Processor}{55}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Mealy or Moore?}{56}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Processor - Building the Circuit}{56}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Adding the Instruction Register}{57}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}Adding functionality}{58}{subsection.6.5.2}%
-\contentsline {subsection}{\numberline {6.5.3}I-Type Instructions Need RF and ALU}{58}{subsection.6.5.3}%
-\contentsline {subsection}{\numberline {6.5.4}R-Type Instructions and Second Operand Selection}{59}{subsection.6.5.4}%
-\contentsline {subsection}{\numberline {6.5.5}And More, and More...}{60}{subsection.6.5.5}%
-\contentsline {subsection}{\numberline {6.5.6}Guidelines for Writing Verilog}{60}{subsection.6.5.6}%
-\contentsline {subsection}{\numberline {6.5.7}Detailing Complex Combinational Modules (ALU)}{61}{subsection.6.5.7}%
-\contentsline {subsection}{\numberline {6.5.8}Verilog - Sticking to Basic Paterns}{61}{subsection.6.5.8}%
-\contentsline {chapter}{\numberline {7}Part II(b) - Processor, I/Os, and Exceptions W - 4.1 - 4.2}{62}{chapter.7}%
-\contentsline {section}{\numberline {7.1}The CPU}{62}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Physical Memory Map}{63}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Connecting CPU and Memory}{63}{subsection.7.2.1}%
-\contentsline {section}{\numberline {7.3}Input/Output (I/O) Devices}{64}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Accessing I/Os: Port-Mapped I/O (PMIO)}{64}{subsection.7.3.1}%
-\contentsline {subsubsection}{Accessing I/Os: Memory Mapped I/O(MMIO)}{64}{section*.31}%
-\contentsline {subsection}{\numberline {7.3.2}Memory Mapped I/O (MMIO)}{65}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Example - A/D Converter}{66}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Bus Interface}{66}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Memory Mapping}{66}{subsection.7.4.2}%
-\contentsline {subsection}{\numberline {7.4.3}Assembling everything}{67}{subsection.7.4.3}%
-\contentsline {subsubsection}{Software Implementation}{67}{section*.35}%
-\contentsline {section}{\numberline {7.5}What do these tri-state buffers do?}{68}{section.7.5}%
-\contentsline {subsection}{\numberline {7.5.1}A Classic UART}{69}{subsection.7.5.1}%
-\contentsline {chapter}{\numberline {8}Part II(c) - Interrupts W - 5.1 - 5.2}{70}{chapter.8}%
-\contentsline {section}{\numberline {8.1}I/O Polling}{70}{section.8.1}%
-\contentsline {section}{\numberline {8.2}I/O Interrupts}{70}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}The Basic Concept of I/O Interrupts}{71}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Interrupt Cycle Description}{72}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}I/O Interrupt Priorities: Daisy Chain Arbitration}{73}{subsection.8.2.3}%
-\contentsline {section}{\numberline {8.3}Direct Memory Access (DMA)}{73}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Timer and Interrupt Mechanism}{75}{subsection.8.3.1}%
-\contentsline {chapter}{\numberline {9}Part II(d) - Processor, I/Os, and Exceptions W - 5.1}{76}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Exceptions, Interrupts, Faults, Traps, and Checks}{76}{section.9.1}%
-\contentsline {paragraph}{Control Flow}{76}{section*.36}%
-\contentsline {paragraph}{Exceptions}{76}{section*.37}%
-\contentsline {paragraph}{Exception Handlers}{76}{section*.38}%
-\contentsline {paragraph}{Naming Conventions}{76}{section*.39}%
-\contentsline {subsection}{\numberline {9.1.1}Undefined Instruction}{77}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}Optional \texttt {fadd.s} Instruction}{77}{subsection.9.1.2}%
-\contentsline {subsection}{\numberline {9.1.3}Outline of an Undefined Instruction Handler}{77}{subsection.9.1.3}%
-\contentsline {section}{\numberline {9.2}Exceptions and Interrupts}{78}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}A Possible Classification of Exceptions}{78}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}Watchpoint}{78}{subsection.9.2.2}%
-\contentsline {subsection}{\numberline {9.2.3}Raising Exceptions}{79}{subsection.9.2.3}%
-\contentsline {subsection}{\numberline {9.2.4}Assessing the Position of an Exception}{79}{subsection.9.2.4}%
-\contentsline {subsection}{\numberline {9.2.5}Assessing the Cause of Exception}{80}{subsection.9.2.5}%
-\contentsline {subsection}{\numberline {9.2.6}RISC-V Machine-Mode Exception Handling}{80}{subsection.9.2.6}%
-\contentsline {subsubsection}{Control and Status Registers (CSRs)}{80}{section*.40}%
-\contentsline {subsubsection}{Instructions for Accessing CSRs}{80}{section*.41}%
-\contentsline {subsubsection}{Returning from Exceptions}{80}{section*.42}%
-\contentsline {subsection}{\numberline {9.2.7}RISC-V Interrupt and Exception Codes}{80}{subsection.9.2.7}%
-\contentsline {subsection}{\numberline {9.2.8}Possible Undefined Instruction Handler}{81}{subsection.9.2.8}%
-\contentsline {subsection}{\numberline {9.2.9}RISC-V Machine-Mode Interrupt Handling}{82}{subsection.9.2.9}%
-\contentsline {section}{\numberline {9.3}The Stack Problem}{82}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}Stack-Full Detection ?}{83}{subsection.9.3.1}%
-\contentsline {subsection}{\numberline {9.3.2}Writing Handlers is Very Very Tricky}{83}{subsection.9.3.2}%
-\contentsline {subsection}{\numberline {9.3.3}Speaking of the Stack...}{83}{subsection.9.3.3}%
-\contentsline {section}{\numberline {9.4}Protection: I/Os Are Not for Everyone}{84}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}Levels of Privilege: Processor Modes}{84}{subsection.9.4.1}%
-\contentsline {subsection}{\numberline {9.4.2}Processor Tasks on Exception}{85}{subsection.9.4.2}%
-\contentsline {subsection}{\numberline {9.4.3}Priorities in Interrupt Handling}{85}{subsection.9.4.3}%
-\contentsline {subsection}{\numberline {9.4.4}More challenges in Writing Exception Handlers}{85}{subsection.9.4.4}%
-\contentsline {section}{\numberline {9.5}Example - Back to Our A/D Converter}{86}{section.9.5}%
-\contentsline {subsection}{\numberline {9.5.1}Simple IREQ and IACK Mechanism}{86}{subsection.9.5.1}%
-\contentsline {subsection}{\numberline {9.5.2}A/D Converter - startADC}{86}{subsection.9.5.2}%
-\contentsline {subsection}{\numberline {9.5.3}A/D Converter - Software:handler}{87}{subsection.9.5.3}%
-\contentsline {subsection}{\numberline {9.5.4}A/D Converter - insertIntoBuffer}{87}{subsection.9.5.4}%
-\contentsline {subsection}{\numberline {9.5.5}A/D Converter - readADC}{88}{subsection.9.5.5}%
-\contentsline {chapter}{\numberline {10}Part II(e) - Processor, I/Os, and Exceptions - Example W - 6.1}{89}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Part Ia: Connecitng an Input Peripheral}{89}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Bus Protocol}{89}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Assembling the Circuit}{90}{section.10.3}%
-\contentsline {section}{\numberline {10.4}Part 1b: Reading the Input Ports}{90}{section.10.4}%
-\contentsline {subsection}{\numberline {10.4.1}Software: buttons}{90}{subsection.10.4.1}%
-\contentsline {section}{\numberline {10.5}Part 2a - Connecting an Output Peripheral}{91}{section.10.5}%
-\contentsline {section}{\numberline {10.6}Assembling everything}{91}{section.10.6}%
-\contentsline {section}{\numberline {10.7}Part 3a: Use Interrupts}{91}{section.10.7}%
-\contentsline {subsection}{\numberline {10.7.1}Interrupt Acknowledgement Process}{92}{subsection.10.7.1}%
-\contentsline {subsection}{\numberline {10.7.2}Solution}{93}{subsection.10.7.2}%
-\contentsline {chapter}{\numberline {11}Part III(a) - Memory Hierarchy - Caches - W.6.2 - 7.1}{94}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Our Goal : Use Different Memories}{94}{section.11.1}%
-\contentsline {subsection}{\numberline {11.1.1}What Memory ot Use?}{95}{subsection.11.1.1}%
-\contentsline {subsection}{\numberline {11.1.2}Spatial and Temporal Locality}{95}{subsection.11.1.2}%
-\contentsline {paragraph}{Temporal Locality}{95}{section*.49}%
-\contentsline {paragraph}{Spatial Locality}{95}{section*.50}%
-\contentsline {subsection}{\numberline {11.1.3}Placement Policy Design}{95}{subsection.11.1.3}%
-\contentsline {section}{\numberline {11.2}Cache: The Idea}{96}{section.11.2}%
-\contentsline {subsection}{\numberline {11.2.1}Cache Memory: Directory and Tags}{96}{subsection.11.2.1}%
-\contentsline {subsection}{\numberline {11.2.2}Cache Hits and Misses}{97}{subsection.11.2.2}%
-\contentsline {subsection}{\numberline {11.2.3}Fully-Associative Cache}{97}{subsection.11.2.3}%
-\contentsline {subsection}{\numberline {11.2.4}Fully-Associative Cache}{98}{subsection.11.2.4}%
-\contentsline {section}{\numberline {11.3}Cache and Cache Controller}{98}{section.11.3}%
-\contentsline {subsection}{\numberline {11.3.1}Cache Hit}{99}{subsection.11.3.1}%
-\contentsline {subsection}{\numberline {11.3.2}Cache Miss}{99}{subsection.11.3.2}%
-\contentsline {section}{\numberline {11.4}What if the Cache is Full?}{100}{section.11.4}%
-\contentsline {subsection}{\numberline {11.4.1}Eviction Policies}{100}{subsection.11.4.1}%
-\contentsline {subsection}{\numberline {11.4.2}Only Exploiting Temporal Locality}{101}{subsection.11.4.2}%
-\contentsline {subsection}{\numberline {11.4.3}Exploiting Spatial Locality}{101}{subsection.11.4.3}%
-\contentsline {subsection}{\numberline {11.4.4}Why Not This ?}{102}{subsection.11.4.4}%
-\contentsline {subsection}{\numberline {11.4.5}Solution}{103}{subsection.11.4.5}%
-\contentsline {subsection}{\numberline {11.4.6}Simplifying Cache Design}{104}{subsection.11.4.6}%
-\contentsline {section}{\numberline {11.5}Generating \texttt {Addr} and \texttt {Tag}}{104}{section.11.5}%
-\contentsline {subsection}{\numberline {11.5.1}The Simplest Hash Function}{105}{subsection.11.5.1}%
-\contentsline {subsubsection}{Direct-Mapped Cache}{105}{section*.53}%
-\contentsline {section}{\numberline {11.6}Which One is the Best Cache ?}{106}{section.11.6}%
-\contentsline {section}{\numberline {11.7}Associativity}{107}{section.11.7}%
-\contentsline {subsection}{\numberline {11.7.1}Set-Associative Cache}{108}{subsection.11.7.1}%
-\contentsline {subsection}{\numberline {11.7.2}A Continuum of Possibilities}{109}{subsection.11.7.2}%
-\contentsline {subsection}{\numberline {11.7.3}Cache Validity}{109}{subsection.11.7.3}%
-\contentsline {subsection}{\numberline {11.7.4}Addressing by Byte vs Addressing by Word}{110}{subsection.11.7.4}%
-\contentsline {section}{\numberline {11.8}Loading Bytes(lb)}{110}{section.11.8}%
-\contentsline {subsection}{\numberline {11.8.1}Write Hit}{111}{subsection.11.8.1}%
-\contentsline {subsubsection}{Write Policies in Cache Memory}{111}{section*.58}%
-\contentsline {subsection}{\numberline {11.8.2}Write Miss in Cache Memory}{112}{subsection.11.8.2}%
-\contentsline {subsubsection}{Allocation Policies}{112}{section*.59}%
-\contentsline {paragraph}{Write-Allocate:}{112}{section*.60}%
-\contentsline {paragraph}{Write-Around (or Write-No-Allocate):}{112}{section*.61}%
-\contentsline {section}{\numberline {11.9}Summary}{113}{section.11.9}%
-\contentsline {subsection}{\numberline {11.9.1}The ``3 Cs'' of Caches}{113}{subsection.11.9.1}%
-\contentsline {paragraph}{Compulsory Misses:}{113}{section*.62}%
-\contentsline {paragraph}{Capacity Misses:}{113}{section*.63}%
-\contentsline {paragraph}{Conflict Misses:}{113}{section*.64}%
-\contentsline {subsection}{\numberline {11.9.2}Summary of Cache Features}{113}{subsection.11.9.2}%
-\contentsline {chapter}{\numberline {12}Part III(a) - Memory Hierarchy - Virtual Memory - W.7.2}{114}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Segmentation Fault: Understanding the Cause}{114}{section.12.1}%
-\contentsline {subsection}{\numberline {12.1.1}Overview - Problems to Solve}{114}{subsection.12.1.1}%
-\contentsline {section}{\numberline {12.2}Relocation at Load Time}{115}{section.12.2}%
-\contentsline {subsubsection}{Binary-Level Adjustments}{115}{section*.65}%
-\contentsline {subsubsection}{Memory Utilization and Limitations}{115}{section*.66}%
-\contentsline {subsection}{\numberline {12.2.1}Relocation in Hardware: Base and Bounds MMU}{116}{subsection.12.2.1}%
-\contentsline {subsection}{\numberline {12.2.2}Memory Management Unit (MMU)}{117}{subsection.12.2.2}%
-\contentsline {subsection}{\numberline {12.2.3}Program Relocation with Virtual Memory}{117}{subsection.12.2.3}%
-\contentsline {section}{\numberline {12.3}Relocation in Hardware: Base and Bounds MMU}{118}{section.12.3}%
-\contentsline {subsection}{\numberline {12.3.1}Preventing Overreach in Virtual and Physical Memory}{118}{subsection.12.3.1}%
-\contentsline {subsection}{\numberline {12.3.2}Base and Bounds MMU}{119}{subsection.12.3.2}%
-\contentsline {section}{\numberline {12.4}Needs of a Multiprogrammed System}{119}{section.12.4}%
-\contentsline {section}{\numberline {12.5}Segmentation and Paging}{119}{section.12.5}%
-\contentsline {paragraph}{Segmentation:}{119}{section*.67}%
-\contentsline {paragraph}{Paging:}{119}{section*.68}%
-\contentsline {subsection}{\numberline {12.5.1}How do we Translate Now?}{120}{subsection.12.5.1}%
-\contentsline {subsection}{\numberline {12.5.2}Virtual Adress Translation in a Paged MMU}{121}{subsection.12.5.2}%
-\contentsline {subsection}{\numberline {12.5.3}Memory Allocation is Easy Now}{121}{subsection.12.5.3}%
-\contentsline {subsection}{\numberline {12.5.4}Page Tables and Their Size}{122}{subsection.12.5.4}%
-\contentsline {subsection}{\numberline {12.5.5}Multilevel Page Tables}{122}{subsection.12.5.5}%
-\contentsline {chapter}{\numberline {13}Comparch II - Part 4a. Instruction Level Parallelism Performance}{123}{chapter.13}%
-\contentsline {section}{\numberline {13.1}What is Performance ?}{123}{section.13.1}%
-\contentsline {subsection}{\numberline {13.1.1}Elapsed Time, CPU Time, \dots }{123}{subsection.13.1.1}%
-\contentsline {subsection}{\numberline {13.1.2}Relative Performance}{123}{subsection.13.1.2}%
-\contentsline {subsection}{\numberline {13.1.3}Relating Performance to Hardware Implementation}{124}{subsection.13.1.3}%
-\contentsline {subsubsection}{Cycles per Instruction (CPI) and Instructions per Cycle (IPC)}{124}{section*.69}%
-\contentsline {subsection}{\numberline {13.1.4}Improving Performance}{124}{subsection.13.1.4}%
-\contentsline {subsection}{\numberline {13.1.5}Factors Influencing Performance}{124}{subsection.13.1.5}%
-\contentsline {subsection}{\numberline {13.1.6}What to Improve to Increase Performance}{125}{subsection.13.1.6}%
-\contentsline {subsection}{\numberline {13.1.7}Benchmarks}{125}{subsection.13.1.7}%
-\contentsline {subsubsection}{SPEC CPU2006 Integer Benchmarks}{125}{section*.70}%
-\contentsline {chapter}{\numberline {14}Part 4b. Instruction Level Parallelism Basic Pipelining}{126}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Circuit Timing and Performance}{126}{section.14.1}%
-\contentsline {subsection}{\numberline {14.1.1}Signal Propagation}{126}{subsection.14.1.1}%
-\contentsline {subsubsection}{Adding Intermediate Registers}{127}{section*.71}%
-\contentsline {subsection}{\numberline {14.1.2}Pipelining: Enhancing System Throughput}{127}{subsection.14.1.2}%
-\contentsline {subsection}{\numberline {14.1.3}Latency and Throughput}{128}{subsection.14.1.3}%
-\contentsline {subsection}{\numberline {14.1.4}Practical Pipelining: Latency and Throughput}{128}{subsection.14.1.4}%
-\contentsline {chapter}{\numberline {15}Part 4c. Instruction Level Parallelism}{130}{chapter.15}%
-\contentsline {subsection}{\numberline {15.0.1}Pipelining the Processor}{130}{subsection.15.0.1}%
-\contentsline {section}{\numberline {15.1}Hardware Reuse Across Processor Stages}{131}{section.15.1}%
-\contentsline {subsection}{\numberline {15.1.1}Multicycle Processor Architecture}{131}{subsection.15.1.1}%
-\contentsline {subsection}{\numberline {15.1.2}Pipelined Processor Architecture}{131}{subsection.15.1.2}%
-\contentsline {section}{\numberline {15.2}Two Main Challenges in Processor Design}{132}{section.15.2}%
-\contentsline {subsection}{\numberline {15.2.1}CISC vs. RISC}{132}{subsection.15.2.1}%
-\contentsline {section}{\numberline {15.3}Multi-Cycle Execution Using an FSM}{132}{section.15.3}%
-\contentsline {subsection}{\numberline {15.3.1}FSM vs.\ Pipeline}{132}{subsection.15.3.1}%
-\contentsline {subsection}{\numberline {15.3.2}Adding Instructions in a Multi-Cycle Design}{132}{subsection.15.3.2}%
-\contentsline {subsection}{\numberline {15.3.3}Adding Instructions to a Pipelined Processor}{133}{subsection.15.3.3}%
-\contentsline {section}{\numberline {15.4}The Importance of the ISA (CISC vs.\ RISC)}{133}{section.15.4}%
-\contentsline {subsection}{\numberline {15.4.1}A CISC Example}{133}{subsection.15.4.1}%
-\contentsline {subsection}{\numberline {15.4.2}The RISC Alternative}{133}{subsection.15.4.2}%
-\contentsline {subsection}{\numberline {15.4.3}MIPS Pipelining Example}{134}{subsection.15.4.3}%
-\contentsline {subsection}{\numberline {15.4.4}The Laundry Metaphor for Pipelining}{134}{subsection.15.4.4}%
-\contentsline {subsection}{\numberline {15.4.5}Two Distinct Memory Interfaces in MIPS}{135}{subsection.15.4.5}%
-\contentsline {subsection}{\numberline {15.4.6}Example of Pipelined Execution }{135}{subsection.15.4.6}%
+\contentsline {chapter}{\numberline {1}Part I(a) - ISA Reminder, Assembly Language, Compiler - W 1.1}{10}{chapter.1}%
+\contentsline {section}{\numberline {1.1}From High Level Languages to Assembly Language}{10}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}High Level Languages}{10}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Assembly Language}{10}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Processors}{11}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Joint or Disjoint Program and Data Memories}{12}{section.1.3}%
+\contentsline {section}{\numberline {1.4}The Encoding problem}{13}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}The Stupid Solution}{13}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}RISC-V Encoding (The Solution)}{13}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Automating this process}{14}{subsection.1.4.3}%
+\contentsline {subsubsection}{Assembler}{14}{section*.6}%
+\contentsline {subsubsection}{Compiler}{14}{section*.7}%
+\contentsline {section}{\numberline {1.5}ISA (Instruction Set Architecture)}{15}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Part I(b) - ISA, Functions, and Stack - W 1.2}{16}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Arithmetic and Logic Instructions in RISCV}{16}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Constants must be encoded on 12 bits}{16}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Assembler Directives}{16}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}The \texttt {x0} Register}{17}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}PseudoInstructions}{17}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Control flow instructions}{18}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}If-Then-Else}{18}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Jumps and Branches}{18}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Comparaisions}{19}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Do-While}{19}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Functions}{19}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Jump to the Function/Retun control to the calling program}{19}{subsection.2.3.1}%
+\contentsline {subsubsection}{The too simple not working approach}{19}{section*.8}%
+\contentsline {subsubsection}{The Good Approach}{20}{section*.9}%
+\contentsline {subsection}{\numberline {2.3.2}Jump Instructions}{20}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Register Conventions}{21}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Back to the good (not so good) approach}{21}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}One simple solution (still not good)}{21}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Acquire storage resources the function needs (still not it)}{22}{subsection.2.3.6}%
+\contentsline {subsubsection}{Problem: Recursive Functions}{22}{section*.10}%
+\contentsline {subsection}{\numberline {2.3.7}The Stack}{22}{subsection.2.3.7}%
+\contentsline {subsubsection}{Dynamic Memory Allocation}{23}{section*.11}%
+\contentsline {subsubsection}{Retrieving Data from the Stack}{23}{section*.12}%
+\contentsline {subsubsection}{Memory Deallocation}{24}{section*.13}%
+\contentsline {subsubsection}{The Stack Pointer}{24}{section*.14}%
+\contentsline {subsection}{\numberline {2.3.8}Spilling Registers to Memory}{24}{subsection.2.3.8}%
+\contentsline {subsection}{\numberline {2.3.9}Register across functions}{24}{subsection.2.3.9}%
+\contentsline {subsection}{\numberline {2.3.10}Preserving Registers}{25}{subsection.2.3.10}%
+\contentsline {section}{\numberline {2.4}Passing Arguments in RISC-V}{25}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Option 1: Using Registers}{25}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Option 2: Using the Stack}{26}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}The RISC-V Approach}{26}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Summary of RISC-V Register Conventions}{26}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Part I(c) - ISA Memory and Addressing Modes - W 2.1}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Memory}{27}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Address and Data}{27}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Many Types of Memories}{28}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Functional Taxonomy of Memories}{28}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Taxonomy of Random Access Memories}{28}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Basic Structure}{29}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Write Operations}{29}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Read Operations}{29}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Practical SRAMs}{29}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}DRAMs}{30}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Ideal Random Access Memory}{30}{subsection.3.2.8}%
+\contentsline {subsection}{\numberline {3.2.9}Physical Organisation }{30}{subsection.3.2.9}%
+\contentsline {subsection}{\numberline {3.2.10}Realistic ROM Array}{31}{subsection.3.2.10}%
+\contentsline {subsection}{\numberline {3.2.11}Static Ram Typical Interface}{31}{subsection.3.2.11}%
+\contentsline {section}{\numberline {3.3}Typical Asynchronous SRAM Read Cycle}{31}{section.3.3}%
+\contentsline {subsubsection}{Read Cycle}{31}{section*.15}%
+\contentsline {subsubsection}{Write Cycle}{32}{section*.16}%
+\contentsline {section}{\numberline {3.4}Where is Memory in the Processor?}{32}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Arithmetic and Logic Instructions}{32}{subsection.3.4.1}%
+\contentsline {subsubsection}{Load Instructions}{33}{section*.17}%
+\contentsline {subsubsection}{Load and Store: The RiSC-V Way}{33}{section*.18}%
+\contentsline {subsubsection}{A Load/Store Architecture}{33}{section*.19}%
+\contentsline {section}{\numberline {3.5}More Addressing Modes? Not in RISC-V!}{33}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Word Adressed Memory}{34}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Loading Words (lw) and Instructions}{34}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Loading Bytes (lb)}{34}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}A Few More Load/Store Instructions}{34}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Access as it is more suitable}{35}{subsection.3.5.5}%
+\contentsline {subsubsection}{Counting Characters in a String}{35}{section*.20}%
+\contentsline {subsection}{\numberline {3.5.6}Loading Bytes (lb)}{36}{subsection.3.5.6}%
+\contentsline {subsubsection}{Which Byte Where?}{36}{section*.21}%
+\contentsline {chapter}{\numberline {4}Part I(d) - ISA Arrays and Data Structures - W 2.2}{38}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Arrays}{38}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Different Ways to Store Arrays}{38}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Adding Positive Elements}{39}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Pointer to Memory vs Index in Array}{40}{subsection.4.1.3}%
+\contentsline {subsubsection}{In C}{41}{section*.22}%
+\contentsline {subsubsection}{We need a good compiler}{41}{section*.23}%
+\contentsline {chapter}{\numberline {5}Part I(e) - ISA Arithmetic - W 3.1, 3.2}{42}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Notation}{42}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Numbers}{42}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Unsigned Integers}{42}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Signed Integers}{43}{subsection.5.2.2}%
+\contentsline {subsubsection}{Sign and Magnitude}{43}{section*.24}%
+\contentsline {subsection}{\numberline {5.2.3}Radix's Complement}{43}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Two's Complement Subtraction}{44}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Addition Is Unchanged from Unsigned}{45}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Sign Extension}{45}{subsection.5.2.6}%
+\contentsline {subsubsection}{Example: 4-bit to 8-bit Conversion}{45}{section*.25}%
+\contentsline {subsection}{\numberline {5.2.7}Signed and Unsigned Instructions}{45}{subsection.5.2.7}%
+\contentsline {section}{\numberline {5.3}Overflow}{46}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Overflow in 2's Complement}{46}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Overflow in Software}{47}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Detect Addition Overflow in Software}{47}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}A Strange but Useful Property}{47}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Two's Complement Subtractor}{48}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Two's Complement Add/Subtract Unit}{48}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}Bounds Check Optimization}{49}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Floating Point Representation}{49}{section.5.6}%
+\contentsline {subsubsection}{Properties of Floating Point Numbers}{50}{section*.26}%
+\contentsline {subsubsection}{Standardization and Hardware Support}{50}{section*.27}%
+\contentsline {subsubsection}{Example: Decimal to IEEE 754 Simple Precision (32 Bits) Conversion}{50}{section*.28}%
+\contentsline {subsection}{\numberline {5.6.1}Sign-and-Magnitude Addition}{51}{subsection.5.6.1}%
+\contentsline {subsubsection}{Solution 1}{51}{section*.29}%
+\contentsline {subsubsection}{Solution 2}{52}{section*.30}%
+\contentsline {chapter}{\numberline {6}Part II(a) - I/O - Exceptions Multicycle Processor W - 3.2, 4.1}{53}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Processor}{53}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Unified Memory}{53}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Single-Cycle Processor}{54}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Propagation Time}{54}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Increasing the Frequency}{55}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Two-Cycle Processor}{55}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Not All Paths Are Born Equal}{55}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Asynchronous/Synchronous Memories}{56}{subsection.6.2.4}%
+\contentsline {section}{\numberline {6.3}Multicycle Processor}{56}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Mealy or Moore?}{57}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Processor - Building the Circuit}{57}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Adding the Instruction Register}{58}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Adding functionality}{59}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}I-Type Instructions Need RF and ALU}{59}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.4}R-Type Instructions and Second Operand Selection}{60}{subsection.6.5.4}%
+\contentsline {subsection}{\numberline {6.5.5}And More, and More...}{61}{subsection.6.5.5}%
+\contentsline {subsection}{\numberline {6.5.6}Guidelines for Writing Verilog}{61}{subsection.6.5.6}%
+\contentsline {subsection}{\numberline {6.5.7}Detailing Complex Combinational Modules (ALU)}{62}{subsection.6.5.7}%
+\contentsline {subsection}{\numberline {6.5.8}Verilog - Sticking to Basic Paterns}{62}{subsection.6.5.8}%
+\contentsline {chapter}{\numberline {7}Part II(b) - Processor, I/Os, and Exceptions W - 4.1 - 4.2}{63}{chapter.7}%
+\contentsline {section}{\numberline {7.1}The CPU}{63}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Physical Memory Map}{64}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Connecting CPU and Memory}{64}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}Input/Output (I/O) Devices}{65}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Accessing I/Os: Port-Mapped I/O (PMIO)}{65}{subsection.7.3.1}%
+\contentsline {subsubsection}{Accessing I/Os: Memory Mapped I/O(MMIO)}{65}{section*.31}%
+\contentsline {subsection}{\numberline {7.3.2}Memory Mapped I/O (MMIO)}{66}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Example - A/D Converter}{67}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Bus Interface}{67}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Memory Mapping}{67}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Assembling everything}{68}{subsection.7.4.3}%
+\contentsline {subsubsection}{Software Implementation}{68}{section*.35}%
+\contentsline {section}{\numberline {7.5}What do these tri-state buffers do?}{69}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}A Classic UART}{70}{subsection.7.5.1}%
+\contentsline {chapter}{\numberline {8}Part II(c) - Interrupts W - 5.1 - 5.2}{71}{chapter.8}%
+\contentsline {section}{\numberline {8.1}I/O Polling}{71}{section.8.1}%
+\contentsline {section}{\numberline {8.2}I/O Interrupts}{71}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}The Basic Concept of I/O Interrupts}{72}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Interrupt Cycle Description}{73}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}I/O Interrupt Priorities: Daisy Chain Arbitration}{74}{subsection.8.2.3}%
+\contentsline {section}{\numberline {8.3}Direct Memory Access (DMA)}{74}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Timer and Interrupt Mechanism}{76}{subsection.8.3.1}%
+\contentsline {chapter}{\numberline {9}Part II(d) - Processor, I/Os, and Exceptions W - 5.1}{77}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Exceptions, Interrupts, Faults, Traps, and Checks}{77}{section.9.1}%
+\contentsline {paragraph}{Control Flow}{77}{section*.36}%
+\contentsline {paragraph}{Exceptions}{77}{section*.37}%
+\contentsline {paragraph}{Exception Handlers}{77}{section*.38}%
+\contentsline {paragraph}{Naming Conventions}{77}{section*.39}%
+\contentsline {subsection}{\numberline {9.1.1}Undefined Instruction}{78}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Optional \texttt {fadd.s} Instruction}{78}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Outline of an Undefined Instruction Handler}{78}{subsection.9.1.3}%
+\contentsline {section}{\numberline {9.2}Exceptions and Interrupts}{79}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}A Possible Classification of Exceptions}{79}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Watchpoint}{79}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Raising Exceptions}{80}{subsection.9.2.3}%
+\contentsline {subsection}{\numberline {9.2.4}Assessing the Position of an Exception}{80}{subsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.2.5}Assessing the Cause of Exception}{81}{subsection.9.2.5}%
+\contentsline {subsection}{\numberline {9.2.6}RISC-V Machine-Mode Exception Handling}{81}{subsection.9.2.6}%
+\contentsline {subsubsection}{Control and Status Registers (CSRs)}{81}{section*.40}%
+\contentsline {subsubsection}{Instructions for Accessing CSRs}{81}{section*.41}%
+\contentsline {subsubsection}{Returning from Exceptions}{81}{section*.42}%
+\contentsline {subsection}{\numberline {9.2.7}RISC-V Interrupt and Exception Codes}{81}{subsection.9.2.7}%
+\contentsline {subsection}{\numberline {9.2.8}Possible Undefined Instruction Handler}{82}{subsection.9.2.8}%
+\contentsline {subsection}{\numberline {9.2.9}RISC-V Machine-Mode Interrupt Handling}{83}{subsection.9.2.9}%
+\contentsline {section}{\numberline {9.3}The Stack Problem}{83}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Stack-Full Detection ?}{84}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Writing Handlers is Very Very Tricky}{84}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}Speaking of the Stack...}{84}{subsection.9.3.3}%
+\contentsline {section}{\numberline {9.4}Protection: I/Os Are Not for Everyone}{85}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Levels of Privilege: Processor Modes}{85}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}Processor Tasks on Exception}{86}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.4.3}Priorities in Interrupt Handling}{86}{subsection.9.4.3}%
+\contentsline {subsection}{\numberline {9.4.4}More challenges in Writing Exception Handlers}{86}{subsection.9.4.4}%
+\contentsline {section}{\numberline {9.5}Example - Back to Our A/D Converter}{87}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}Simple IREQ and IACK Mechanism}{87}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {9.5.2}A/D Converter - startADC}{87}{subsection.9.5.2}%
+\contentsline {subsection}{\numberline {9.5.3}A/D Converter - Software:handler}{88}{subsection.9.5.3}%
+\contentsline {subsection}{\numberline {9.5.4}A/D Converter - insertIntoBuffer}{88}{subsection.9.5.4}%
+\contentsline {subsection}{\numberline {9.5.5}A/D Converter - readADC}{89}{subsection.9.5.5}%
+\contentsline {chapter}{\numberline {10}Part II(e) - Processor, I/Os, and Exceptions - Example W - 6.1}{90}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Part Ia: Connecitng an Input Peripheral}{90}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Bus Protocol}{90}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Assembling the Circuit}{91}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Part 1b: Reading the Input Ports}{91}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Software: buttons}{91}{subsection.10.4.1}%
+\contentsline {section}{\numberline {10.5}Part 2a - Connecting an Output Peripheral}{92}{section.10.5}%
+\contentsline {section}{\numberline {10.6}Assembling everything}{92}{section.10.6}%
+\contentsline {section}{\numberline {10.7}Part 3a: Use Interrupts}{92}{section.10.7}%
+\contentsline {subsection}{\numberline {10.7.1}Interrupt Acknowledgement Process}{93}{subsection.10.7.1}%
+\contentsline {subsection}{\numberline {10.7.2}Solution}{94}{subsection.10.7.2}%
+\contentsline {chapter}{\numberline {11}Part III(a) - Memory Hierarchy - Caches - W.6.2 - 7.1}{95}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Our Goal : Use Different Memories}{95}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}What Memory ot Use?}{96}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}Spatial and Temporal Locality}{96}{subsection.11.1.2}%
+\contentsline {paragraph}{Temporal Locality}{96}{section*.49}%
+\contentsline {paragraph}{Spatial Locality}{96}{section*.50}%
+\contentsline {subsection}{\numberline {11.1.3}Placement Policy Design}{96}{subsection.11.1.3}%
+\contentsline {section}{\numberline {11.2}Cache: The Idea}{97}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Cache Memory: Directory and Tags}{97}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Cache Hits and Misses}{98}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.2.3}Fully-Associative Cache}{98}{subsection.11.2.3}%
+\contentsline {subsection}{\numberline {11.2.4}Fully-Associative Cache}{99}{subsection.11.2.4}%
+\contentsline {section}{\numberline {11.3}Cache and Cache Controller}{99}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}Cache Hit}{100}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}Cache Miss}{100}{subsection.11.3.2}%
+\contentsline {section}{\numberline {11.4}What if the Cache is Full?}{101}{section.11.4}%
+\contentsline {subsection}{\numberline {11.4.1}Eviction Policies}{101}{subsection.11.4.1}%
+\contentsline {subsection}{\numberline {11.4.2}Only Exploiting Temporal Locality}{102}{subsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.4.3}Exploiting Spatial Locality}{102}{subsection.11.4.3}%
+\contentsline {subsection}{\numberline {11.4.4}Why Not This ?}{103}{subsection.11.4.4}%
+\contentsline {subsection}{\numberline {11.4.5}Solution}{104}{subsection.11.4.5}%
+\contentsline {subsection}{\numberline {11.4.6}Simplifying Cache Design}{105}{subsection.11.4.6}%
+\contentsline {section}{\numberline {11.5}Generating \texttt {Addr} and \texttt {Tag}}{105}{section.11.5}%
+\contentsline {subsection}{\numberline {11.5.1}The Simplest Hash Function}{106}{subsection.11.5.1}%
+\contentsline {subsubsection}{Direct-Mapped Cache}{106}{section*.53}%
+\contentsline {section}{\numberline {11.6}Which One is the Best Cache ?}{107}{section.11.6}%
+\contentsline {section}{\numberline {11.7}Associativity}{108}{section.11.7}%
+\contentsline {subsection}{\numberline {11.7.1}Set-Associative Cache}{109}{subsection.11.7.1}%
+\contentsline {subsection}{\numberline {11.7.2}A Continuum of Possibilities}{110}{subsection.11.7.2}%
+\contentsline {subsection}{\numberline {11.7.3}Cache Validity}{110}{subsection.11.7.3}%
+\contentsline {subsection}{\numberline {11.7.4}Addressing by Byte vs Addressing by Word}{111}{subsection.11.7.4}%
+\contentsline {section}{\numberline {11.8}Loading Bytes(lb)}{111}{section.11.8}%
+\contentsline {subsection}{\numberline {11.8.1}Write Hit}{112}{subsection.11.8.1}%
+\contentsline {subsubsection}{Write Policies in Cache Memory}{112}{section*.58}%
+\contentsline {subsection}{\numberline {11.8.2}Write Miss in Cache Memory}{113}{subsection.11.8.2}%
+\contentsline {subsubsection}{Allocation Policies}{113}{section*.59}%
+\contentsline {paragraph}{Write-Allocate:}{113}{section*.60}%
+\contentsline {paragraph}{Write-Around (or Write-No-Allocate):}{113}{section*.61}%
+\contentsline {section}{\numberline {11.9}Summary}{114}{section.11.9}%
+\contentsline {subsection}{\numberline {11.9.1}The ``3 Cs'' of Caches}{114}{subsection.11.9.1}%
+\contentsline {paragraph}{Compulsory Misses:}{114}{section*.62}%
+\contentsline {paragraph}{Capacity Misses:}{114}{section*.63}%
+\contentsline {paragraph}{Conflict Misses:}{114}{section*.64}%
+\contentsline {subsection}{\numberline {11.9.2}Summary of Cache Features}{114}{subsection.11.9.2}%
+\contentsline {chapter}{\numberline {12}Part III(a) - Memory Hierarchy - Virtual Memory - W.7.2}{115}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Segmentation Fault: Understanding the Cause}{115}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}Overview - Problems to Solve}{115}{subsection.12.1.1}%
+\contentsline {section}{\numberline {12.2}Relocation at Load Time}{116}{section.12.2}%
+\contentsline {subsubsection}{Binary-Level Adjustments}{116}{section*.65}%
+\contentsline {subsubsection}{Memory Utilization and Limitations}{116}{section*.66}%
+\contentsline {subsection}{\numberline {12.2.1}Relocation in Hardware: Base and Bounds MMU}{117}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}Memory Management Unit (MMU)}{118}{subsection.12.2.2}%
+\contentsline {subsection}{\numberline {12.2.3}Program Relocation with Virtual Memory}{118}{subsection.12.2.3}%
+\contentsline {section}{\numberline {12.3}Relocation in Hardware: Base and Bounds MMU}{119}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Preventing Overreach in Virtual and Physical Memory}{119}{subsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.3.2}Base and Bounds MMU}{120}{subsection.12.3.2}%
+\contentsline {section}{\numberline {12.4}Needs of a Multiprogrammed System}{120}{section.12.4}%
+\contentsline {section}{\numberline {12.5}Segmentation and Paging}{120}{section.12.5}%
+\contentsline {paragraph}{Segmentation:}{120}{section*.67}%
+\contentsline {paragraph}{Paging:}{120}{section*.68}%
+\contentsline {subsection}{\numberline {12.5.1}How do we Translate Now?}{121}{subsection.12.5.1}%
+\contentsline {subsection}{\numberline {12.5.2}Virtual Adress Translation in a Paged MMU}{122}{subsection.12.5.2}%
+\contentsline {subsection}{\numberline {12.5.3}Memory Allocation is Easy Now}{122}{subsection.12.5.3}%
+\contentsline {subsection}{\numberline {12.5.4}Page Tables and Their Size}{123}{subsection.12.5.4}%
+\contentsline {subsection}{\numberline {12.5.5}Multilevel Page Tables}{123}{subsection.12.5.5}%
+\contentsline {chapter}{\numberline {13}Comparch II - Part IV(a) - Instruction Level Parallelism Performance}{124}{chapter.13}%
+\contentsline {section}{\numberline {13.1}What is Performance ?}{124}{section.13.1}%
+\contentsline {subsection}{\numberline {13.1.1}Elapsed Time, CPU Time, \dots }{124}{subsection.13.1.1}%
+\contentsline {subsection}{\numberline {13.1.2}Relative Performance}{124}{subsection.13.1.2}%
+\contentsline {subsection}{\numberline {13.1.3}Relating Performance to Hardware Implementation}{125}{subsection.13.1.3}%
+\contentsline {subsubsection}{Cycles per Instruction (CPI) and Instructions per Cycle (IPC)}{125}{section*.69}%
+\contentsline {subsection}{\numberline {13.1.4}Improving Performance}{125}{subsection.13.1.4}%
+\contentsline {subsection}{\numberline {13.1.5}Factors Influencing Performance}{125}{subsection.13.1.5}%
+\contentsline {subsection}{\numberline {13.1.6}What to Improve to Increase Performance}{126}{subsection.13.1.6}%
+\contentsline {subsection}{\numberline {13.1.7}Benchmarks}{126}{subsection.13.1.7}%
+\contentsline {subsubsection}{SPEC CPU2006 Integer Benchmarks}{126}{section*.70}%
+\contentsline {chapter}{\numberline {14}Part Part IV(b) - Instruction Level Parallelism - Basic Pipelining}{127}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Circuit Timing and Performance}{127}{section.14.1}%
+\contentsline {subsection}{\numberline {14.1.1}Signal Propagation}{127}{subsection.14.1.1}%
+\contentsline {subsubsection}{Adding Intermediate Registers}{128}{section*.71}%
+\contentsline {subsection}{\numberline {14.1.2}Pipelining: Enhancing System Throughput}{128}{subsection.14.1.2}%
+\contentsline {subsection}{\numberline {14.1.3}Latency and Throughput}{129}{subsection.14.1.3}%
+\contentsline {subsection}{\numberline {14.1.4}Practical Pipelining: Latency and Throughput}{129}{subsection.14.1.4}%
+\contentsline {chapter}{\numberline {15}Part Part IV(c) - Instruction Level Parallelism}{131}{chapter.15}%
+\contentsline {subsection}{\numberline {15.0.1}Pipelining the Processor}{131}{subsection.15.0.1}%
+\contentsline {section}{\numberline {15.1}Hardware Reuse Across Processor Stages}{132}{section.15.1}%
+\contentsline {subsection}{\numberline {15.1.1}Multicycle Processor Architecture}{132}{subsection.15.1.1}%
+\contentsline {subsection}{\numberline {15.1.2}Pipelined Processor Architecture}{132}{subsection.15.1.2}%
+\contentsline {section}{\numberline {15.2}Two Main Challenges in Processor Design}{133}{section.15.2}%
+\contentsline {subsection}{\numberline {15.2.1}CISC vs. RISC}{133}{subsection.15.2.1}%
+\contentsline {section}{\numberline {15.3}Multi-Cycle Execution Using an FSM}{133}{section.15.3}%
+\contentsline {subsection}{\numberline {15.3.1}FSM vs.\ Pipeline}{133}{subsection.15.3.1}%
+\contentsline {subsection}{\numberline {15.3.2}Adding Instructions in a Multi-Cycle Design}{133}{subsection.15.3.2}%
+\contentsline {subsection}{\numberline {15.3.3}Adding Instructions to a Pipelined Processor}{134}{subsection.15.3.3}%
+\contentsline {section}{\numberline {15.4}The Importance of the ISA (CISC vs.\ RISC)}{134}{section.15.4}%
+\contentsline {subsection}{\numberline {15.4.1}A CISC Example}{134}{subsection.15.4.1}%
+\contentsline {subsection}{\numberline {15.4.2}The RISC Alternative}{134}{subsection.15.4.2}%
+\contentsline {subsection}{\numberline {15.4.3}MIPS Pipelining Example}{135}{subsection.15.4.3}%
+\contentsline {subsection}{\numberline {15.4.4}The Laundry Metaphor for Pipelining}{135}{subsection.15.4.4}%
+\contentsline {subsection}{\numberline {15.4.5}Two Distinct Memory Interfaces in MIPS}{136}{subsection.15.4.5}%
+\contentsline {subsection}{\numberline {15.4.6}Pipeline Registers and Their Contents}{136}{subsection.15.4.6}%
+\contentsline {subsection}{\numberline {15.4.7}Pipeline Initialization and Execution}{137}{subsection.15.4.7}%
+\contentsline {subsubsection}{Pipeline Hazard: Data Dependency Error}{137}{section*.79}%
+\contentsline {section}{\numberline {15.5}Data Hazard Detection in Pipelined Processors}{138}{section.15.5}%
+\contentsline {subsection}{\numberline {15.5.1}Stalling in Instruction Execution}{138}{subsection.15.5.1}%
+\contentsline {subsubsection}{Conclusion}{139}{section*.81}%
+\contentsline {subsection}{\numberline {15.5.2}Alternative Solution}{139}{subsection.15.5.2}%
+\contentsline {subsection}{\numberline {15.5.3}Data Hazards Resolved by Forwarding}{140}{subsection.15.5.3}%
+\contentsline {subsection}{\numberline {15.5.4}Classic MIPS Pipeline with Forwarding}{141}{subsection.15.5.4}%
+\contentsline {section}{\numberline {15.6}Structural Hazards}{142}{section.15.6}%
+\contentsline {subsubsection}{Example}{142}{section*.82}%
+\contentsline {subsubsection}{Handling Cache Misses}{142}{section*.83}%
+\contentsline {subsubsection}{Stalling Strategies}{142}{section*.84}%
+\contentsline {subsubsection}{Consequences of Unresolved Structural Hazards}{142}{section*.85}%
+\contentsline {subsubsection}{Prevention in Our Pipeline}{142}{section*.86}%
+\contentsline {subsubsection}{Dependency Example}{142}{section*.87}%
+\contentsline {section}{\numberline {15.7}Control Hazards in Pipelined Processors}{143}{section.15.7}%
+\contentsline {subsection}{\numberline {15.7.1}The Problem}{143}{subsection.15.7.1}%
+\contentsline {subsubsection}{Example}{143}{section*.88}%
+\contentsline {subsection}{\numberline {15.7.2}Stalling (Flushing) the Pipeline}{143}{subsection.15.7.2}%
+\contentsline {subsection}{\numberline {15.7.3}Delay Slots}{143}{subsection.15.7.3}%
+\contentsline {section}{\numberline {15.8}Summary}{144}{section.15.8}%
+\contentsline {chapter}{\numberline {16}Part IV(d) - Instruction Level Parallelism - Scheduling}{145}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Dynamic Scheduling and Out-of-Order Execution}{145}{section.16.1}%
+\contentsline {subsection}{\numberline {16.1.1}Motivating Example}{145}{subsection.16.1.1}%
+\contentsline {subsection}{\numberline {16.1.2}Breaking the Rigidity of Basic Pipelines}{145}{subsection.16.1.2}%
+\contentsline {subsection}{\numberline {16.1.3}Dynamically Scheduled Processor Overview}{145}{subsection.16.1.3}%
+\contentsline {subsection}{\numberline {16.1.4}Reservation Stations}{146}{subsection.16.1.4}%
+\contentsline {subsubsection}{How Reservation Stations Work}{146}{section*.89}%
+\contentsline {subsubsection}{Components of a Reservation Station}{146}{section*.90}%
+\contentsline {subsubsection}{Execution Process}{146}{section*.91}%
+\contentsline {subsubsection}{Analogy: Kitchen Order Management}{147}{section*.92}%
+\contentsline {subsubsection}{Summary}{147}{section*.93}%
+\contentsline {subsection}{\numberline {16.1.5}Register Renaming and Data Dependencies}{147}{subsection.16.1.5}%
+\contentsline {subsubsection}{Pipeline Hazards and Dependency Types}{147}{section*.94}%
+\contentsline {subsubsection}{Example}{147}{section*.95}%
+\contentsline {section}{\numberline {16.2}Dynamically Scheduled Processor}{148}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}Precise vs.\ Imprecise Exceptions}{149}{subsection.16.2.1}%
+\contentsline {subsubsection}{Out-of-Order Commitment and Exceptions}{149}{section*.97}%
+\contentsline {subsection}{\numberline {16.2.2}Reordering Instructions at Writeback}{150}{subsection.16.2.2}%
+\contentsline {subsubsection}{High-Level Overview.}{150}{section*.98}%
+\contentsline {subsubsection}{Execution Steps.}{150}{section*.99}%
+\contentsline {subsubsection}{Why It Improves Performance.}{151}{section*.100}%
+\contentsline {chapter}{\numberline {17}Part 4f: Instruction Level Parallelism (ILP) Besides and Beyond Superscalars}{155}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Superscalar Execution}{155}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Dealing with Control Hazards}{156}{section.17.2}%
+\contentsline {subsection}{\numberline {17.2.1}Dynamic Branch Prediction}{156}{subsection.17.2.1}%
+\contentsline {subsection}{\numberline {17.2.2}Branch History Table (BHT)}{156}{subsection.17.2.2}%
+\contentsline {subsection}{\numberline {17.2.3}Speculative Execution}{156}{subsection.17.2.3}%
+\contentsline {subsection}{\numberline {17.2.4}Branches in the Reorder Buffer}{157}{subsection.17.2.4}%
+\contentsline {section}{\numberline {17.3}Beyond Superscalars: Simultaneous Multithreading (SMT)}{157}{section.17.3}%
+\contentsline {section}{\numberline {17.4}Memory Considerations: Nonblocking Caches}{158}{section.17.4}%
+\contentsline {section}{\numberline {17.5}VLIW: Very Long Instruction Word Architecture}{159}{section.17.5}%
+\contentsline {subsection}{\numberline {17.5.1}Core Concepts}{159}{subsection.17.5.1}%
+\contentsline {subsection}{\numberline {17.5.2}Example: VLIW vs. Pipelined Execution}{159}{subsection.17.5.2}%
+\contentsline {paragraph}{VLIW Instruction Format:}{160}{section*.116}%
+\contentsline {paragraph}{Scheduled VLIW Instructions:}{160}{section*.117}%
+\contentsline {subsection}{\numberline {17.5.3}Summary}{160}{subsection.17.5.3}%
+\contentsline {chapter}{\numberline {18}Part 5a. Multiprocessors Cache Coherence}{161}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Flynn's Taxonomy (1966)}{161}{section.18.1}%
+\contentsline {subsection}{\numberline {18.1.1}Shared-Memory Multiprocessors (UMA)}{161}{subsection.18.1.1}%
+\contentsline {subsection}{\numberline {18.1.2}Distributed-Memory Multiprocessors (NUMA)}{162}{subsection.18.1.2}%
+\contentsline {subsection}{\numberline {18.1.3}Programming Paradigms}{162}{subsection.18.1.3}%
+\contentsline {subsection}{\numberline {18.1.4}Why (Hardware) Shared Memory?}{163}{subsection.18.1.4}%
+\contentsline {subsection}{\numberline {18.1.5}Cache Coherence and the Multi-Processor Problem}{163}{subsection.18.1.5}%
+\contentsline {subsection}{\numberline {18.1.6}Ensuring a Coherent Memory System}{164}{subsection.18.1.6}%
+\contentsline {subsection}{\numberline {18.1.7}Snoopy Cache-Coherence Protocols}{164}{subsection.18.1.7}%
+\contentsline {subsection}{\numberline {18.1.8}Simple Invalidate Snooping Protocol}{165}{subsection.18.1.8}%
+\contentsline {subsection}{\numberline {18.1.9}3-State Write-Back Invalidation Protocol (MSI)}{165}{subsection.18.1.9}%
+\contentsline {section}{\numberline {18.2}MSI Protocol}{166}{section.18.2}%
